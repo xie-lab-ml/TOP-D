@@ -26,7 +26,7 @@
 
 <!-- Figure 1, original vector asset: https://arxiv.org/html/2607.04751v1/teaser.svg -->
 <p align="center">
-  <img src="recipe/assets/teaser.svg" width="425" alt="Figure 1: While standard OPD forces direct teacher supervision and suffers from unstable optimization, TOP-D ensures stable training by dynamically constructing a proximal teacher at every iteration.">
+  <img src="recipe/assets/teaser.svg" width="600" alt="Figure 1: While standard OPD forces direct teacher supervision and suffers from unstable optimization, TOP-D ensures stable training by dynamically constructing a proximal teacher at every iteration.">
 </p>
 
 <p align="center">
@@ -37,21 +37,52 @@ A **minimal implementation of TOP-D and On-Policy Distillation (OPD)** built on 
 
 ## Minimal implementation
 
-**The student generates; the reference model teaches.** We load the teacher checkpoint through `actor_rollout_ref.ref.model.path` and reuse verl's existing reference-policy worker to score the student's response tokens. The teacher is frozen: it does not generate training responses or receive optimizer updates. The proximal teacher is computed algebraically, not instantiated as another model.
+**Keep verl's rollout and actor update; add distillation in three places.** The excerpts below show the core additions, with surrounding checks and branches omitted.
 
-```text
-Student-generated responses
-  -> pre-update student log probs + reference-teacher log probs
-  -> OPD / TOP-D token advantages
-  -> existing clipped PPO actor update
-```
+1. **Teacher → the existing reference model.** Pass the teacher checkpoint through the reference-model input. The frozen teacher scores **student-generated tokens**—no teacher rollout or separate service.
 
-The two main places to read are:
+   ```bash
+   # Argument passed to verl.trainer.main_ppo by the recipe.
+   +actor_rollout_ref.ref.model.path="${TEACHER_MODEL_PATH}"
+   ```
 
-- **[`core_algos.py`](verl/verl/trainer/ppo/core_algos.py)** defines the advantage estimators. OPD uses `log_ratio = ref_log_prob - old_log_probs`. TOP-D transforms it into `log((1 - alpha) + alpha * exp(log_ratio))`, adds the mean reward of later response tokens, and normalizes valid-token returns within each prompt group. The code uses `logaddexp` for numerical stability. **Naive TOP-D** is the ablation that applies only the immediate-reward transform.
-- **[`ray_trainer.py`](verl/verl/trainer/ppo/ray_trainer.py)** connects the pieces: student rollout, student/reference scoring on the **same sampled tokens**, advantage computation, and actor update. The default recipe recomputes the pre-update student's `old_log_probs` before optimization.
+   The [reference worker](verl/verl/workers/fsdp_workers.py#L931-L958) loads this separate checkpoint; the [reference gate](verl/verl/trainer/ppo/utils.py#L72-L88) keeps scoring enabled for distillation, even with zero extra KL coefficients.
 
-Small supporting changes enable the reference worker for distillation in [`utils.py`](verl/verl/trainer/ppo/utils.py) and load its separate teacher checkpoint in [`fsdp_workers.py`](verl/verl/workers/fsdp_workers.py). “Reference” is the worker's role, **not a copy of the student**; teacher scoring remains necessary even when the extra KL coefficients are zero.
+2. **[`core_algos.py`](verl/verl/trainer/ppo/core_algos.py#L338-L472) → add OPD / TOP-D advantages.** OPD uses the teacher–student log-probability difference. TOP-D constructs its proximal teacher **algebraically**, using the same scores:
+
+   ```python
+   # OPD
+   advantages = (ref_log_prob - old_log_probs) * response_mask
+
+   # TOP-D: log_ratio is ref_log_prob - old_log_probs on valid tokens.
+   topd_rewards = torch.logaddexp(
+       log_ratio + math.log(alpha),
+       torch.full_like(log_ratio, math.log1p(-alpha)),
+   )
+   token_returns = _compute_topd_token_returns(topd_rewards, response_mask)
+   advantages = _normalize_topd_token_returns_by_prompt(
+       token_returns, response_mask, index=index
+   )
+   ```
+
+   Each TOP-D return is **current reward + mean future reward**, then normalized over valid tokens sharing a prompt UID. The full functions handle padding, `alpha` boundaries, and `no_grad`. **Naive TOP-D** keeps only the immediate-reward transform.
+
+3. **[`ray_trainer.py`](verl/verl/trainer/ppo/ray_trainer.py#L261-L296) → wire the new estimators into the trainer.** Keep pre-update student and reference-teacher log probabilities on the same tokens, then pass the advantages to the existing clipped PPO update:
+
+   ```python
+   # TOP-D branch; OPD selects compute_opd_advantage instead.
+   compute_topd_fn = core_algos.compute_topd_advantage
+   advantages, returns = compute_topd_fn(
+       token_level_rewards=data.batch["token_level_rewards"],
+       response_mask=data.batch["response_mask"],
+       old_log_probs=data.batch["old_log_probs"],
+       ref_log_prob=data.batch["ref_log_prob"],
+       index=data.non_tensor_batch["uid"] if "uid" in data.non_tensor_batch else None,
+       config=config,
+   )
+   data.batch["advantages"] = advantages
+   data.batch["returns"] = returns
+   ```
 
 ## Quick start
 

@@ -2484,29 +2484,32 @@
     },
     "recipe/opd/run_qwen3_1p7b_base_qwen3_30a3b_teacher_dapo17k_naive_topd_alpha0p1_16k_kl0.sh": {
       "original_git_blob": "a2651f93fe8ccac432446fd5878f6f24820cf728",
-      "release_git_blob": "a2651f93fe8ccac432446fd5878f6f24820cf728",
-      "sha256": "03be3ab9e41ea65aacceb485f036f80412904df16cdb1bdadf0c96737ac9a259"
+      "release_git_blob": "934eca70a47ca000e88e5531b7d90b7ce012ac6e",
+      "sha256": "1b08de8f37c2db3a4d4903ad8d3caeaf8e21c96feaf838e76563b43b35450403"
     },
     "recipe/opd/run_qwen3_1p7b_base_qwen3_30a3b_teacher_dapo17k_opd_16k_kl0.sh": {
       "original_git_blob": "02d0193d0a34a1475eff18c46177288da52ab394",
-      "release_git_blob": "02d0193d0a34a1475eff18c46177288da52ab394",
-      "sha256": "af779e4fcc2e4451a5dc6cc994b1cf7b66c755fd9c47424e8abb7d9b1aa12ea5"
+      "release_git_blob": "e9a343f926b03fed44753667a0287d0e8f382e4e",
+      "sha256": "0ce2630e9fa2613b3542a78d13ee7cc0a7ce2127c325025e0737a8d60afd38ae"
     },
     "recipe/opd/run_qwen3_1p7b_base_qwen3_30a3b_teacher_dapo17k_topd_alpha0p1_16k_kl0.sh": {
       "original_git_blob": "18375ee10c35af4e2235e6491b07ac6503f6c601",
-      "release_git_blob": "18375ee10c35af4e2235e6491b07ac6503f6c601",
-      "sha256": "90400bcc88afaef0330186a18e7b32f0702b44b72a07bb8eb599766435dede42"
+      "release_git_blob": "76d91d1252950ae1fc6ded23ea45dfdb6eb19e6e",
+      "sha256": "fdd0c4019ab1ce8eea04348c96fb42ca712c47acfb5e91152bf2b6ba0f98f1d2"
     },
     "recipe/opd/run_qwen3_1p7b_base_qwen3_teacher_dapo17k_common.sh": {
       "original_git_blob": "34d7bd479e0053d5c1b7712c410026e7ad265a62",
-      "release_git_blob": "b3548882ea0947f299014e7bd913879e8df8458b",
-      "sha256": "be2b48d00184632c706bb2a3d72986865e18620eaa061d95443201270d6c7acb"
+      "release_git_blob": "a9c73fd1d29e596c6d2269382ec20581a4b77ca6",
+      "sha256": "ca00312251c1d19780588f9eb49ac2d0b94c52c702db237deb5cbe83b39c6c5f"
     }
   },
   "intentional_changes": {
     "verl/verl/trainer/ppo/ray_trainer.py": "Val-core display alias changes avg@32 to avg@16; comments clarify scoring on the same response tokens. Training and metric computation unchanged.",
-    "recipe/opd/run_qwen3_1p7b_base_qwen3_teacher_dapo17k_common.sh": "Default teacher/model label changed from Qwen3-8B to Qwen3-30B-A3B-Instruct-2507; reference wrapping uses its Qwen3MoeDecoderLayer (overridable). English comments clarify model and data paths. Batch128, avg16, all algorithm/optimization/determinism settings retained.",
+    "recipe/opd/run_qwen3_1p7b_base_qwen3_teacher_dapo17k_common.sh": "Default teacher/model label changed from Qwen3-8B to Qwen3-30B-A3B-Instruct-2507; reference wrapping uses its Qwen3MoeDecoderLayer (overridable). English comments clarify model and data paths. TRAIN_BATCH_SIZE is now required from each entry script rather than assigned here; train-batch default 128 and avg@16 are retained. Entry-specific mini-batch changes are documented separately.",
     "verl/verl/trainer/ppo/core_algos.py": "Documentation-only clarifications of token scoring, the algebraic proximal teacher, future-token averaging, and prompt-group normalization. Executable AST is unchanged after removing docstrings.",
-    "recipe/opd/download_models.sh": "English comments clarify complete model downloads into model/ and the separate download/training path variables. All executable lines are unchanged."
+    "recipe/opd/download_models.sh": "English comments clarify complete model downloads into model/ and the separate download/training path variables. All executable lines are unchanged.",
+    "recipe/opd/run_qwen3_1p7b_base_qwen3_30a3b_teacher_dapo17k_opd_16k_kl0.sh": "Set TRAIN_BATCH_SIZE=128 explicitly in this entry script instead of the common launcher. OPD PPO_MINI_BATCH_SIZE remains 128; effective batch sizes are unchanged.",
+    "recipe/opd/run_qwen3_1p7b_base_qwen3_30a3b_teacher_dapo17k_topd_alpha0p1_16k_kl0.sh": "Set TRAIN_BATCH_SIZE=128 explicitly in this entry script. Change default PPO_MINI_BATCH_SIZE from 16 to 32 as requested by the author; TOPD_ALPHA=0.1 and other training settings are unchanged.",
+    "recipe/opd/run_qwen3_1p7b_base_qwen3_30a3b_teacher_dapo17k_naive_topd_alpha0p1_16k_kl0.sh": "Set TRAIN_BATCH_SIZE=128 explicitly in this entry script. Change default PPO_MINI_BATCH_SIZE from 16 to 32 as requested by the author; TOPD_ALPHA=0.1 and other training settings are unchanged."
   }
 }

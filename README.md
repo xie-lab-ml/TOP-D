@@ -158,11 +158,13 @@ RESET_RAY=0 bash recipe/opd/run_qwen3_1p7b_base_qwen3_30a3b_teacher_dapo17k_naiv
 |---|---|
 | Student / teacher | Qwen3-1.7B-Base / Qwen3-30B-A3B-Instruct-2507 |
 | Rollout batch | 128 prompts × 8 responses |
-| PPO minibatch | OPD: 128 prompts; TOP-D / naive TOP-D: 16 prompts |
+| PPO minibatch | OPD: 128 prompts; TOP-D / naive TOP-D: 32 prompts |
 | TOP-D `alpha` | 0.1 |
 | Prompt / response limit | 2,048 / 16,384 tokens |
 | Learning rate | `1e-6` |
 | Evaluation | avg@16 on AIME24, AIME25, and AIME26 |
+
+Each entry script sets `TRAIN_BATCH_SIZE=128` and its own `PPO_MINI_BATCH_SIZE`; the shared launcher consumes these values without overriding them.
 
 **avg@16** averages correctness over 16 completions per question, then over questions; it is not pass@16 or best-of-16. This release defaults to avg@16, while the paper reports avg@32. The original metric computation is retained.
 
@@ -187,7 +189,7 @@ TOP-D/
 <details>
 <summary>Source fidelity and validation scope</summary>
 
-The original 482-file runtime, installation metadata, and six recipe files were checked against the working project. The declared release changes select the 30B-A3B teacher and its MoE wrapping, mirror avg@16 in the `val-core` display alias, and clarify documentation/comments. Training algorithms, optimization, sampling, and determinism settings are preserved. Source hashes and declared differences are recorded in [`source_manifest.json`](recipe/verification/source_manifest.json).
+The original 482-file runtime, installation metadata, and six recipe files were checked against the working project. Declared release changes select the 30B-A3B teacher and its MoE wrapping, mirror avg@16 in `val-core`, and clarify documentation/comments. Batch configuration now lives in each entry script: train batch stays 128; TOP-D / naive TOP-D minibatches change from 16 to 32, while OPD stays 128. Algorithms, sampling, and determinism are unchanged. Source hashes and declared differences are recorded in [`source_manifest.json`](recipe/verification/source_manifest.json).
 
 ```bash
 # Verify source files and the original Parquet bytes / decoded row content.

@@ -6,6 +6,7 @@ SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
 ADV_ESTIMATOR=opd
 TOPD_ALPHA=
 METHOD_TAG=opd
+TRAIN_BATCH_SIZE=128
 PPO_MINI_BATCH_SIZE=128
 
 source "${SCRIPT_DIR}/run_qwen3_1p7b_base_qwen3_teacher_dapo17k_common.sh"

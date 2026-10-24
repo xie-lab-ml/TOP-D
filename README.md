@@ -173,9 +173,11 @@ RESET_RAY=0 bash recipe/opd/run_qwen3_1p7b_base_qwen3_30a3b_teacher_dapo17k_naiv
 | Learning rate | `1e-6` |
 | Evaluation | avg@16 on AIME24, AIME25, and AIME26 |
 
+> **Single-node defaults. To keep experiments practical and efficient on 1 node / 8 GPUs, this release uses a smaller global prompt batch (128 instead of the paper's 512) and lighter validation (avg@16 instead of avg@32). To reproduce the paper's results or explore the performance ceiling, we recommend the paper's 4-node / 32-GPU distributed setup with its original batch size, evaluation protocol, and other hyperparameters.**
+
 Each entry script sets `TRAIN_BATCH_SIZE=128` and its own `PPO_MINI_BATCH_SIZE`; the shared launcher consumes these values without overriding them.
 
-**avg@16** averages correctness over 16 completions per question, then over questions; it is not pass@16 or best-of-16. This release defaults to avg@16, while the paper reports avg@32. The original metric computation is retained.
+**avg@16** averages correctness over 16 completions per question, then over questions; it is not pass@16 or best-of-16. The original metric computation is retained.
 
 ## Data and layout
 

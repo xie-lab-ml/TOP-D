@@ -4,10 +4,11 @@ Bundled verl runtime and installation files retain the upstream Apache-2.0 notic
 Copyright 2023-2024 Bytedance Ltd. and/or its affiliates
 Additional per-file notices in verl/ remain in effect.
 
-The 482-file runtime was matched to the author's working source. Only the declared
-avg@16 display alias and recipe defaults for the requested teacher differ.
-See recipe/verification/source_manifest.json for precise file provenance.
+The 482-file runtime was matched to the author's working source. Deliberate release
+changes cover the avg@16 display alias, published recipe defaults, reference
+student-tokenizer support, and documentation. Latest source readbacks and exact
+file provenance are recorded in recipe/verification/source_manifest.json.
 
 Datasets are NOT all covered by the code license. See recipe/data/NOTICE.txt.
 In particular AIME26 is subject to CC BY-NC-SA 4.0.
-No model weights or private service configuration are redistributed.
+No model weights or user credentials are included.

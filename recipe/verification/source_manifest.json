@@ -2226,8 +2226,8 @@
     },
     "verl/verl/workers/fsdp_workers.py": {
       "original_git_blob": "2bdf56c0f1e892bcf1a0194dce850c02a3e16398",
-      "release_git_blob": "2bdf56c0f1e892bcf1a0194dce850c02a3e16398",
-      "sha256": "63e81719d0e1a4d8776bb0a46ef036b702bd6787f8cd6388c1c23746f9e0b571"
+      "release_git_blob": "c2708befc0e136074df3b14e0bbca6706cc9ebb1",
+      "sha256": "7b5fc7527cfe8c277e6e52022bbe296eb6a0ad1384a553ef909758b0701bea02"
     },
     "verl/verl/workers/megatron_workers.py": {
       "original_git_blob": "2eafb77a8e3a6d903f1397d3bf734becc8ceb143",
@@ -2469,8 +2469,9 @@
       "release_git_blob": "af51223f5d87d6249d643a8d3e7f82bd2d6750e3"
     },
     "verl/README.md": {
-      "sha256": "4463e7338a1a1f51454d3f12e4851a0b6ac1be44f50875c98456e919660f940f",
-      "release_git_blob": "4b818ff700d2155ff740f72c1cda0d80465f6659"
+      "sha256": "1a759146c6388d6b5ca7a3c004d4e6901011e694450fa7b75975806dcff49533",
+      "release_git_blob": "e6ce339b6631d9a7a20b30b2ea22114fcf9768c9",
+      "previous_release_git_blob": "4b818ff700d2155ff740f72c1cda0d80465f6659"
     },
     "recipe/opd/download_models.sh": {
       "original_git_blob": "33b78c3bdfaa1f50abc34138aeb225c392caf5f3",
@@ -2484,32 +2485,51 @@
     },
     "recipe/opd/run_qwen3_1p7b_base_qwen3_30a3b_teacher_dapo17k_naive_topd_alpha0p1_16k_kl0.sh": {
       "original_git_blob": "a2651f93fe8ccac432446fd5878f6f24820cf728",
-      "release_git_blob": "934eca70a47ca000e88e5531b7d90b7ce012ac6e",
-      "sha256": "1b08de8f37c2db3a4d4903ad8d3caeaf8e21c96feaf838e76563b43b35450403"
+      "latest_source_git_blob": "36421c9eae4b68f407e5818aec04edfd02557eaf",
+      "latest_source_sha256": "16c5acffa46865a49aa612241d4c74139deb7746429303bb4c5f7637ed060af4",
+      "release_git_blob": "36421c9eae4b68f407e5818aec04edfd02557eaf",
+      "sha256": "16c5acffa46865a49aa612241d4c74139deb7746429303bb4c5f7637ed060af4"
     },
     "recipe/opd/run_qwen3_1p7b_base_qwen3_30a3b_teacher_dapo17k_opd_16k_kl0.sh": {
       "original_git_blob": "02d0193d0a34a1475eff18c46177288da52ab394",
-      "release_git_blob": "e9a343f926b03fed44753667a0287d0e8f382e4e",
-      "sha256": "0ce2630e9fa2613b3542a78d13ee7cc0a7ce2127c325025e0737a8d60afd38ae"
+      "latest_source_git_blob": "ab3000123aee9269565504f699571a94bd02f2ec",
+      "latest_source_sha256": "fd76bafb26da41e3b0a7824b300043a56a17c47518b4dcd617bb935f70e1487e",
+      "release_git_blob": "ab3000123aee9269565504f699571a94bd02f2ec",
+      "sha256": "fd76bafb26da41e3b0a7824b300043a56a17c47518b4dcd617bb935f70e1487e"
     },
     "recipe/opd/run_qwen3_1p7b_base_qwen3_30a3b_teacher_dapo17k_topd_alpha0p1_16k_kl0.sh": {
       "original_git_blob": "18375ee10c35af4e2235e6491b07ac6503f6c601",
-      "release_git_blob": "76d91d1252950ae1fc6ded23ea45dfdb6eb19e6e",
-      "sha256": "fdd0c4019ab1ce8eea04348c96fb42ca712c47acfb5e91152bf2b6ba0f98f1d2"
+      "latest_source_git_blob": "815be51762386dd358ea79d5317575de14fde4d5",
+      "latest_source_sha256": "4ab42b82f065c44e27fdea3f5eda9d57d533416db9dde2af1a5c4a5efc03ad8d",
+      "release_git_blob": "815be51762386dd358ea79d5317575de14fde4d5",
+      "sha256": "4ab42b82f065c44e27fdea3f5eda9d57d533416db9dde2af1a5c4a5efc03ad8d"
     },
     "recipe/opd/run_qwen3_1p7b_base_qwen3_teacher_dapo17k_common.sh": {
       "original_git_blob": "34d7bd479e0053d5c1b7712c410026e7ad265a62",
-      "release_git_blob": "a9c73fd1d29e596c6d2269382ec20581a4b77ca6",
-      "sha256": "ca00312251c1d19780588f9eb49ac2d0b94c52c702db237deb5cbe83b39c6c5f"
+      "latest_source_git_blob": "6a0b158230446b0a8899af61cdf30e7943c84542",
+      "latest_source_sha256": "0ce80d7b2b83b2f5cc9ccd04493f4985b0a243a378e25b9d58106d07b2f28410",
+      "release_git_blob": "2ccc40cd7ff16c07d1a86fc83efee4ba5c900d77",
+      "sha256": "3d7311f12fe26f05a029a55299fecbb24e5ae48ccfef1b8ee1172c193e37d586"
     }
   },
   "intentional_changes": {
     "verl/verl/trainer/ppo/ray_trainer.py": "Val-core display alias changes avg@32 to avg@16; comments clarify scoring on the same response tokens. Training and metric computation unchanged.",
-    "recipe/opd/run_qwen3_1p7b_base_qwen3_teacher_dapo17k_common.sh": "Default teacher/model label changed from Qwen3-8B to Qwen3-30B-A3B-Instruct-2507; reference wrapping uses its Qwen3MoeDecoderLayer (overridable). English comments clarify model and data paths. TRAIN_BATCH_SIZE is now required from each entry script rather than assigned here; train-batch default 128 and avg@16 are retained. Entry-specific mini-batch changes are documented separately.",
+    "recipe/opd/run_qwen3_1p7b_base_qwen3_teacher_dapo17k_common.sh": "Latest original EOS/PAD/length preflight and ref.model.tokenizer_path are retained. All four batch values are required from entry scripts. Compared with the latest original, executable changes only retain the established 30B-A3B teacher default/label and configurable Qwen3MoeDecoderLayer wrapping; English release comments differ.",
     "verl/verl/trainer/ppo/core_algos.py": "Documentation-only clarifications of token scoring, the algebraic proximal teacher, future-token averaging, and prompt-group normalization. Executable AST is unchanged after removing docstrings.",
     "recipe/opd/download_models.sh": "English comments clarify complete model downloads into model/ and the separate download/training path variables. All executable lines are unchanged.",
-    "recipe/opd/run_qwen3_1p7b_base_qwen3_30a3b_teacher_dapo17k_opd_16k_kl0.sh": "Set TRAIN_BATCH_SIZE=128 explicitly in this entry script instead of the common launcher. OPD PPO_MINI_BATCH_SIZE remains 128; effective batch sizes are unchanged.",
-    "recipe/opd/run_qwen3_1p7b_base_qwen3_30a3b_teacher_dapo17k_topd_alpha0p1_16k_kl0.sh": "Set TRAIN_BATCH_SIZE=128 explicitly in this entry script. Change default PPO_MINI_BATCH_SIZE from 16 to 32 as requested by the author; TOPD_ALPHA=0.1 and other training settings are unchanged.",
-    "recipe/opd/run_qwen3_1p7b_base_qwen3_30a3b_teacher_dapo17k_naive_topd_alpha0p1_16k_kl0.sh": "Set TRAIN_BATCH_SIZE=128 explicitly in this entry script. Change default PPO_MINI_BATCH_SIZE from 16 to 32 as requested by the author; TOPD_ALPHA=0.1 and other training settings are unchanged."
+    "recipe/opd/run_qwen3_1p7b_base_qwen3_30a3b_teacher_dapo17k_opd_16k_kl0.sh": "Byte-identical to the latest original readback: train128, mini128, PPO microbatch1 and log-prob microbatch1 are set in this entry script.",
+    "recipe/opd/run_qwen3_1p7b_base_qwen3_30a3b_teacher_dapo17k_topd_alpha0p1_16k_kl0.sh": "Byte-identical to the latest original readback: train128, mini32, PPO microbatch1 and log-prob microbatch1 are set in this entry script; alpha0.1 retained.",
+    "recipe/opd/run_qwen3_1p7b_base_qwen3_30a3b_teacher_dapo17k_naive_topd_alpha0p1_16k_kl0.sh": "Byte-identical to the latest original readback: train128, mini32, PPO microbatch1 and log-prob microbatch1 are set in this entry script; alpha0.1 retained.",
+    "verl/verl/workers/fsdp_workers.py": "Compatibility fix beyond the original readback: consume ref.model.tokenizer_path for tokenizer, processor and generation-config loading in the reference role. Teacher AutoConfig/weights still use the teacher model path. No override preserves old behavior; no token-ID remapping or algorithm change is introduced.",
+    "verl/README.md": "Replace the upstream landing-page copy with bundle-specific navigation, source attribution and installation guidance. Remove links to examples not shipped in this bundle; preserve all module Markdown and upstream licenses/notices."
+  },
+  "latest_source_audit": {
+    "date": "2026-10-25",
+    "original_head": "1bd489f71fd1ef42e73f553bda92e8ef6b79cb57",
+    "tracked_runtime_files_rehashed": 482,
+    "tracked_runtime_changes_from_initial_source": 0,
+    "script_readback_verification": "All four scripts were copied from the editor and checked against independently computed file SHA-256, Git blob and byte count.",
+    "reference_tokenizer_finding": "The latest original common script passes ref.model.tokenizer_path, but the unchanged original FSDP worker does not read it. This release adds the minimal consumer explicitly listed above.",
+    "original_model_metadata_check": "For the available Qwen3-1.7B-Base and Qwen3-8B checkpoints, all 151665 student token IDs match the teacher mapping; the teacher adds four tokens. Default EOS differs (151643 vs151645). No model weights were loaded; the release 30B teacher checkpoint was not available for this local check."
   }
 }

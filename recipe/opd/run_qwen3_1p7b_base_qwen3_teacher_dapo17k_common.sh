@@ -14,6 +14,8 @@ required_entry_vars=(
     METHOD_TAG
     TRAIN_BATCH_SIZE
     PPO_MINI_BATCH_SIZE
+    PPO_MICRO_BATCH_SIZE_PER_GPU
+    LOG_PROB_MICRO_BATCH_SIZE_PER_GPU
 )
 
 for name in "${required_entry_vars[@]}"; do
@@ -37,6 +39,9 @@ MODEL_PATH=${MODEL_PATH:-${RELEASE_ROOT}/model/Qwen3-1.7B-Base}
 # The frozen teacher reuses the reference worker to score student-generated tokens.
 # It is a separate checkpoint, not a copy of the student; no teacher rollout is needed.
 TEACHER_MODEL_PATH=${TEACHER_MODEL_PATH:-${RELEASE_ROOT}/model/Qwen3-30B-A3B-Instruct-2507}
+# Use the student tokenizer as the canonical tokenizer for the teacher/reference
+# policy so EOS/PAD semantics stay aligned while teacher weights remain separate.
+REF_TOKENIZER_PATH=${REF_TOKENIZER_PATH:-${MODEL_PATH}}
 # The default teacher is MoE. Override this when using a different teacher architecture.
 TEACHER_LAYER_CLS=${TEACHER_LAYER_CLS:-Qwen3MoeDecoderLayer}
 # Original DAPO and AIME Parquet files are included here. Override these paths only
@@ -49,10 +54,6 @@ AIME26_FILE=${AIME26_FILE:-${MATH_REASONING_DATA_DIR}/aime26.parquet}
 VAL_FILES=${VAL_FILES:-}
 CUSTOM_REWARD_PATH=${CUSTOM_REWARD_PATH:-${SCRIPT_DIR}/math_verify_reward.py}
 CUSTOM_REWARD_NAME=${CUSTOM_REWARD_NAME:-compute_score}
-
-# TRAIN_BATCH_SIZE and PPO_MINI_BATCH_SIZE are set by each entry script.
-PPO_MICRO_BATCH_SIZE_PER_GPU=1
-LOG_PROB_MICRO_BATCH_SIZE_PER_GPU=1
 
 NNODES=${NNODES:-1}
 GPUS_PER_NODE=${GPUS_PER_NODE:-8}
@@ -159,6 +160,7 @@ WORKSPACE=${WORKSPACE}
 VERL_DIR=${VERL_DIR}
 MODEL_PATH=${MODEL_PATH}
 TEACHER_MODEL_PATH=${TEACHER_MODEL_PATH}
+REF_TOKENIZER_PATH=${REF_TOKENIZER_PATH}
 TRAIN_FILES=${TRAIN_FILES_LIST}
 VAL_FILES=${VAL_FILES_LIST}
 RUN_DIR=${RUN_DIR}
@@ -228,6 +230,11 @@ if [ ! -f "${TEACHER_MODEL_PATH}/config.json" ]; then
     exit 1
 fi
 
+if [ ! -f "${REF_TOKENIZER_PATH}/tokenizer_config.json" ]; then
+    echo "REF_TOKENIZER_PATH is invalid or missing tokenizer_config.json: ${REF_TOKENIZER_PATH}" >&2
+    exit 1
+fi
+
 if [ ! -f "${TRAIN_FILE}" ]; then
     echo "TRAIN_FILE does not exist: ${TRAIN_FILE}" >&2
     exit 1
@@ -236,12 +243,26 @@ fi
 python3 - <<PY
 import json
 from pathlib import Path
+from transformers import AutoTokenizer
+
 for p in [Path('${TRAIN_FILE}')]:
     assert p.exists(), p
 for name, p in [('student', Path('${MODEL_PATH}') / 'config.json'), ('teacher', Path('${TEACHER_MODEL_PATH}') / 'config.json')]:
     cfg = json.loads(p.read_text())
     print(f'{name}_model_type=', cfg.get('model_type'))
     print(f'{name}_architectures=', cfg.get('architectures'))
+
+student_tokenizer = AutoTokenizer.from_pretrained('${MODEL_PATH}', trust_remote_code=True)
+ref_tokenizer = AutoTokenizer.from_pretrained('${REF_TOKENIZER_PATH}', trust_remote_code=True)
+print('student_tokenizer_path=', '${MODEL_PATH}')
+print('ref_tokenizer_path=', '${REF_TOKENIZER_PATH}')
+print('student_eos_token_id=', student_tokenizer.eos_token_id)
+print('ref_eos_token_id=', ref_tokenizer.eos_token_id)
+print('student_pad_token_id=', student_tokenizer.pad_token_id)
+print('ref_pad_token_id=', ref_tokenizer.pad_token_id)
+assert student_tokenizer.eos_token_id == ref_tokenizer.eos_token_id, 'student/ref eos_token_id mismatch'
+assert student_tokenizer.pad_token_id == ref_tokenizer.pad_token_id, 'student/ref pad_token_id mismatch'
+assert len(student_tokenizer) == len(ref_tokenizer), 'student/ref tokenizer vocab size mismatch'
 PY
 
 if [ "${START_RAY}" = "1" ]; then
@@ -344,6 +365,7 @@ python3 -m verl.trainer.main_ppo \
     actor_rollout_ref.rollout.val_kwargs.top_p=0.7 \
     actor_rollout_ref.rollout.val_kwargs.n="${VAL_N}" \
     +actor_rollout_ref.ref.model.path="${TEACHER_MODEL_PATH}" \
+    +actor_rollout_ref.ref.model.tokenizer_path="${REF_TOKENIZER_PATH}" \
     actor_rollout_ref.ref.log_prob_micro_batch_size_per_gpu="${LOG_PROB_MICRO_BATCH_SIZE_PER_GPU}" \
     actor_rollout_ref.ref.use_torch_compile="${REF_USE_TORCH_COMPILE}" \
     actor_rollout_ref.ref.fsdp_config.seed="${SEED}" \

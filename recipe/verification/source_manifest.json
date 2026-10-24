@@ -2459,6 +2459,11 @@
       "release_git_blob": "e6c0f5a08e367d504c1b4b1f1fc85870a5def55f",
       "original_git_blob": "e6c0f5a08e367d504c1b4b1f1fc85870a5def55f"
     },
+    "verl/docker/Dockerfile.stable.vllm": {
+      "sha256": "98197da9628e5ad2c886b0a89aa4e3442d5bdd7e3c2785f3b3daa139bff61ce9",
+      "release_git_blob": "f3e399d2add5e913eccf03d4be872cd2812fa600",
+      "original_git_blob": "f3e399d2add5e913eccf03d4be872cd2812fa600"
+    },
     "verl/setup.py": {
       "sha256": "55c2b29c939b702d272a4a4d92780b49ebbd9335d4314f35b43428452f98c43f",
       "release_git_blob": "af51223f5d87d6249d643a8d3e7f82bd2d6750e3"
@@ -2466,10 +2471,6 @@
     "verl/README.md": {
       "sha256": "4463e7338a1a1f51454d3f12e4851a0b6ac1be44f50875c98456e919660f940f",
       "release_git_blob": "4b818ff700d2155ff740f72c1cda0d80465f6659"
-    },
-    "verl/docker/Dockerfile.stable.vllm": {
-      "sha256": "d4bd4b40e4dc47d87baa19f71b50461b9d5e387562930a5ace253025a311ea18",
-      "release_git_blob": "240587db17df5df6e78f2c2373ef62faea819f5c"
     },
     "recipe/opd/download_models.sh": {
       "original_git_blob": "33b78c3bdfaa1f50abc34138aeb225c392caf5f3",

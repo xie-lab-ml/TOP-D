@@ -1,7 +1,3 @@
-* text=auto
-*.py text eol=lf
-*.sh text eol=lf
-*.patch text eol=lf
-*.json text eol=lf
-*.txt text eol=lf
-*.md text eol=lf
+# Preserve the exact original runtime and parquet bytes across operating systems.
+* -text
+*.parquet binary

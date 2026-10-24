@@ -53,13 +53,14 @@ Student rollouts → teacher scores → token advantages → existing PPO update
 
    `REF_TOKENIZER_PATH` defaults to `MODEL_PATH`. The [FSDP worker](verl/verl/workers/fsdp_workers.py) loads the selected tokenizer; the teacher only scores, never generates or trains.
 
-2. **[`core_algos.py`](verl/verl/trainer/ppo/core_algos.py#L338-L472): token advantages.** TOP-D constructs its proximal teacher algebraically from the same log probabilities.
+2. **[`core_algos.py`](verl/verl/trainer/ppo/core_algos.py#L338-L472): token advantages.** Both rewards use the same sampled token; `p_student` is its pre-update student probability.
 
    ```python
-   # OPD
+   # OPD reward: log(p_teacher / p_student)
    advantages = (ref_log_prob - old_log_probs) * response_mask
 
-   # TOP-D: log_ratio = ref_log_prob - old_log_probs on valid tokens.
+   # TOP-D reward: log(alpha * (p_teacher / p_student) + (1 - alpha))
+   # log_ratio = ref_log_prob - old_log_probs on valid tokens.
    topd_rewards = torch.logaddexp(
        log_ratio + math.log(alpha),
        torch.full_like(log_ratio, math.log1p(-alpha)),

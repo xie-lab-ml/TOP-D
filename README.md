@@ -3,10 +3,10 @@
 </h1>
 
 <p align="center">
-  <a href="mailto:zhengpengxie00@gmail.com">Zhengpeng Xie</a><sup>*</sup>,
-  <a href="mailto:li.zhang@xingyunzhili.com">Li Lyna Zhang</a><sup>†</sup>,
-  <a href="mailto:zekexie@hkust-gz.edu.cn">Zeke Xie</a><sup>‡</sup>,
-  <a href="mailto:maoyang@microsoft.com">Mao Yang</a>
+  <a href="https://scholar.google.com/citations?user=QuK9uDcAAAAJ&amp;hl=en">Zhengpeng Xie</a><sup>*</sup>,
+  <a href="https://scholar.google.com/citations?user=-_ItfAoAAAAJ&amp;hl=en">Li Lyna Zhang</a><sup>†</sup>,
+  <a href="https://scholar.google.com/citations?user=ysXmZCMAAAAJ&amp;hl=en">Zeke Xie</a><sup>‡</sup>,
+  <a href="https://scholar.google.com/citations?user=LgJqohwAAAAJ&amp;hl=en">Mao Yang</a>
 </p>
 
 <p align="center">
@@ -26,11 +26,11 @@
 
 <!-- Figure 1, original vector asset: https://arxiv.org/html/2607.04751v1/teaser.svg -->
 <p align="center">
-  <img src="recipe/assets/teaser.svg" width="850" alt="Figure 1: TOP-D constructs a proximal teacher inside the student's trust region, rather than learning directly from a distant teacher as in standard OPD.">
+  <img src="recipe/assets/teaser.svg" width="425" alt="Figure 1: While standard OPD forces direct teacher supervision and suffers from unstable optimization, TOP-D ensures stable training by dynamically constructing a proximal teacher at every iteration.">
 </p>
 
 <p align="center">
-  <em>Figure 1. Instead of asking the student to match a distant teacher in one step, TOP-D constructs a proximal teacher at each iteration.</em>
+  <em>Figure 1: While standard OPD forces direct teacher supervision and suffers from unstable optimization, TOP-D ensures stable training by dynamically constructing a proximal teacher at every iteration.</em>
 </p>
 
 A **minimal implementation of TOP-D and On-Policy Distillation (OPD)** built on [verl](https://github.com/verl-project/verl). The repository includes the working runtime, training recipes, and original math datasets—no separate upstream checkout or patch step.
@@ -178,12 +178,11 @@ File-identity and CPU checks have passed. A fresh Linux installation, GPU model 
 If you find this work useful, please cite:
 
 ```bibtex
-@inproceedings{xie2026trust,
-  title     = {Trust Region Policy Distillation},
-  author    = {Zhengpeng Xie and Li Lyna Zhang and Zeke Xie and Mao Yang},
-  booktitle = {Advances in Neural Information Processing Systems},
-  year      = {2026},
-  url       = {https://arxiv.org/abs/2607.04751}
+@article{xie2026trust,
+title={Trust Region Policy Distillation},
+author={Xie, Zhengpeng and Zhang, Li Lyna and Xie, Zeke and Yang, Mao},
+journal={arXiv preprint arXiv:2607.04751},
+year={2026}
 }
 ```
 

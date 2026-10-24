@@ -347,8 +347,9 @@ def compute_opd_advantage(
 ) -> tuple[torch.Tensor, torch.Tensor]:
     """Compute minimal on-policy distillation advantages.
 
-    OPD uses the teacher/reference log probability minus the student rollout
-    log probability as a token-level advantage on the student's own rollout.
+    The teacher/reference and pre-update student score the same student-generated
+    response tokens. Their log-probability difference is the token advantage;
+    task rewards are not used by this estimator.
     """
     with torch.no_grad():
         advantages = (ref_log_prob - old_log_probs) * response_mask
@@ -375,8 +376,10 @@ def _compute_topd_immediate_rewards(
     response_mask: torch.Tensor,
     alpha: float,
 ) -> torch.Tensor:
+    # Construct the proximal-teacher signal algebraically; no extra model is loaded.
     valid_mask = response_mask.bool()
     log_ratio = torch.where(valid_mask, ref_log_prob - old_log_probs, torch.zeros_like(old_log_probs))
+    # This recovers OPD's immediate reward, not TOP-D's later return/normalization steps.
     if alpha == 1.0:
         return log_ratio * response_mask
     topd_rewards = torch.logaddexp(
@@ -448,8 +451,11 @@ def compute_topd_advantage(
 ) -> tuple[torch.Tensor, torch.Tensor]:
     """Compute TOP-D advantages.
 
-    TOP-D replaces the OPD reward with log(alpha * exp(ref_log_prob - old_log_probs) + 1 - alpha),
-    then computes token-level future returns and prompt-group token-level normalized advantages.
+    TOP-D transforms the OPD log ratio into log((1 - alpha) + alpha * exp(log_ratio)).
+    Each return adds the current reward to the mean reward of later valid tokens;
+    the final valid token has no future term. Returns are then standardized over
+    all valid response tokens sharing a prompt UID, using population std + 1e-6.
+    Padding is excluded and the complete advantage computation is gradient-free.
     """
     del token_level_rewards, reward_baselines
     with torch.no_grad():

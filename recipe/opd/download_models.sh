@@ -5,10 +5,11 @@ set -euo pipefail
 SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
 RELEASE_ROOT=$(cd -- "${SCRIPT_DIR}/../.." && pwd)
 
-# Download models into the local release tree by default. You can also pre-download
-# the models anywhere else and export STUDENT_DIR / TEACHER_DIR to those directories.
-# Default teacher for release: Qwen3-30B-A3B-Instruct-2507. For a cheaper local
-# debug run, override TEACHER_REPO and TEACHER_DIR, e.g. with Qwen/Qwen3-8B.
+# Download complete student and teacher checkpoints into model/ by default.
+# Keep the weight shards, tokenizer files, and model configuration together.
+# STUDENT_DIR / TEACHER_DIR override download destinations only; if customized,
+# also set MODEL_PATH / TEACHER_MODEL_PATH when launching a training recipe.
+# Existing complete checkpoints can be reused without running this helper.
 MODEL_DIR=${MODEL_DIR:-${RELEASE_ROOT}/model}
 STUDENT_REPO=${STUDENT_REPO:-Qwen/Qwen3-1.7B-Base}
 TEACHER_REPO=${TEACHER_REPO:-Qwen/Qwen3-30B-A3B-Instruct-2507}

@@ -259,7 +259,7 @@ def compute_advantage(
         data.batch["advantages"] = advantages
         data.batch["returns"] = returns
     elif adv_estimator in (AdvantageEstimator.OPD, "opd"):
-        # Call compute_opd_advantage with teacher/reference log probs and student rollout log probs.
+        # Score the same sampled response tokens with the teacher and pre-update student.
         assert "old_log_probs" in data.batch, "OPD requires old_log_probs from the student rollout policy."
         assert "ref_log_prob" in data.batch, "OPD requires ref_log_prob from the teacher/reference policy."
         advantages, returns = core_algos.compute_opd_advantage(
@@ -277,7 +277,7 @@ def compute_advantage(
         AdvantageEstimator.NAIVE_TOPD,
         "naive_topd",
     ):
-        # TOP-D and naive_topd reuse OPD's teacher/reference log probs and student rollout log probs.
+        # Reuse OPD's two log-probability tensors; only advantage construction differs.
         assert "old_log_probs" in data.batch, "TOP-D requires old_log_probs from the student rollout policy."
         assert "ref_log_prob" in data.batch, "TOP-D requires ref_log_prob from the teacher/reference policy."
         if adv_estimator in (AdvantageEstimator.NAIVE_TOPD, "naive_topd"):

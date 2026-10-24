@@ -1456,8 +1456,8 @@
     },
     "verl/verl/trainer/ppo/core_algos.py": {
       "original_git_blob": "b0623fb47e9bb9b94ca3fe9e9885bd8121f78262",
-      "release_git_blob": "b0623fb47e9bb9b94ca3fe9e9885bd8121f78262",
-      "sha256": "3ee39c247961415c23d7069be9d561fa0955c0826a754e8fa55e69e2c278a329"
+      "release_git_blob": "42b7c44d005bf0bdc90e20aedcddfef0531e84a9",
+      "sha256": "0663a5e92020b2a41a27846c94003fc7c63fb45268c9cec4aa6c8124c32d5be1"
     },
     "verl/verl/trainer/ppo/metric_utils.py": {
       "original_git_blob": "beb1410dbceca0577916f2c5c1576f560c7034b8",
@@ -1471,8 +1471,8 @@
     },
     "verl/verl/trainer/ppo/ray_trainer.py": {
       "original_git_blob": "3af0ed83342cda4bddb853e2608fc63d9952130f",
-      "release_git_blob": "d57ab4a7fe0345f8f90cf33fcd74749801be6819",
-      "sha256": "b1890ea14e7ab4e3921d37d229889cbd322aad5720f268adf1a6116c73fddbb9"
+      "release_git_blob": "6ac9fbdc43ec045d5062edd2ab4d65df9ce05e75",
+      "sha256": "3c9dbee65fa8cfbcf04c381e73f9f8cd65abe0cfe88e39ec2bba09c876636c3d"
     },
     "verl/verl/trainer/ppo/reward.py": {
       "original_git_blob": "f13a3abf9763c1da3df4138274d919e3037ffeb2",
@@ -2474,8 +2474,8 @@
     },
     "recipe/opd/download_models.sh": {
       "original_git_blob": "33b78c3bdfaa1f50abc34138aeb225c392caf5f3",
-      "release_git_blob": "33b78c3bdfaa1f50abc34138aeb225c392caf5f3",
-      "sha256": "9e49483da13f2578b9c7e25e791412fdfb7090f7cab598d5260b33008789756e"
+      "release_git_blob": "d81bc150bba7d6f79b8aeb12accb6ae30e293dcd",
+      "sha256": "96da66cb363efc0ff09ab25a89b2f002a899dfe30c6518740381fe915f450868"
     },
     "recipe/opd/math_verify_reward.py": {
       "original_git_blob": "51b9185483e4458e6a8360ac24f0161b190b4010",
@@ -2499,12 +2499,14 @@
     },
     "recipe/opd/run_qwen3_1p7b_base_qwen3_teacher_dapo17k_common.sh": {
       "original_git_blob": "34d7bd479e0053d5c1b7712c410026e7ad265a62",
-      "release_git_blob": "68239e615440dcc94296fcc687aefa75de3f0eef",
-      "sha256": "39da5aee9398e1a6e0a298001f801deeadaab8f4bf4f1868bb5fadd722b2654d"
+      "release_git_blob": "b3548882ea0947f299014e7bd913879e8df8458b",
+      "sha256": "be2b48d00184632c706bb2a3d72986865e18620eaa061d95443201270d6c7acb"
     }
   },
   "intentional_changes": {
-    "verl/verl/trainer/ppo/ray_trainer.py": "Only val-core display alias changes avg@32 to avg@16; training and metric computation unchanged.",
-    "recipe/opd/run_qwen3_1p7b_base_qwen3_teacher_dapo17k_common.sh": "Default teacher/model label changed from Qwen3-8B to Qwen3-30B-A3B-Instruct-2507; reference wrapping uses its Qwen3MoeDecoderLayer (overridable). Batch128, avg16, all algorithm/optimization/determinism settings retained."
+    "verl/verl/trainer/ppo/ray_trainer.py": "Val-core display alias changes avg@32 to avg@16; comments clarify scoring on the same response tokens. Training and metric computation unchanged.",
+    "recipe/opd/run_qwen3_1p7b_base_qwen3_teacher_dapo17k_common.sh": "Default teacher/model label changed from Qwen3-8B to Qwen3-30B-A3B-Instruct-2507; reference wrapping uses its Qwen3MoeDecoderLayer (overridable). English comments clarify model and data paths. Batch128, avg16, all algorithm/optimization/determinism settings retained.",
+    "verl/verl/trainer/ppo/core_algos.py": "Documentation-only clarifications of token scoring, the algebraic proximal teacher, future-token averaging, and prompt-group normalization. Executable AST is unchanged after removing docstrings.",
+    "recipe/opd/download_models.sh": "English comments clarify complete model downloads into model/ and the separate download/training path variables. All executable lines are unchanged."
   }
 }

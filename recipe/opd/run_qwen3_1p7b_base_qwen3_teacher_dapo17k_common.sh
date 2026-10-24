@@ -31,15 +31,15 @@ RUN_DIR=${RUN_ROOT}/${EXP_NAME}
 LOG_DIR=${RUN_DIR}/logs
 CKPT_DIR=${RUN_DIR}/checkpoints
 
-# Student model path. Download Qwen/Qwen3-1.7B-Base first, then keep it here
-# or override MODEL_PATH with your local model directory.
+# Put the complete student checkpoint in model/, or set MODEL_PATH to an existing copy.
 MODEL_PATH=${MODEL_PATH:-${RELEASE_ROOT}/model/Qwen3-1.7B-Base}
-# Release default requested by the author; teacher still uses the reference model.
+# The frozen teacher reuses the reference worker to score student-generated tokens.
+# It is a separate checkpoint, not a copy of the student; no teacher rollout is needed.
 TEACHER_MODEL_PATH=${TEACHER_MODEL_PATH:-${RELEASE_ROOT}/model/Qwen3-30B-A3B-Instruct-2507}
 # The default teacher is MoE. Override this when using a different teacher architecture.
 TEACHER_LAYER_CLS=${TEACHER_LAYER_CLS:-Qwen3MoeDecoderLayer}
-# Math reasoning parquet directory. Put DAPO-17k and AIME parquet files here,
-# or override MATH_REASONING_DATA_DIR / TRAIN_FILE / AIME*_FILE.
+# Original DAPO and AIME Parquet files are included here. Override these paths only
+# when intentionally using another data location.
 MATH_REASONING_DATA_DIR=${MATH_REASONING_DATA_DIR:-${RELEASE_ROOT}/recipe/data/math_reasoning_parquet}
 TRAIN_FILE=${TRAIN_FILE:-${MATH_REASONING_DATA_DIR}/dapo_math_17k.parquet}
 AIME24_FILE=${AIME24_FILE:-${MATH_REASONING_DATA_DIR}/aime24.parquet}

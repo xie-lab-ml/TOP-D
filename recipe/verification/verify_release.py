@@ -56,7 +56,7 @@ def main():
         unexpected = sorted(set(differences)-set(src['intentional_changes']))
         if unexpected:
             raise SystemExit('Unexpected differences from original:\n'+'\n'.join(unexpected))
-        print('Original comparison: only the explicitly declared release-default/display changes differ.')
+        print('Original comparison: only explicitly declared release and documentation changes differ.')
     print('This proves file identity, not GPU execution or paper-level accuracy.')
 
 

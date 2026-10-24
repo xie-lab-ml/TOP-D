@@ -1,26 +1,63 @@
-# TOP-D
+<h1 align="center">
+  Trust Region Policy Distillation
+</h1>
 
-Minimal OPD and Trust Region Policy Distillation, using the **reference model as the teacher**.
+<p align="center">
+  <a href="mailto:zhengpengxie00@gmail.com">Zhengpeng Xie</a><sup>*</sup>,
+  <a href="mailto:li.zhang@xingyunzhili.com">Li Lyna Zhang</a><sup>†</sup>,
+  <a href="mailto:zekexie@hkust-gz.edu.cn">Zeke Xie</a><sup>‡</sup>,
+  <a href="mailto:maoyang@microsoft.com">Mao Yang</a>
+</p>
 
-This repository includes the original working `verl` source and the original math datasets. Clone once, install the environment, download the model checkpoints, and run the recipe. No upstream checkout or patch-application step is required.
+<p align="center">
+  <sub>* Work done during an internship. &nbsp; † Project leader. &nbsp; ‡ Corresponding author.</sub>
+</p>
+
+<p align="center">
+  <b>Accepted to NeurIPS 2026</b>
+</p>
+
+<p align="center">
+  <a href="https://arxiv.org/abs/2607.04751">Paper</a> &nbsp;·&nbsp;
+  <a href="#minimal-implementation">Implementation</a> &nbsp;·&nbsp;
+  <a href="#quick-start">Quick start</a> &nbsp;·&nbsp;
+  <a href="#citing-top-d">Citation</a>
+</p>
+
+<!-- Figure 1, original vector asset: https://arxiv.org/html/2607.04751v1/teaser.svg -->
+<p align="center">
+  <img src="recipe/assets/teaser.svg" width="850" alt="Figure 1: TOP-D constructs a proximal teacher inside the student's trust region, rather than learning directly from a distant teacher as in standard OPD.">
+</p>
+
+<p align="center">
+  <em>Figure 1. Instead of asking the student to match a distant teacher in one step, TOP-D constructs a proximal teacher at each iteration.</em>
+</p>
+
+A **minimal implementation of TOP-D and On-Policy Distillation (OPD)** built on [verl](https://github.com/verl-project/verl). The repository includes the working runtime, training recipes, and original math datasets—no separate upstream checkout or patch step.
+
+## Minimal implementation
+
+**The student generates; the reference model teaches.** We load the teacher checkpoint through `actor_rollout_ref.ref.model.path` and reuse verl's existing reference-policy worker to score the student's response tokens. The teacher is frozen: it does not generate training responses or receive optimizer updates. The proximal teacher is computed algebraically, not instantiated as another model.
 
 ```text
-TOP-D/
-├── model/                # empty placeholder; model checkpoints are downloaded here
-├── recipe/
-│   ├── opd/              # original OPD, TOP-D and naive TOP-D launch scripts
-│   ├── data/             # original DAPO and AIME Parquet files
-│   ├── environment/      # versions read from the original working environment
-│   └── verification/     # offline file-identity checks
-├── verl/                 # full bundled verl Python package and installation metadata
-├── install.sh
-├── LICENSE
-└── README.md
+Student-generated responses
+  -> pre-update student log probs + reference-teacher log probs
+  -> OPD / TOP-D token advantages
+  -> existing clipped PPO actor update
 ```
 
-## Environment
+The two main places to read are:
 
-Use **Linux, Python 3.12, CUDA 12.9, PyTorch 2.10.0 and vLLM 0.17.0**. A CUDA-compatible NVIDIA driver and adequate GPU/host memory are required. `recipe/environment/requirements.txt` pins the other directly used packages to the versions observed in the original environment, including Transformers 5.2.0, Ray 2.54.0, FlashAttention 2.8.3, NumPy 1.26.4, Pandas 3.0.1 and PyArrow 23.0.1.
+- **[`core_algos.py`](verl/verl/trainer/ppo/core_algos.py)** defines the advantage estimators. OPD uses `log_ratio = ref_log_prob - old_log_probs`. TOP-D transforms it into `log((1 - alpha) + alpha * exp(log_ratio))`, adds the mean reward of later response tokens, and normalizes valid-token returns within each prompt group. The code uses `logaddexp` for numerical stability. **Naive TOP-D** is the ablation that applies only the immediate-reward transform.
+- **[`ray_trainer.py`](verl/verl/trainer/ppo/ray_trainer.py)** connects the pieces: student rollout, student/reference scoring on the **same sampled tokens**, advantage computation, and actor update. The default recipe recomputes the pre-update student's `old_log_probs` before optimization.
+
+Small supporting changes enable the reference worker for distillation in [`utils.py`](verl/verl/trainer/ppo/utils.py) and load its separate teacher checkpoint in [`fsdp_workers.py`](verl/verl/workers/fsdp_workers.py). “Reference” is the worker's role, **not a copy of the student**; teacher scoring remains necessary even when the extra KL coefficients are zero.
+
+## Quick start
+
+### 1. Install
+
+Use **Linux, Python 3.12, CUDA 12.9, PyTorch 2.10.0, and vLLM 0.17.0** with a compatible NVIDIA driver.
 
 ```bash
 git clone https://github.com/xie-lab-ml/TOP-D.git
@@ -30,75 +67,128 @@ source .venv/bin/activate
 bash install.sh
 ```
 
-Run the installer in a dedicated environment, not in an environment used by another running job. FlashAttention may require the matching CUDA toolkit/compiler to build. The original public Docker build recipe is retained at `verl/docker/Dockerfile.stable.vllm` for users who prefer to reproduce the base container.
+The installer uses the bundled `verl/` and the [versions observed in the working environment](recipe/environment/requirements.txt). Use an isolated environment; FlashAttention may need a matching CUDA toolkit/compiler. If those dependencies are already installed, run `bash install.sh --existing-env`. Use `bash install.sh --check` to inspect versions.
 
-If the original dependency environment is already installed, use:
+<details>
+<summary>Installation details</summary>
+
+The installer intentionally avoids `pip install .[vllm]`: the inherited optional dependency has an older vLLM cap. Additional pinned packages include Transformers 5.2.0, Ray 2.54.0, FlashAttention 2.8.3, NumPy 1.26.4, Pandas 3.0.1, and PyArrow 23.0.1. The original container build recipe is retained at [`verl/docker/Dockerfile.stable.vllm`](verl/docker/Dockerfile.stable.vllm).
+
+</details>
+
+### 2. Put the models in `model/`
+
+Run from the repository root. Skip downloading if you already have the complete checkpoints.
 
 ```bash
-bash install.sh --existing-env
+# Student: download the complete checkpoint into model/.
+hf download Qwen/Qwen3-1.7B-Base \
+  --local-dir ./model/Qwen3-1.7B-Base
+
+# Teacher: loaded through the existing reference-model path.
+hf download Qwen/Qwen3-30B-A3B-Instruct-2507 \
+  --local-dir ./model/Qwen3-30B-A3B-Instruct-2507
 ```
 
-The installer installs **this local `verl/`**, not the latest PyPI/GitHub version. It intentionally does not use `pip install .[vllm]`, whose inherited upstream optional dependency has an older vLLM cap. Check the installed versions with `bash install.sh --check`.
+These are the paths used by the recipes by default. Keep all weight shards, configuration, and tokenizer files; no weights are committed to this repository. The original helper, `bash recipe/opd/download_models.sh`, downloads to the same default locations.
 
-## Models
+<details>
+<summary>Use checkpoints stored elsewhere</summary>
+
+Point the training recipe to your existing checkpoint directories:
 
 ```bash
-bash recipe/opd/download_models.sh
+export MODEL_PATH=/path/to/Qwen3-1.7B-Base
+export TEACHER_MODEL_PATH=/path/to/Qwen3-30B-A3B-Instruct-2507
 ```
 
-Defaults:
-- Student: `Qwen/Qwen3-1.7B-Base`
-- Teacher: **`Qwen/Qwen3-30B-A3B-Instruct-2507`**
+The download helper uses `STUDENT_DIR` / `TEACHER_DIR` for its output paths; training uses `MODEL_PATH` / `TEACHER_MODEL_PATH`. If you customize the download locations, set the training variables accordingly. The default teacher is MoE and uses `Qwen3MoeDecoderLayer`; `TEACHER_LAYER_CLS` can be overridden for another architecture.
 
-The empty `model/` directory is retained with `.gitkeep`; no weights are committed. Already downloaded checkpoints can be selected with `MODEL_PATH` and `TEACHER_MODEL_PATH`. The teacher uses the existing reference-policy log-probability path; no additional teacher API is required.
+</details>
 
-## Original data included
+### 3. Run a recipe
 
-| File in `recipe/data/math_reasoning_parquet/` | Rows | Use |
-|---|---:|---|
-| `dapo_math_17k.parquet` | 17,398 | Training |
-| `aime24.parquet` | 30 | Evaluation |
-| `aime25.parquet` | 30 | Evaluation |
-| `aime26.parquet` | 30 | Evaluation |
-
-All four files have **the same bytes and SHA-256 as the author's original files**: prompts, answers, row order, `extra_info`, Arrow schema and Parquet encoding are preserved. These are not substitute datasets or newly chosen preprocessing defaults. Their checksums and public-source attribution are under `recipe/data/`.
-
-**Data licenses are separate from the code license. AIME26 retains CC BY-NC-SA 4.0 (non-commercial, attribution, share-alike).** See `recipe/data/NOTICE.txt` before redistribution or commercial use. The other source cards identify Apache-2.0; this does not override rights in the original examination materials.
-
-## Run on one eight-GPU node
-
-The recipe uses **128 prompts per rollout batch**, eight responses per prompt and **avg@16** evaluation. OPD uses a 128-prompt PPO minibatch; TOP-D and naive TOP-D use 16 prompts. TOP-D alpha is 0.1. The prompt/response limits are 2,048/16,384 tokens, with learning rate `1e-6` and the original policy-loss settings.
-
-Use a dedicated available training node. **The original script contains a Ray reset option; `RESET_RAY=0` below prevents it from stopping existing Ray processes.** Do not attach to an unrelated cluster.
+The default setup is **one eight-GPU node, 128 prompts per rollout batch, eight responses per prompt, and avg@16 evaluation**. Use an idle, dedicated node with sufficient GPU and host memory for the 30B-A3B teacher and 16K responses.
 
 ```bash
-# OPD
-RESET_RAY=0 bash recipe/opd/run_qwen3_1p7b_base_qwen3_30a3b_teacher_dapo17k_opd_16k_kl0.sh
-
 # TOP-D
 RESET_RAY=0 bash recipe/opd/run_qwen3_1p7b_base_qwen3_30a3b_teacher_dapo17k_topd_alpha0p1_16k_kl0.sh
+
+# OPD baseline
+RESET_RAY=0 bash recipe/opd/run_qwen3_1p7b_base_qwen3_30a3b_teacher_dapo17k_opd_16k_kl0.sh
 
 # Naive TOP-D ablation
 RESET_RAY=0 bash recipe/opd/run_qwen3_1p7b_base_qwen3_30a3b_teacher_dapo17k_naive_topd_alpha0p1_16k_kl0.sh
 ```
 
-`avg@16` averages correctness over 16 completions per question and then over questions. It is not best-of-16. The original metric computation is retained; the `val-core` display alias now mirrors `avg@16`.
+`RESET_RAY=0` prevents the original script from stopping existing Ray processes. Do not attach to an unrelated cluster.
 
-Only the explicitly requested release defaults differ from the working source: the default teacher and experiment label select 30B-A3B instead of the local 8B debug teacher, its reference wrapping uses `Qwen3MoeDecoderLayer` (overridable via `TEACHER_LAYER_CLS`), and the `val-core` alias uses 16 instead of 32. The original optimization, sampling, determinism, reward and trainer implementations are otherwise retained. Eight GPUs of arbitrary memory capacity are not automatically sufficient for the 30B teacher and 16K responses.
+| Setting | Default |
+|---|---|
+| Student / teacher | Qwen3-1.7B-Base / Qwen3-30B-A3B-Instruct-2507 |
+| Rollout batch | 128 prompts × 8 responses |
+| PPO minibatch | OPD: 128 prompts; TOP-D / naive TOP-D: 16 prompts |
+| TOP-D `alpha` | 0.1 |
+| Prompt / response limit | 2,048 / 16,384 tokens |
+| Learning rate | `1e-6` |
+| Evaluation | avg@16 on AIME24, AIME25, and AIME26 |
 
-## Verify fidelity without training
+**avg@16** averages correctness over 16 completions per question, then over questions; it is not pass@16 or best-of-16. This release defaults to avg@16, while the paper reports avg@32. The original metric computation is retained.
+
+## Data and layout
+
+The original Parquet files are included under [`recipe/data/math_reasoning_parquet/`](recipe/data/math_reasoning_parquet/): **DAPO-Math-17k (17,398 training examples)** and **AIME24 / AIME25 / AIME26 (30 evaluation problems each)**. Their bytes, row order, prompts, answers, and metadata match the original experiment files. See the [checksums](recipe/data/data_manifest.json) and [dataset sources and licenses](recipe/data/NOTICE.txt).
+
+```text
+TOP-D/
+├── model/                 # checkpoint destinations; initially only .gitkeep
+├── recipe/
+│   ├── opd/               # launch scripts and reward function
+│   ├── data/              # original math datasets
+│   ├── environment/       # dependency pins and environment checks
+│   ├── verification/      # file-identity and CPU checks
+│   └── assets/            # paper teaser
+├── verl/                  # complete bundled runtime and install metadata
+├── install.sh
+└── README.md
+```
+
+<details>
+<summary>Source fidelity and validation scope</summary>
+
+The original 482-file runtime, installation metadata, and six recipe files were checked against the working project. The declared release changes select the 30B-A3B teacher and its MoE wrapping, mirror avg@16 in the `val-core` display alias, and clarify documentation/comments. Training algorithms, optimization, sampling, and determinism settings are preserved. Source hashes and declared differences are recorded in [`source_manifest.json`](recipe/verification/source_manifest.json).
 
 ```bash
+# Verify source files and the original Parquet bytes / decoded row content.
 python recipe/verification/verify_release.py --decode-data
 
-# Optional, if the original project is available on the same filesystem:
+# CPU-only checks of OPD / TOP-D and the avg@16 display alias.
+python recipe/verification/check_core.py
+
+# Optional: compare against an original project on the same filesystem.
 python recipe/verification/verify_release.py --original /path/to/original/project --decode-data
 ```
 
-The original `verl/verl` runtime contains 482 tracked files. All were matched before the declared display-only change: 462 were obtained as identical public Git blobs, and the other 20 were copied from the original source and independently checked. Original installation metadata and all six recipe files were also checked. The full code is vendored, so an inferred upstream version is not needed at install time. Upstream documentation, examples and CI directories not needed to install or run the package are omitted.
+File-identity and CPU checks have passed. A fresh Linux installation, GPU model loading, distributed training, memory requirements on other cards, and paper-level scores have **not been independently revalidated for this packaged release**. Matching files or package versions is not a substitute for an end-to-end GPU run. Eight GPUs of arbitrary memory capacity are not automatically sufficient.
 
-The author reports that the original project runs on their GPUs. Packaging/file-identity checks do not constitute a new GPU experiment: this release has not independently rerun the complete training, measured memory on other cards, or reproduced paper metrics in a clean new environment. Dependency installation instructions preserve the observed versions; GPU driver/toolkit and transitive-dependency differences may still require environment-specific fixes.
+</details>
 
-## License
+## Citing TOP-D
 
-Code: Apache-2.0, with upstream notices retained in `verl/LICENSE` and `verl/Notice.txt`. Dataset terms are described separately in `recipe/data/NOTICE.txt`. Model checkpoints retain their own terms. See [Trust Region Policy Distillation](https://arxiv.org/abs/2607.04751) for the method.
+If you find this work useful, please cite:
+
+```bibtex
+@inproceedings{xie2026trust,
+  title     = {Trust Region Policy Distillation},
+  author    = {Zhengpeng Xie and Li Lyna Zhang and Zeke Xie and Mao Yang},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year      = {2026},
+  url       = {https://arxiv.org/abs/2607.04751}
+}
+```
+
+## Acknowledgments and license
+
+Built on [verl](https://github.com/verl-project/verl). We thank its contributors for the training infrastructure.
+
+Code is licensed under [Apache-2.0](LICENSE), with upstream notices preserved in [`verl/Notice.txt`](verl/Notice.txt). **Datasets and model checkpoints retain their own terms. In particular, AIME26 is CC BY-NC-SA 4.0** (attribution, non-commercial, share-alike); see [`recipe/data/NOTICE.txt`](recipe/data/NOTICE.txt). The other dataset source cards identify Apache-2.0, without overriding rights in the original examination materials.

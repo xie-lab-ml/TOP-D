@@ -1,13 +1,18 @@
-third_party/
-model/
-recipe/data/
-recipe/runs/
-recipe/logs/
-recipe/tensorboard/
-__pycache__/
-.pytest_cache/
-.venv/
+# Model weights are downloaded by each user.
+/model/*
+!/model/.gitkeep
+# Original math parquet files in recipe/data are deliberately tracked.
+/recipe/runs/
+/recipe/logs/
+/recipe/tensorboard/
+**/__pycache__/
+**/.pytest_cache/
 *.pyc
+*.pyo
+*.egg-info/
+build/
+dist/
+.venv/
 *.bundle
 *.log
 .env

@@ -1,0 +1,2510 @@
+{
+  "original_runtime_file_count": 482,
+  "original_runtime_tree": "e37901e08f1a35ed5de0775fff970ed4d8306ea0",
+  "public_content_source": "18f1a7af61efe4f77d88c93b8d2f23b6a4b1cf23",
+  "meaning": "462 public files match original Git blobs; the 20 different runtime files were read from original source and individually verified. Not a claim of recovering original upstream commit.",
+  "files": {
+    "verl/verl/__init__.py": {
+      "original_git_blob": "26af7e77f19905538f4cdfabc7fbb74e8acd9471",
+      "release_git_blob": "26af7e77f19905538f4cdfabc7fbb74e8acd9471",
+      "sha256": "442a2483226f4a64bd77265c9b121213be7b6fc25154941864ed54cb9afc4fb7"
+    },
+    "verl/verl/base_config.py": {
+      "original_git_blob": "f425dd1464b0f13c83a0944249cd84d55903f120",
+      "release_git_blob": "f425dd1464b0f13c83a0944249cd84d55903f120",
+      "sha256": "a313fdc081a3983193980a475b9b572b125fe95da92c459f05db810a14f62050"
+    },
+    "verl/verl/checkpoint_engine/README.md": {
+      "original_git_blob": "82fd08d61f3762b26a9633576b91df4ed9ca57b9",
+      "release_git_blob": "82fd08d61f3762b26a9633576b91df4ed9ca57b9",
+      "sha256": "373acefda7cb33eb152deb97e9b177cec75cd649d9514466a5602528adce4b16"
+    },
+    "verl/verl/checkpoint_engine/__init__.py": {
+      "original_git_blob": "e23036b921d7d9fc6fd465c54302b659cb017e57",
+      "release_git_blob": "e23036b921d7d9fc6fd465c54302b659cb017e57",
+      "sha256": "1c39f309cf5b08b63359743ef904dcf1dd22ddb03d80727feef0b853377386b8"
+    },
+    "verl/verl/checkpoint_engine/base.py": {
+      "original_git_blob": "6b3a7cd258494fc9801d9e99da1e72ee799098cf",
+      "release_git_blob": "6b3a7cd258494fc9801d9e99da1e72ee799098cf",
+      "sha256": "4fbf8a0401bb7ca6332233b04e4aecaa08aa4d4bd01e0c88888dbf5935647399"
+    },
+    "verl/verl/checkpoint_engine/hccl_checkpoint_engine.py": {
+      "original_git_blob": "13a42c132085e57ba59416b8875eea4981ad9eed",
+      "release_git_blob": "13a42c132085e57ba59416b8875eea4981ad9eed",
+      "sha256": "c2662893e7ca92b5d08543c50afaf6a122fda253823121cbd50e32149e067a9e"
+    },
+    "verl/verl/checkpoint_engine/kimi_checkpoint_engine.py": {
+      "original_git_blob": "2fe3907607fa3c871cf51ecc1dcae94fa3c6aed0",
+      "release_git_blob": "2fe3907607fa3c871cf51ecc1dcae94fa3c6aed0",
+      "sha256": "cd0e4935c0e409ff2c92cd8cd884ccbd7f5923cde70d413a44fd9473f6915a0b"
+    },
+    "verl/verl/checkpoint_engine/mooncake_checkpoint_engine.py": {
+      "original_git_blob": "9fa0455ffd86c7e453729d4d55c5e5bab3d2ccbb",
+      "release_git_blob": "9fa0455ffd86c7e453729d4d55c5e5bab3d2ccbb",
+      "sha256": "f34aabf363842c4c1206c327b9f20a1a8a1a755aa4dd169dbe3745d77bd15132"
+    },
+    "verl/verl/checkpoint_engine/nccl_checkpoint_engine.py": {
+      "original_git_blob": "279733900d68d7f3d417f3cdbc29c82cbaf7af6d",
+      "release_git_blob": "279733900d68d7f3d417f3cdbc29c82cbaf7af6d",
+      "sha256": "c1ee8efa3465a27d64f4bb9100a0489190d552ecce955973bf5a725c9e50300b"
+    },
+    "verl/verl/checkpoint_engine/nixl_checkpoint_engine.py": {
+      "original_git_blob": "fbdefc5b230d32e8a80a8735f003de6636b5da82",
+      "release_git_blob": "fbdefc5b230d32e8a80a8735f003de6636b5da82",
+      "sha256": "825db00813e352c66a8b7f7503a531ce9a5c61c99043006ced28baaa5275f7f3"
+    },
+    "verl/verl/experimental/__init__.py": {
+      "original_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "release_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "sha256": "e65abd77db034b4f29eb1268c24867f84919dbce22e28d1997e563ed1d94179c"
+    },
+    "verl/verl/experimental/agent_loop/__init__.py": {
+      "original_git_blob": "d43683df3e482e63c897bcbd8135064037f4de5d",
+      "release_git_blob": "d43683df3e482e63c897bcbd8135064037f4de5d",
+      "sha256": "197b5cd75e6c43b3f1da97243f48efba8d6d5f98fa43112e89a1089e90aa7e49"
+    },
+    "verl/verl/experimental/agent_loop/agent_loop.py": {
+      "original_git_blob": "6503a0eebb439de53767557bb764ddb5c293e71a",
+      "release_git_blob": "6503a0eebb439de53767557bb764ddb5c293e71a",
+      "sha256": "90c0d79988d9e9607cb4549b65bf3c72a8b81afea7a42c005af7e3bcac86aa16"
+    },
+    "verl/verl/experimental/agent_loop/prometheus_utils.py": {
+      "original_git_blob": "0ce582df61ed9cd27d63c6eb27a7885831ddc24a",
+      "release_git_blob": "0ce582df61ed9cd27d63c6eb27a7885831ddc24a",
+      "sha256": "b447c4d25179186102b17df38b7a45d79e3978edade9bcdf5cf6af4439936851"
+    },
+    "verl/verl/experimental/agent_loop/single_turn_agent_loop.py": {
+      "original_git_blob": "d45082f5fa1a8a4e76688d0cf1b509c6dd915409",
+      "release_git_blob": "d45082f5fa1a8a4e76688d0cf1b509c6dd915409",
+      "sha256": "8d3e51085f545209da4d54d3245bce7c5e98a1e64689848cf345be035b75eb96"
+    },
+    "verl/verl/experimental/agent_loop/tool_agent_loop.py": {
+      "original_git_blob": "308ef499182a1d556621a5bb89c6bd3206605324",
+      "release_git_blob": "308ef499182a1d556621a5bb89c6bd3206605324",
+      "sha256": "2abfe16521dadef9d79aa95a2165714092f3c6643402ec7da1ae8465c6e469b8"
+    },
+    "verl/verl/experimental/agent_loop/tool_parser.py": {
+      "original_git_blob": "b035bd16115fd7eddb69e16a1101b6555ce04a91",
+      "release_git_blob": "b035bd16115fd7eddb69e16a1101b6555ce04a91",
+      "sha256": "50f52ffc8bb91d65857e651b3b0f7303daeb264b881d33ea531503d2d50277ed"
+    },
+    "verl/verl/experimental/agent_loop/utils.py": {
+      "original_git_blob": "68cb57d870f8fdb65aa892ba75598e4c66020239",
+      "release_git_blob": "68cb57d870f8fdb65aa892ba75598e4c66020239",
+      "sha256": "390125d2f7c03d9a42096d96fddba99a3236bcd669d119e13d6154cd85d6a3e9"
+    },
+    "verl/verl/experimental/dataset/__init__.py": {
+      "original_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "release_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "sha256": "e65abd77db034b4f29eb1268c24867f84919dbce22e28d1997e563ed1d94179c"
+    },
+    "verl/verl/experimental/dataset/sampler.py": {
+      "original_git_blob": "b7b15b422c823280c862397dd88c362aac213554",
+      "release_git_blob": "b7b15b422c823280c862397dd88c362aac213554",
+      "sha256": "4524187caf870f595f721157e00a2df55f13bdb8cddf47d42741a89fd676a700"
+    },
+    "verl/verl/experimental/dynamic_dataset/__init__.py": {
+      "original_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "release_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "sha256": "e65abd77db034b4f29eb1268c24867f84919dbce22e28d1997e563ed1d94179c"
+    },
+    "verl/verl/experimental/dynamic_dataset/dynamicgen_dataset.py": {
+      "original_git_blob": "4e60b7836e02a7b2e3397eeb4b09b380ed3e03f5",
+      "release_git_blob": "4e60b7836e02a7b2e3397eeb4b09b380ed3e03f5",
+      "sha256": "0d0b60ad852293202caee723f228830b317caa8cd976e176ee13c28f55d06126"
+    },
+    "verl/verl/experimental/fully_async_policy/README.md": {
+      "original_git_blob": "b7ff1756459995b5ad869892a524becf2f9a46f7",
+      "release_git_blob": "b7ff1756459995b5ad869892a524becf2f9a46f7",
+      "sha256": "f5804204927c3da28c985a1f0a7a63d2ec6adb47a7f78628ffeecaab8ab7ee50"
+    },
+    "verl/verl/experimental/fully_async_policy/README_zh.md": {
+      "original_git_blob": "ad2e52e41679b1c7bd82f13aedcee7ad165e6f07",
+      "release_git_blob": "ad2e52e41679b1c7bd82f13aedcee7ad165e6f07",
+      "sha256": "6cb0832c38e1b25fe96ad6a6bb704f32cfb3cb3b6697bbff34f536f0ff15d99e"
+    },
+    "verl/verl/experimental/fully_async_policy/agent_loop/__init__.py": {
+      "original_git_blob": "1599c4a9ef900b7f32382ffdc3178c082d74a8fc",
+      "release_git_blob": "1599c4a9ef900b7f32382ffdc3178c082d74a8fc",
+      "sha256": "7a6e60f383f906d91ff87a79b73f96477a7300b72b44fed021f46bd9cc0c220a"
+    },
+    "verl/verl/experimental/fully_async_policy/agent_loop/agent_loop.py": {
+      "original_git_blob": "16b670ba579c55b6bf436e61e8914011a8ced530",
+      "release_git_blob": "16b670ba579c55b6bf436e61e8914011a8ced530",
+      "sha256": "c89370a5fcdbf1b1c5dc5ddaf6c1a08588a0475399a0b1fddaaafcae9077e22f"
+    },
+    "verl/verl/experimental/fully_async_policy/config/fully_async_ppo_megatron_trainer.yaml": {
+      "original_git_blob": "9caad8c0fd7db6e5d3ecf49b333775a0e80c7b0a",
+      "release_git_blob": "9caad8c0fd7db6e5d3ecf49b333775a0e80c7b0a",
+      "sha256": "07ff09280f4d3400615614f5d3de1499873a6351450c65272f42862b8032d3ae"
+    },
+    "verl/verl/experimental/fully_async_policy/config/fully_async_ppo_trainer.yaml": {
+      "original_git_blob": "40b7f0acb53643470cb56dd30acb6e82a0206ae3",
+      "release_git_blob": "40b7f0acb53643470cb56dd30acb6e82a0206ae3",
+      "sha256": "8bf257fef11e9738dfb8e74e150b58dc9948fe278d51c0e39face6ddeca70aa2"
+    },
+    "verl/verl/experimental/fully_async_policy/detach_utils.py": {
+      "original_git_blob": "47c9d4d05c10ba324715a4d2572387ea5807ee05",
+      "release_git_blob": "47c9d4d05c10ba324715a4d2572387ea5807ee05",
+      "sha256": "506951ce9e0030bb581db08dec2d49da7e191002a9b8e8f4b50b134461b7fa60"
+    },
+    "verl/verl/experimental/fully_async_policy/fully_async_main.py": {
+      "original_git_blob": "18b2eddb0565118a22ff684597ccdfc15c9681c2",
+      "release_git_blob": "18b2eddb0565118a22ff684597ccdfc15c9681c2",
+      "sha256": "ea743db6e529d8e4cb55c1c5bf874cab47e42b65a3962407ae7ac97dae9e4f7e"
+    },
+    "verl/verl/experimental/fully_async_policy/fully_async_rollouter.py": {
+      "original_git_blob": "fdde54a67c409094209943d18370e0bf6f192721",
+      "release_git_blob": "fdde54a67c409094209943d18370e0bf6f192721",
+      "sha256": "8869a91fa003a872c6fe3591fcd0db322e7afa91eecfb7d88f74a46e4b1762ce"
+    },
+    "verl/verl/experimental/fully_async_policy/fully_async_trainer.py": {
+      "original_git_blob": "e9728064ee6d9c75299e726da791d99869846741",
+      "release_git_blob": "e9728064ee6d9c75299e726da791d99869846741",
+      "sha256": "03f5c0c13d9e0a8077c1525a3abb0c9dcf8b633901ebc7bb9156ff257738f3d6"
+    },
+    "verl/verl/experimental/fully_async_policy/message_queue.py": {
+      "original_git_blob": "8d419d364497c25a8a5c0ddc821d6c790a0a2702",
+      "release_git_blob": "8d419d364497c25a8a5c0ddc821d6c790a0a2702",
+      "sha256": "5954351516315a2d589318a501b70114560901b572acb6c8f58cfd93632aa4be"
+    },
+    "verl/verl/experimental/fully_async_policy/shell/dapo_30b_a3b_base_math_fsdp.sh": {
+      "original_git_blob": "e364a6e591eedce522c63711dce828d128db2d7d",
+      "release_git_blob": "e364a6e591eedce522c63711dce828d128db2d7d",
+      "sha256": "1f50cdb402d5babc5e2a8dc71ef46e3f55565816bca1526002326b7126aec150"
+    },
+    "verl/verl/experimental/fully_async_policy/shell/dapo_7b_async_retool.sh": {
+      "original_git_blob": "7d7e56bdf6a54460e61e3007f22142a23c6c148d",
+      "release_git_blob": "7d7e56bdf6a54460e61e3007f22142a23c6c148d",
+      "sha256": "d9d1063d262185443b080e160b8036b837bc4076857bb990b17f7badac659324"
+    },
+    "verl/verl/experimental/fully_async_policy/shell/dapo_7b_math_fsdp2_16_16.sh": {
+      "original_git_blob": "b90e7eb2985a93f35805bd209ac9d9ad8aa7c7af",
+      "release_git_blob": "b90e7eb2985a93f35805bd209ac9d9ad8aa7c7af",
+      "sha256": "47a081f86ae525081bceb849c46bb71358fe927f024a46d32e24001856a4a388"
+    },
+    "verl/verl/experimental/fully_async_policy/shell/dapo_7b_math_fsdp2_32_32.sh": {
+      "original_git_blob": "922c90f31aec055a45a7d367c843d08fffcb906e",
+      "release_git_blob": "922c90f31aec055a45a7d367c843d08fffcb906e",
+      "sha256": "bd6667f054bd1ad1746b1caa88f87fed19e42b178c314b0d57a58750262f45b5"
+    },
+    "verl/verl/experimental/fully_async_policy/shell/dapo_7b_math_fsdp2_4_12.sh": {
+      "original_git_blob": "d1b9d821e7ed855e7544960e913085ad54c454ba",
+      "release_git_blob": "d1b9d821e7ed855e7544960e913085ad54c454ba",
+      "sha256": "8f6c79393c21da042395a24a4e0fb1b3d402c9d1dd8f1eaf61d158fdb88c1069"
+    },
+    "verl/verl/experimental/fully_async_policy/shell/dapo_7b_math_fsdp2_4_4.sh": {
+      "original_git_blob": "8bf73be8c857adc28e072bb0dc0c7bb659d3dcfb",
+      "release_git_blob": "8bf73be8c857adc28e072bb0dc0c7bb659d3dcfb",
+      "sha256": "6cf8918955de1288f460e373c6135330f86136582bfb028035a69b1481ed731b"
+    },
+    "verl/verl/experimental/fully_async_policy/shell/dapo_7b_math_fsdp2_64_64.sh": {
+      "original_git_blob": "b9856540d628a3c45c3a60d051669e16947a7523",
+      "release_git_blob": "b9856540d628a3c45c3a60d051669e16947a7523",
+      "sha256": "05bcca75dc217ce46bc58ee5b2716319750cf4f086dce9e9c0acc277ff75e92b"
+    },
+    "verl/verl/experimental/fully_async_policy/shell/dapo_7b_math_fsdp2_64_64_mis.sh": {
+      "original_git_blob": "91985e5f87e9f4eb2654906fabd916c655741a37",
+      "release_git_blob": "91985e5f87e9f4eb2654906fabd916c655741a37",
+      "sha256": "bea78bc5a9d056a126ea1d524027f421144acee704e9231277fedede62f5c59d"
+    },
+    "verl/verl/experimental/fully_async_policy/shell/dapo_7b_math_fsdp2_8_8.sh": {
+      "original_git_blob": "aa916e3717039e8cd3fb968c101c6654f0b58db2",
+      "release_git_blob": "aa916e3717039e8cd3fb968c101c6654f0b58db2",
+      "sha256": "bf5b8299475efa069511d8c9d70ef225c1110f2693d64fac53969671d31acef5"
+    },
+    "verl/verl/experimental/fully_async_policy/shell/geo3k_qwen25vl_7b_megatron_4_4.sh": {
+      "original_git_blob": "7d4cdffbe9208453e58b72775c0add8e71c472bc",
+      "release_git_blob": "7d4cdffbe9208453e58b72775c0add8e71c472bc",
+      "sha256": "ee3cc20b0c9aff2e5586479f1331c98d43ed0eb74940c60d268f99868e073855"
+    },
+    "verl/verl/experimental/fully_async_policy/shell/grpo_30b_a3b_base_math_megatron_96_32.sh": {
+      "original_git_blob": "3b3dae7f4c1b431ac5598a697b090c0bb3e676bb",
+      "release_git_blob": "3b3dae7f4c1b431ac5598a697b090c0bb3e676bb",
+      "sha256": "27eb291a6c5333c089f52ad67a58c7c73ae41a778c902a426e7feb7432f4b7e1"
+    },
+    "verl/verl/experimental/fully_async_policy/shell/grpo_30b_a3b_base_math_megatron_96_32_mis.sh": {
+      "original_git_blob": "318d88cb2d72ab3334dd29447b44f762ed974987",
+      "release_git_blob": "318d88cb2d72ab3334dd29447b44f762ed974987",
+      "sha256": "580e988b630804d6081cb2bfa9a4777ecb4e0fa625fee83e5cc219f0574d808d"
+    },
+    "verl/verl/experimental/fully_async_policy/shell/runtime_env.yaml": {
+      "original_git_blob": "88467b8c2435de0eb2c7aaf9988798b6dfd8da78",
+      "release_git_blob": "88467b8c2435de0eb2c7aaf9988798b6dfd8da78",
+      "sha256": "19e48f7c02d2d074434bed70417018939ae912df12746a93058b63945b4ffd7c"
+    },
+    "verl/verl/experimental/fully_async_policy/unittest/simple_streaming_demo.py": {
+      "original_git_blob": "209c2aae39bf2d7386d7b88085ceffb3deff6433",
+      "release_git_blob": "209c2aae39bf2d7386d7b88085ceffb3deff6433",
+      "sha256": "49ad92771a02a1b1eb457444df86f4d148d37a70c7a67866a07242f3ced85877"
+    },
+    "verl/verl/experimental/one_step_off_policy/README.md": {
+      "original_git_blob": "e46c95dfb60bd0eaa534bcae154a70fa9ae78737",
+      "release_git_blob": "e46c95dfb60bd0eaa534bcae154a70fa9ae78737",
+      "sha256": "dd1a8960abf0257c58c2c1b215852484f540de3a7c6ac61057d9fc05190c6054"
+    },
+    "verl/verl/experimental/one_step_off_policy/config/one_step_off_ppo_megatron_trainer.yaml": {
+      "original_git_blob": "0e4677be36815dc756ab2f92f779570b4ef17479",
+      "release_git_blob": "0e4677be36815dc756ab2f92f779570b4ef17479",
+      "sha256": "a2d8bc6343ffd62c6dcc612df4d53d81ce807effb7d15aac572f1116bc75fdfc"
+    },
+    "verl/verl/experimental/one_step_off_policy/config/one_step_off_ppo_trainer.yaml": {
+      "original_git_blob": "dc784b2ae73dd2406e286c50dc2b2a459cc98df6",
+      "release_git_blob": "dc784b2ae73dd2406e286c50dc2b2a459cc98df6",
+      "sha256": "ce4193f2b213b2ef0b5af33dfe654f930a1c337d25a2b10c146593e1ecd88504"
+    },
+    "verl/verl/experimental/one_step_off_policy/main_ppo.py": {
+      "original_git_blob": "1f3c5fa0a856c8a75c2a1dcc7a2a078b0ec403b7",
+      "release_git_blob": "1f3c5fa0a856c8a75c2a1dcc7a2a078b0ec403b7",
+      "sha256": "c93ea07c09d86c58dc45eeb175f5984b53bbc811106760fb9a134575771aa894"
+    },
+    "verl/verl/experimental/one_step_off_policy/ray_trainer.py": {
+      "original_git_blob": "fca6ce01d126c3c67ca4ea20794772e2ed2f0452",
+      "release_git_blob": "fca6ce01d126c3c67ca4ea20794772e2ed2f0452",
+      "sha256": "f088eeafdf771d5e8bbd038ca230d27ee6c96de27034cbdb62b1b599bdbc6597"
+    },
+    "verl/verl/experimental/one_step_off_policy/shell/dapo_7b_math_fsdp2_4_12.sh": {
+      "original_git_blob": "cbefe87424b0a6e6a8c58952d74f65575a70a74e",
+      "release_git_blob": "cbefe87424b0a6e6a8c58952d74f65575a70a74e",
+      "sha256": "e9b7dd9aa83adea8fd70359a888f4493f75c2978abd491f9516b18a841c4c265"
+    },
+    "verl/verl/experimental/one_step_off_policy/shell/dapo_7b_math_fsdp2_64_64.sh": {
+      "original_git_blob": "c35513cf9f24bff6284304ef2d33457a53231d55",
+      "release_git_blob": "c35513cf9f24bff6284304ef2d33457a53231d55",
+      "sha256": "1e2473177760b6c3f60e45cfdc2022bbe6a03ae062c96ad654d4f3ab52ad073d"
+    },
+    "verl/verl/experimental/one_step_off_policy/shell/dapo_7b_math_fsdp2_64_64_ris.sh": {
+      "original_git_blob": "10ce9122269e1469d917b1d9c9035dc9103101b9",
+      "release_git_blob": "10ce9122269e1469d917b1d9c9035dc9103101b9",
+      "sha256": "ed25e62c86cb6b2b183cb6f925c04aedb46d5e2b94499e917870463f86eba2d6"
+    },
+    "verl/verl/experimental/one_step_off_policy/shell/dapo_7b_math_fsdp2_colocate.sh": {
+      "original_git_blob": "a5c6ee87143698ed6ab0658d6af616cded657dc2",
+      "release_git_blob": "a5c6ee87143698ed6ab0658d6af616cded657dc2",
+      "sha256": "e94931c4073373c122c415400e425510bf5f97fbcd2613ca5eea58f47e9cca97"
+    },
+    "verl/verl/experimental/one_step_off_policy/shell/dapo_7b_math_fsdp2_sglang_4_12.sh": {
+      "original_git_blob": "2725bb5bc3d94deda88fc6b10d63e1ae57606e54",
+      "release_git_blob": "2725bb5bc3d94deda88fc6b10d63e1ae57606e54",
+      "sha256": "266c8020eafb0518cf90c34e4ce5eddb555d996f2ebfe304cc8cfdf7bded963b"
+    },
+    "verl/verl/experimental/one_step_off_policy/shell/dapo_7b_math_fsdp2_sglang_colocate.sh": {
+      "original_git_blob": "5ccceec5f9d26e1f8d919cc5f6a0f4075a0f2e69",
+      "release_git_blob": "5ccceec5f9d26e1f8d919cc5f6a0f4075a0f2e69",
+      "sha256": "4f45a4500a97d579b3469713da13b6b511cc458d04d283842383aed3cd4d6dec"
+    },
+    "verl/verl/experimental/one_step_off_policy/shell/dapo_7b_math_megatron_4_12.sh": {
+      "original_git_blob": "a0da86affea3552b24deaa5d8cc736fd3618cc2c",
+      "release_git_blob": "a0da86affea3552b24deaa5d8cc736fd3618cc2c",
+      "sha256": "3f3765356e0964313607927d9f44cfd0e2e2393c716ca449f3d8821a0886e8b8"
+    },
+    "verl/verl/experimental/one_step_off_policy/shell/dapo_7b_math_megatron_colocate.sh": {
+      "original_git_blob": "f9879d555bf5d311e2b48f34b26172bee61e8687",
+      "release_git_blob": "f9879d555bf5d311e2b48f34b26172bee61e8687",
+      "sha256": "fc255dbda9b463db7e92128bc60ba6b4066e36381fa11d959e4d67b93493018c"
+    },
+    "verl/verl/experimental/one_step_off_policy/shell/grpo_0.6b_gsm8k_fsdp2_2_6.sh": {
+      "original_git_blob": "facabdf58e82cb6e6aad8d27e36c9995fa1ae899",
+      "release_git_blob": "facabdf58e82cb6e6aad8d27e36c9995fa1ae899",
+      "sha256": "a9c05a948f3d58baa6d17c31028dd475b43754a71e77e9c7277cdc0a77f69893"
+    },
+    "verl/verl/experimental/one_step_off_policy/shell/grpo_0.6b_gsm8k_fsdp2_sglang_2_6.sh": {
+      "original_git_blob": "5c959f499617a23d8f209934836b9ec23be44679",
+      "release_git_blob": "5c959f499617a23d8f209934836b9ec23be44679",
+      "sha256": "7d1542de25c3fd5effdd7cd8d1a553f80c6bc582c0bb286db4cffd2e97573bc9"
+    },
+    "verl/verl/experimental/one_step_off_policy/shell/grpo_3b_gsm8k_fsdp2_2_6.sh": {
+      "original_git_blob": "c5c5eb11d2ac6f0031950097c48b3e79ad765e7c",
+      "release_git_blob": "c5c5eb11d2ac6f0031950097c48b3e79ad765e7c",
+      "sha256": "4640a49b14ec4a896b621538993df230f388430bf9d41fa5e88346246df9db02"
+    },
+    "verl/verl/experimental/one_step_off_policy/shell/grpo_qwen3_8b_gsm8k_fsdp2_8_8_npu.sh": {
+      "original_git_blob": "d6f884ad53af4e1f01cdc37736b4adf06db0bb1e",
+      "release_git_blob": "d6f884ad53af4e1f01cdc37736b4adf06db0bb1e",
+      "sha256": "f055e15a6c1eeee4bc2a025c950d8501dc6f1b3e51de47a5ced25ac938b62cb1"
+    },
+    "verl/verl/experimental/reward_loop/__init__.py": {
+      "original_git_blob": "137343e0bfaa6c5b00d6486001270dd437cfc56d",
+      "release_git_blob": "137343e0bfaa6c5b00d6486001270dd437cfc56d",
+      "sha256": "35f3c5f27b19e7624c247c1ef7d47be7703ea21d594750df49348f8eeb69e36e"
+    },
+    "verl/verl/experimental/reward_loop/reward_loop.py": {
+      "original_git_blob": "ceee8441fa289b21dda417577991bfe3c31dfa12",
+      "release_git_blob": "ceee8441fa289b21dda417577991bfe3c31dfa12",
+      "sha256": "ec4a1db3d82f1dde4456a36421575c5e1bf999063f0b506c488c18548512e6b5"
+    },
+    "verl/verl/experimental/reward_loop/reward_manager/__init__.py": {
+      "original_git_blob": "f72b8c89ce65f706f24874af043beb00c81d2aef",
+      "release_git_blob": "f72b8c89ce65f706f24874af043beb00c81d2aef",
+      "sha256": "2200a9920f02c8d4791a6dae7c8cf38abd419d8bb14ceecdf25a051e58b94ff3"
+    },
+    "verl/verl/experimental/reward_loop/reward_manager/base.py": {
+      "original_git_blob": "16546b0b5b23bade318b4f51ce41467f54bafaa8",
+      "release_git_blob": "16546b0b5b23bade318b4f51ce41467f54bafaa8",
+      "sha256": "363199cbd369f54dea2c9792dab8510e04fba7ac57ee4e15fc6e7139591773df"
+    },
+    "verl/verl/experimental/reward_loop/reward_manager/dapo.py": {
+      "original_git_blob": "0fd2ca3b5144df026b525b844db76a8de1d71c80",
+      "release_git_blob": "0fd2ca3b5144df026b525b844db76a8de1d71c80",
+      "sha256": "660ae03d1f626339b8162c96a4a5af0fdbd0cd0efb2fb66745414d54ad3f463b"
+    },
+    "verl/verl/experimental/reward_loop/reward_manager/gdpo.py": {
+      "original_git_blob": "562590da83a79cb36bafec241f582732f1f55b68",
+      "release_git_blob": "562590da83a79cb36bafec241f582732f1f55b68",
+      "sha256": "eda8e11223cdc1ff7e9de1ab5e413b0ee71553bb10f6f5faee0cc70df894c96e"
+    },
+    "verl/verl/experimental/reward_loop/reward_manager/limited.py": {
+      "original_git_blob": "97311d7c7d4f14dc3db667576fe53f3637718b65",
+      "release_git_blob": "97311d7c7d4f14dc3db667576fe53f3637718b65",
+      "sha256": "311f86f87528c977d946245a3c13f5ec0a946c2c38dee2d70a7d10998d73e1b1"
+    },
+    "verl/verl/experimental/reward_loop/reward_manager/naive.py": {
+      "original_git_blob": "fb5cebd755aaa1f8063dc672bf6ee58ae089f55a",
+      "release_git_blob": "fb5cebd755aaa1f8063dc672bf6ee58ae089f55a",
+      "sha256": "56d7312695779a9f9c53d423dad8d4895c1c37de00a1482516849b47a6f50add"
+    },
+    "verl/verl/experimental/reward_loop/reward_manager/registry.py": {
+      "original_git_blob": "62612e2f00d5d3429d07417cfa3ef7d7e7e03b80",
+      "release_git_blob": "62612e2f00d5d3429d07417cfa3ef7d7e7e03b80",
+      "sha256": "42d6d971676f38f123ac5ac8ce645e2309f36150141fb01bd59c55215ef9f6f8"
+    },
+    "verl/verl/experimental/reward_loop/reward_manager/remote.py": {
+      "original_git_blob": "3464a66d87da3af223cfbd5dbf4556c6c907c283",
+      "release_git_blob": "3464a66d87da3af223cfbd5dbf4556c6c907c283",
+      "sha256": "4f586ed8090f3878f88aefa0dc73fe1e1b3bc587e5c91fe9824d56cb9ef64aa8"
+    },
+    "verl/verl/experimental/reward_loop/reward_model.py": {
+      "original_git_blob": "40253c56b4b9ffe4b8c73372b1743e96d235ef61",
+      "release_git_blob": "40253c56b4b9ffe4b8c73372b1743e96d235ef61",
+      "sha256": "8915f7103abeced020ec3564059d6af2904a060e6780c33596d7b1c8a1729936"
+    },
+    "verl/verl/experimental/reward_loop/router/inner_sglang_router.py": {
+      "original_git_blob": "e05b17c89fc9f9e7fa8a4e1d1331e3e8e0f11412",
+      "release_git_blob": "e05b17c89fc9f9e7fa8a4e1d1331e3e8e0f11412",
+      "sha256": "88612c85b974c4859fe5ed1deb7032a2f33088b7e1c3280071b3decfdfac4abb"
+    },
+    "verl/verl/experimental/reward_loop/router/naive_router.py": {
+      "original_git_blob": "a495c0592e3cf882b521584c1dcf1824a7cee18f",
+      "release_git_blob": "a495c0592e3cf882b521584c1dcf1824a7cee18f",
+      "sha256": "3c1abe32d99bc09d78eeab10595021f76f4cbe9bd217e4365f003a23d960a758"
+    },
+    "verl/verl/experimental/separation/__init__.py": {
+      "original_git_blob": "9cd3ed5b8e9f967b0e91ce33ffa01d4902e69a38",
+      "release_git_blob": "9cd3ed5b8e9f967b0e91ce33ffa01d4902e69a38",
+      "sha256": "9cd31bfb80bfcc5923b79ec8db5ad231b1a02707c508198d30e867a7122ab650"
+    },
+    "verl/verl/experimental/separation/engine_workers.py": {
+      "original_git_blob": "97952b2816fe74c8751317c3983506f5ae55082a",
+      "release_git_blob": "97952b2816fe74c8751317c3983506f5ae55082a",
+      "sha256": "f88a7dc83b274a29a6e023d2c456be9381c04d37fec3411d290c73da1b351df6"
+    },
+    "verl/verl/experimental/separation/ray_trainer.py": {
+      "original_git_blob": "3f34cddb1ea0a763565a1abb337abd83d95dee27",
+      "release_git_blob": "3f34cddb1ea0a763565a1abb337abd83d95dee27",
+      "sha256": "54ceab03342298c2b799edbf234969dbb9be6c9935ab0de4cb8ed3a497ce5ee9"
+    },
+    "verl/verl/experimental/separation/utils.py": {
+      "original_git_blob": "3648cbef385d7c06c2e8220650128beb42dcffc2",
+      "release_git_blob": "3648cbef385d7c06c2e8220650128beb42dcffc2",
+      "sha256": "a8a70a314c901b8aa61ca4c04761d1c50030359c839960b6802d2264cc8a569b"
+    },
+    "verl/verl/experimental/vla/README.md": {
+      "original_git_blob": "5797ea8560da7694636eb0d8ca7d02c24f784986",
+      "release_git_blob": "5797ea8560da7694636eb0d8ca7d02c24f784986",
+      "sha256": "7d8d97637a40dc69682cdf8eda27a0b9197d1a77be7db5cdc6336df5bde50671"
+    },
+    "verl/verl/experimental/vla/config/rob_ppo_trainer.yaml": {
+      "original_git_blob": "8ad4c7dd7c26637444673efaa761b76e008cdc37",
+      "release_git_blob": "8ad4c7dd7c26637444673efaa761b76e008cdc37",
+      "sha256": "4638376774556ea44bcd63fcfb88f8487844f45d59338e911ad3fc93585cbdc1"
+    },
+    "verl/verl/experimental/vla/config/rob_sac_trainer.yaml": {
+      "original_git_blob": "7c3cf0e674c22b37e3026ad72ff8e0680b885006",
+      "release_git_blob": "7c3cf0e674c22b37e3026ad72ff8e0680b885006",
+      "sha256": "f966c458e5dda20c2d858ccff492ab84dd602e181ddc149af7f8e93160290fdb"
+    },
+    "verl/verl/experimental/vla/dp_rob.py": {
+      "original_git_blob": "3ede5399c3a228ffc29c159faa6a9228bdcb9a4e",
+      "release_git_blob": "3ede5399c3a228ffc29c159faa6a9228bdcb9a4e",
+      "sha256": "4865708bfe54768834e9a50c7b9a1e6d956e343d0ca33474de1bd87adf4897a3"
+    },
+    "verl/verl/experimental/vla/env_loop.py": {
+      "original_git_blob": "c677bf3fc3eb239dacabb931fdf32528211bab15",
+      "release_git_blob": "c677bf3fc3eb239dacabb931fdf32528211bab15",
+      "sha256": "23d3d8f5d654af416519f233520f9e4f1860fe73d940bcfeda59cfa3b93989e0"
+    },
+    "verl/verl/experimental/vla/envs/__init__.py": {
+      "original_git_blob": "2171666b035340542d81212af41b2ca1f96fab69",
+      "release_git_blob": "2171666b035340542d81212af41b2ca1f96fab69",
+      "sha256": "0363f4a7c467c6839b1bacedf56f5604cf7292b16f0941efa6311ca9f24725ba"
+    },
+    "verl/verl/experimental/vla/envs/action_utils.py": {
+      "original_git_blob": "d361de0814a4e91e679cbebe8f33fe60eaf1dbd8",
+      "release_git_blob": "d361de0814a4e91e679cbebe8f33fe60eaf1dbd8",
+      "sha256": "aed91fe7d0a32fee5505e77d0e6d34b838b2ff3b889ffc570ceaea22ec2e7a8e"
+    },
+    "verl/verl/experimental/vla/envs/isaac_env/__init__.py": {
+      "original_git_blob": "31a9171f0262536d9ccac845e33441336dd670b0",
+      "release_git_blob": "31a9171f0262536d9ccac845e33441336dd670b0",
+      "sha256": "28de832d72754e4dcbf91a473a0c1026be55b7f4057ff83ba87c3a5565a0164a"
+    },
+    "verl/verl/experimental/vla/envs/isaac_env/isaac_env.py": {
+      "original_git_blob": "665b2eaaecc3bf8343cacec0d7c74423e15ee1a8",
+      "release_git_blob": "665b2eaaecc3bf8343cacec0d7c74423e15ee1a8",
+      "sha256": "6fc66a74e8908af886159fa1057cbbf18ce8890ebad251616b2664b745988d09"
+    },
+    "verl/verl/experimental/vla/envs/libero_env/__init__.py": {
+      "original_git_blob": "2171666b035340542d81212af41b2ca1f96fab69",
+      "release_git_blob": "2171666b035340542d81212af41b2ca1f96fab69",
+      "sha256": "0363f4a7c467c6839b1bacedf56f5604cf7292b16f0941efa6311ca9f24725ba"
+    },
+    "verl/verl/experimental/vla/envs/libero_env/libero_env.py": {
+      "original_git_blob": "42700b7d82e4c4a8a9f66293d262da5ab91a8fb1",
+      "release_git_blob": "42700b7d82e4c4a8a9f66293d262da5ab91a8fb1",
+      "sha256": "6aa3d8edd2957eff384b02bb7d1f7aff377985ee0a53d6935d328e4cd6f6f6ec"
+    },
+    "verl/verl/experimental/vla/envs/libero_env/utils.py": {
+      "original_git_blob": "1c3286bfe7673deff28f93dc84fbf1bc4889200f",
+      "release_git_blob": "1c3286bfe7673deff28f93dc84fbf1bc4889200f",
+      "sha256": "2064ceda3e4a6e29b42f9d3ed33609b0a62efcb84079250125e1d42133bd03b4"
+    },
+    "verl/verl/experimental/vla/envs/libero_env/venv.py": {
+      "original_git_blob": "9f9a835e43068666c66ed6e6af1636d40d4f4737",
+      "release_git_blob": "9f9a835e43068666c66ed6e6af1636d40d4f4737",
+      "sha256": "79fb6d4a98cce17ec56c59c54801e6a9d204a5db4481cfe56c3248bf17631313"
+    },
+    "verl/verl/experimental/vla/fsdp_workers.py": {
+      "original_git_blob": "365d5c08cfd2fcef5b0146164bd1e18f77d63c6f",
+      "release_git_blob": "365d5c08cfd2fcef5b0146164bd1e18f77d63c6f",
+      "sha256": "b3bcbaf502e3730532fa471190218892b740fcbeb3956655b248daba261e00dc"
+    },
+    "verl/verl/experimental/vla/main_ppo.py": {
+      "original_git_blob": "633d0a08e9dfccb11f52c03d3971f77885685ee9",
+      "release_git_blob": "633d0a08e9dfccb11f52c03d3971f77885685ee9",
+      "sha256": "d049559f984c33c1517a8de81531f19bbc72c758155eccc7471e536fd3154031"
+    },
+    "verl/verl/experimental/vla/main_sac.py": {
+      "original_git_blob": "5307912778cc0cfd97b62c048b4e771520ecae25",
+      "release_git_blob": "5307912778cc0cfd97b62c048b4e771520ecae25",
+      "sha256": "5e9fe908eab34b93de2126e647dfff77dd13597d1a01cfed4f4cead5b73a14e8"
+    },
+    "verl/verl/experimental/vla/models/__init__.py": {
+      "original_git_blob": "a0447ae3c092da6dadf9f63140ba10dbdb12a846",
+      "release_git_blob": "a0447ae3c092da6dadf9f63140ba10dbdb12a846",
+      "sha256": "359f3faac88ff98fa818655ea9152a275a7b52e852b84691fc24d20ccf041f33"
+    },
+    "verl/verl/experimental/vla/models/modules/mlp.py": {
+      "original_git_blob": "4f304fdd27c815dbb6ade82d59ebb9d3d4107231",
+      "release_git_blob": "4f304fdd27c815dbb6ade82d59ebb9d3d4107231",
+      "sha256": "7ad001cc7221416aba2f0f6d533c7b627e567efc1a10f5ed91fd95d421118235"
+    },
+    "verl/verl/experimental/vla/models/openvla_oft/__init__.py": {
+      "original_git_blob": "a6f6b91498b5e61982e3c382964f0a26dd4188bd",
+      "release_git_blob": "a6f6b91498b5e61982e3c382964f0a26dd4188bd",
+      "sha256": "786b5133fec19f708658b4c5bfb9720149be7df2fbd29b4463cbbee8e1344ffc"
+    },
+    "verl/verl/experimental/vla/models/openvla_oft/configuration_prismatic.py": {
+      "original_git_blob": "1e4bb27d05c4ec64c5913dba68f95febf8658675",
+      "release_git_blob": "1e4bb27d05c4ec64c5913dba68f95febf8658675",
+      "sha256": "c606aba7f9f024ec41f9685d7b85e3ae6c9b98be9bd178080f5cc6db513abf56"
+    },
+    "verl/verl/experimental/vla/models/openvla_oft/constants.py": {
+      "original_git_blob": "f6d6b3bce671b47b8977657f3c9fdef6a5635f98",
+      "release_git_blob": "f6d6b3bce671b47b8977657f3c9fdef6a5635f98",
+      "sha256": "0bb56c881cc6d61d97e16b955ff53728523d1eda014c144864be403798a638bb"
+    },
+    "verl/verl/experimental/vla/models/openvla_oft/modeling_prismatic.py": {
+      "original_git_blob": "a52b56acce048d521bc2a5c8334ed16f969b369d",
+      "release_git_blob": "a52b56acce048d521bc2a5c8334ed16f969b369d",
+      "sha256": "4e5755c5356fd2b4ceb341b64f98665b44f2ec5e7b96efb7a92017fc1ef28437"
+    },
+    "verl/verl/experimental/vla/models/openvla_oft/processing_prismatic.py": {
+      "original_git_blob": "4249a5f051001e3bdbc8a9ba77d8481818badd00",
+      "release_git_blob": "4249a5f051001e3bdbc8a9ba77d8481818badd00",
+      "sha256": "f31293947ec9d40714e4334e2060db6aa24af31ed6d5a1a0e69c45af8bcfbcf3"
+    },
+    "verl/verl/experimental/vla/models/openvla_oft/train_utils.py": {
+      "original_git_blob": "74f0935db8b227ba84b38f1a107982060aa69478",
+      "release_git_blob": "74f0935db8b227ba84b38f1a107982060aa69478",
+      "sha256": "81df161c8a29b2c519d90c4a11cb678024a0ae1473b99faa300d8cfe44994f3f"
+    },
+    "verl/verl/experimental/vla/models/pi0_torch/__init__.py": {
+      "original_git_blob": "b230a5985c257bf29065f4b4d373002329d586b8",
+      "release_git_blob": "b230a5985c257bf29065f4b4d373002329d586b8",
+      "sha256": "6b2286624a128f13973c1ee3386381ec140b28e78750091c1c499d967ba27a7a"
+    },
+    "verl/verl/experimental/vla/models/pi0_torch/configuration_pi0_torch.py": {
+      "original_git_blob": "501137445bb9e999a73ec6d058a68ff81f4d2d58",
+      "release_git_blob": "501137445bb9e999a73ec6d058a68ff81f4d2d58",
+      "sha256": "d7658df4c7920230b28e4ae31902e4316cbafd631dc9b61c49f04161fc489776"
+    },
+    "verl/verl/experimental/vla/models/pi0_torch/model/modeling_pi0.py": {
+      "original_git_blob": "4d7cdd5e305e96001452db9f6585bb6d14827cbb",
+      "release_git_blob": "4d7cdd5e305e96001452db9f6585bb6d14827cbb",
+      "sha256": "c79b5be1758411222494351d34e996c0a6f5871af2a2e301632509989d3b9c0b"
+    },
+    "verl/verl/experimental/vla/models/pi0_torch/model/paligemma_with_expert.py": {
+      "original_git_blob": "ce500855aa0ac5ccf65c94d14984bc72d443d871",
+      "release_git_blob": "ce500855aa0ac5ccf65c94d14984bc72d443d871",
+      "sha256": "ff2829e56684746c6f5963662ffa7510280a60e4d814dbb20de4155cb3fdc7bc"
+    },
+    "verl/verl/experimental/vla/models/pi0_torch/modeling_pi0_torch.py": {
+      "original_git_blob": "6886a35af6fe25404b0ba0083abf1c92dcd2d6fa",
+      "release_git_blob": "6886a35af6fe25404b0ba0083abf1c92dcd2d6fa",
+      "sha256": "3eea0381da17fcd952064fe67df1172c41b330b0b00fb64fafc57ce4fca63177"
+    },
+    "verl/verl/experimental/vla/models/pi0_torch/pi0_utils.py": {
+      "original_git_blob": "26a4a8616bcbbf746fae29bfbd53c47bd50eab45",
+      "release_git_blob": "26a4a8616bcbbf746fae29bfbd53c47bd50eab45",
+      "sha256": "93300e1acec0bf7a30db26a8ece9cb15ed5654682b3f2e160a860ad95e59367c"
+    },
+    "verl/verl/experimental/vla/models/pi0_torch/policy/__init__.py": {
+      "original_git_blob": "1cd1e8433dffa0b3ba420be3e346f4f5cd062014",
+      "release_git_blob": "1cd1e8433dffa0b3ba420be3e346f4f5cd062014",
+      "sha256": "ced14be479d27e864cf3557c37d8abe00d2204ba6c030620bf48ea85e25a5921"
+    },
+    "verl/verl/experimental/vla/models/pi0_torch/policy/base.py": {
+      "original_git_blob": "cb3267a2a1809e05fe99df029ef85ea31e5b5736",
+      "release_git_blob": "cb3267a2a1809e05fe99df029ef85ea31e5b5736",
+      "sha256": "4af7ea2a92a15794934a2fb8f200b9db5ed0130271bc22930149b113422df027"
+    },
+    "verl/verl/experimental/vla/models/pi0_torch/policy/libero_policy.py": {
+      "original_git_blob": "cd45a78a046bc447aefbbcdf0402d915ea824b57",
+      "release_git_blob": "cd45a78a046bc447aefbbcdf0402d915ea824b57",
+      "sha256": "78d514c8d474ce75e9526ee8da6a608126fc7edda64f7b370f19dfa8e8130e50"
+    },
+    "verl/verl/experimental/vla/models/register_vla_models.py": {
+      "original_git_blob": "c3d97cf1952c1973538db135727061b0a6c20141",
+      "release_git_blob": "c3d97cf1952c1973538db135727061b0a6c20141",
+      "sha256": "1d13c2faf66fc83340b5b59841f2b4b7063ec68b5a38fb9f06cf6eac7ce91033"
+    },
+    "verl/verl/experimental/vla/naive_rollout_rob.py": {
+      "original_git_blob": "e4b56f4c7697ac1a2f7008a6e401660ef49a7fe8",
+      "release_git_blob": "e4b56f4c7697ac1a2f7008a6e401660ef49a7fe8",
+      "sha256": "d10f799de1c25cb7484c44439ae18edaea0256bcaeca4b7511e1bc45e1726ce7"
+    },
+    "verl/verl/experimental/vla/prepare_libero_dataset.py": {
+      "original_git_blob": "9c2ce204811926437067b098978cd1e5c0ef4853",
+      "release_git_blob": "9c2ce204811926437067b098978cd1e5c0ef4853",
+      "sha256": "d7314ec0f5f0d5035e00ec80b2764c6f81096807281b6d08ad15630e1c391c44"
+    },
+    "verl/verl/experimental/vla/requirements_vla.txt": {
+      "original_git_blob": "11705d307c455bc7a2dfb66cabed89f5c4a7246e",
+      "release_git_blob": "11705d307c455bc7a2dfb66cabed89f5c4a7246e",
+      "sha256": "2ac7955800c07cf472044270e71dca6e228724c5f27592c59ff1266c87cdc6ee"
+    },
+    "verl/verl/experimental/vla/rob_ray_trainer.py": {
+      "original_git_blob": "519b7dab4b538b2e368fc18238ad9fecc6d8ba2d",
+      "release_git_blob": "519b7dab4b538b2e368fc18238ad9fecc6d8ba2d",
+      "sha256": "b6aa63e53b8ed00b094c279fb017699a638044375fca140e1a05cafd084af993"
+    },
+    "verl/verl/experimental/vla/run_pi05_libero_sac.sh": {
+      "original_git_blob": "bcda05eacfa8c30d070d5a2dc32b69c14672da18",
+      "release_git_blob": "bcda05eacfa8c30d070d5a2dc32b69c14672da18",
+      "sha256": "060faf120a074bfe483cb935291a30c77639c8cd82e59bec349a6fde403d45d6"
+    },
+    "verl/verl/experimental/vla/run_pi05_libero_sac_disagg.sh": {
+      "original_git_blob": "92a540570e6ad55f6a82390982f74f80cd74250a",
+      "release_git_blob": "92a540570e6ad55f6a82390982f74f80cd74250a",
+      "sha256": "1606907ed1759c92491b0000226830adaccc103c9c23083c38640d3c3a6861c1"
+    },
+    "verl/verl/experimental/vla/run_simpleVLA_isaac_disagg.sh": {
+      "original_git_blob": "9a2030895a988faa1d89538b3f2a6fd52582fa4e",
+      "release_git_blob": "9a2030895a988faa1d89538b3f2a6fd52582fa4e",
+      "sha256": "8c9eb72fae1e1a71e90951e97d7ae61fee573bad456dfee6f6b208445cf289dc"
+    },
+    "verl/verl/experimental/vla/run_simpleVLA_libero_grpo.sh": {
+      "original_git_blob": "0e8d4f0cde063c1b6fa1bae08d408d88d96e7e0c",
+      "release_git_blob": "0e8d4f0cde063c1b6fa1bae08d408d88d96e7e0c",
+      "sha256": "e3666953029c16516717491dd0a8fc5828f3826dc8d3a1d6bd1f9b24dd11edc0"
+    },
+    "verl/verl/experimental/vla/sac/base.py": {
+      "original_git_blob": "fbdfe130c04ed36cbb752ab7171015fb14936443",
+      "release_git_blob": "fbdfe130c04ed36cbb752ab7171015fb14936443",
+      "sha256": "44d33d93d4a4fe5e2e18fe3c0402ab62b5ef302b4b7db945c6410a505a638ff7"
+    },
+    "verl/verl/experimental/vla/sac/naive_rollout_pi05.py": {
+      "original_git_blob": "336891ab2a484ffa637c3f807ef6260a26a25726",
+      "release_git_blob": "336891ab2a484ffa637c3f807ef6260a26a25726",
+      "sha256": "1f2042bb764887dcf4f937dfadbba2ef0232fab150c0ff010fe283caa9ba8151"
+    },
+    "verl/verl/experimental/vla/sac/replay_pool.py": {
+      "original_git_blob": "5f485a400b1c5535c371d7a39177d54716a5c622",
+      "release_git_blob": "5f485a400b1c5535c371d7a39177d54716a5c622",
+      "sha256": "80946adabfad36689aa8f5dafd45036694c7c2cd3afa9e6c5f3b19d1f18c3901"
+    },
+    "verl/verl/experimental/vla/sac/sac_actor.py": {
+      "original_git_blob": "598a08055a87b106f1122a5a30fa7a3d126d6890",
+      "release_git_blob": "598a08055a87b106f1122a5a30fa7a3d126d6890",
+      "sha256": "21520ea4b647d4da3e8141aee7fe7e2b6052622d0c8b96c14ab0a8699a853f62"
+    },
+    "verl/verl/experimental/vla/sac/sac_ray_trainer.py": {
+      "original_git_blob": "310a9dc76865e8742ee855e0cae8dac433deec83",
+      "release_git_blob": "310a9dc76865e8742ee855e0cae8dac433deec83",
+      "sha256": "fbdec016e88fbdf7ad955f3cab64bb8076f02dee4ae95e25b57048eccefd3d2b"
+    },
+    "verl/verl/experimental/vla/workers/env/env_loop_wg_test.py": {
+      "original_git_blob": "71fb6348f6235b3ec26b7ee5ab22c3e74b3beb4b",
+      "release_git_blob": "71fb6348f6235b3ec26b7ee5ab22c3e74b3beb4b",
+      "sha256": "24674296abd60c129408a77cfb13e15dddca01be81ffac80d27012c3a13fe167"
+    },
+    "verl/verl/experimental/vla/workers/env/env_manager.py": {
+      "original_git_blob": "7050a517d89a19706a23964e10fdaca50a190578",
+      "release_git_blob": "7050a517d89a19706a23964e10fdaca50a190578",
+      "sha256": "76e077a330e9cde3f7d0e164525e654b4eb7297fb663b5da062c42def399fde1"
+    },
+    "verl/verl/experimental/vla/workers/env/env_worker.py": {
+      "original_git_blob": "6cadfd9f9cffe9aea52aae550fba7f239543baec",
+      "release_git_blob": "6cadfd9f9cffe9aea52aae550fba7f239543baec",
+      "sha256": "4386b2118f46140b197c4ba163ae21ab392a2e3822426fa9f92cbc8707a20bc5"
+    },
+    "verl/verl/interactions/__init__.py": {
+      "original_git_blob": "b6db0fcef70b051ba5975c4a94d2b68b986e1127",
+      "release_git_blob": "b6db0fcef70b051ba5975c4a94d2b68b986e1127",
+      "sha256": "48e4a0c1591de920175cf07b36cb6f87e094becf910af84c9db2d527a9464497"
+    },
+    "verl/verl/interactions/base.py": {
+      "original_git_blob": "7c5d200abdc65b009ee8e49a8fb9825642c6b67c",
+      "release_git_blob": "7c5d200abdc65b009ee8e49a8fb9825642c6b67c",
+      "sha256": "83e444e1d4ac7e256464d9591be7a223a1a988dab22d09bc660d96f3ec5ebffe"
+    },
+    "verl/verl/interactions/gsm8k_interaction.py": {
+      "original_git_blob": "67898ad577a0e277bd92df4956c50be3c7004ae8",
+      "release_git_blob": "67898ad577a0e277bd92df4956c50be3c7004ae8",
+      "sha256": "2581b65ebcac215d9a4f8a41200509863195647386988e437814ef754b1f96b7"
+    },
+    "verl/verl/interactions/utils/__init__.py": {
+      "original_git_blob": "c4b932b1ae7eeeb4c53c98c684cf0ba9b670a86b",
+      "release_git_blob": "c4b932b1ae7eeeb4c53c98c684cf0ba9b670a86b",
+      "sha256": "0bae18fab65cb4028732b91a1215baf8e02f9fdf8b4762a523662a34374e7432"
+    },
+    "verl/verl/interactions/utils/interaction_registry.py": {
+      "original_git_blob": "df747af11d0e119360acb0f9ff6c9ba49926e0a3",
+      "release_git_blob": "df747af11d0e119360acb0f9ff6c9ba49926e0a3",
+      "sha256": "653d7d4b7fe1c3d1fa9a26a0e0b0324252596ba09ebfe2aa658327e05b4ac5eb"
+    },
+    "verl/verl/interactions/weather_interaction.py": {
+      "original_git_blob": "9e4022652e7b024699baf57c03fce56c63ee21c8",
+      "release_git_blob": "9e4022652e7b024699baf57c03fce56c63ee21c8",
+      "sha256": "3fcbd1627572b4e89e1f800a990c5314fcc09aa52f99c6791a2cd2db2a3072fe"
+    },
+    "verl/verl/model_merger/__init__.py": {
+      "original_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "release_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "sha256": "e65abd77db034b4f29eb1268c24867f84919dbce22e28d1997e563ed1d94179c"
+    },
+    "verl/verl/model_merger/__main__.py": {
+      "original_git_blob": "f3ab5b9c29b5d5114fc918042ea496848078d38a",
+      "release_git_blob": "f3ab5b9c29b5d5114fc918042ea496848078d38a",
+      "sha256": "bbeaa19d4993c1c6c6d5552e8d1eaf1f56e5e737661acc0d750f0d41c2d4bce0"
+    },
+    "verl/verl/model_merger/base_model_merger.py": {
+      "original_git_blob": "37cf926762cc36af765ac63f9d1c382e9d568760",
+      "release_git_blob": "37cf926762cc36af765ac63f9d1c382e9d568760",
+      "sha256": "07294b1c6e22ccc8bd7695a5cc39fc9a8e63655a9de520826e0a47e46ef2cc07"
+    },
+    "verl/verl/model_merger/fsdp_model_merger.py": {
+      "original_git_blob": "7853b2b79878a8142153cbc647eafc665ab718f4",
+      "release_git_blob": "7853b2b79878a8142153cbc647eafc665ab718f4",
+      "sha256": "2ae5f3f7fc95871b08a2e185def4f1a5cec09164579cd15eeb2314cb73ef1f0f"
+    },
+    "verl/verl/model_merger/megatron_model_merger.py": {
+      "original_git_blob": "bccd54d2ab125d091fcdcd9549c86aee5f5ecacb",
+      "release_git_blob": "bccd54d2ab125d091fcdcd9549c86aee5f5ecacb",
+      "sha256": "47d299fb3d1b1185585708f2134826fdde2122107b43a9ab82155f8a5ae4a41a"
+    },
+    "verl/verl/models/README.md": {
+      "original_git_blob": "677b92f3871aa2f76a7f5bd8c07d1050bab14564",
+      "release_git_blob": "677b92f3871aa2f76a7f5bd8c07d1050bab14564",
+      "sha256": "5e3bd067a590fca3a0d571b639ac466e1c6a5ad68abc18fcb6a3a176fb5ab476"
+    },
+    "verl/verl/models/__init__.py": {
+      "original_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "release_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "sha256": "e65abd77db034b4f29eb1268c24867f84919dbce22e28d1997e563ed1d94179c"
+    },
+    "verl/verl/models/llama/__init__.py": {
+      "original_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "release_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "sha256": "e65abd77db034b4f29eb1268c24867f84919dbce22e28d1997e563ed1d94179c"
+    },
+    "verl/verl/models/llama/megatron/__init__.py": {
+      "original_git_blob": "fc851ea435ff43ad31eff24dc729df0e78cf8bee",
+      "release_git_blob": "fc851ea435ff43ad31eff24dc729df0e78cf8bee",
+      "sha256": "882e9d87f97eba0d0f67cacb2851e709c1771043e06c42880ccb11170d9914bd"
+    },
+    "verl/verl/models/llama/megatron/checkpoint_utils/__init__.py": {
+      "original_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "release_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "sha256": "e65abd77db034b4f29eb1268c24867f84919dbce22e28d1997e563ed1d94179c"
+    },
+    "verl/verl/models/llama/megatron/checkpoint_utils/llama_loader.py": {
+      "original_git_blob": "dafecfdf084e81d2e72df9151fb3c593770127ac",
+      "release_git_blob": "dafecfdf084e81d2e72df9151fb3c593770127ac",
+      "sha256": "842e23c86ebc1e327f230c6cb9e178d83df92a11900315ed23d71fbd099aa43a"
+    },
+    "verl/verl/models/llama/megatron/checkpoint_utils/llama_loader_depracated.py": {
+      "original_git_blob": "2f65bc6b1701bdb79cf1ed282de0212bd6396fdc",
+      "release_git_blob": "2f65bc6b1701bdb79cf1ed282de0212bd6396fdc",
+      "sha256": "03c5c40fa17fc68b238951334e670ee592f5e356f7d35b7e0d353ea86170aac9"
+    },
+    "verl/verl/models/llama/megatron/checkpoint_utils/llama_saver.py": {
+      "original_git_blob": "595efcde376ea498ee65bc39310060a046b83d1b",
+      "release_git_blob": "595efcde376ea498ee65bc39310060a046b83d1b",
+      "sha256": "98ab4629ea317f20458ef5a850332ede5da4990416fac3da65adf012aa5ad3f7"
+    },
+    "verl/verl/models/llama/megatron/layers/__init__.py": {
+      "original_git_blob": "352bc56086dcf1e7e2a6534f0e6e506796a1fb6d",
+      "release_git_blob": "352bc56086dcf1e7e2a6534f0e6e506796a1fb6d",
+      "sha256": "9cb3d2cecc91f210d111fd44f8122e652285265204832c22799428b41be8db9f"
+    },
+    "verl/verl/models/llama/megatron/layers/parallel_attention.py": {
+      "original_git_blob": "4f76b991abda8038db299d09cc230b6051479d47",
+      "release_git_blob": "4f76b991abda8038db299d09cc230b6051479d47",
+      "sha256": "4fadace5146c22607055fe824ac8cbb499c0ab467e97656e9b80f5f63161e180"
+    },
+    "verl/verl/models/llama/megatron/layers/parallel_decoder.py": {
+      "original_git_blob": "f46e9457c793ccc4a9dc72f6d471d58ef48e8bfe",
+      "release_git_blob": "f46e9457c793ccc4a9dc72f6d471d58ef48e8bfe",
+      "sha256": "597288c158587c4a47f3e0e916bbeefb4e97d2085e850928ba482ad94f61a569"
+    },
+    "verl/verl/models/llama/megatron/layers/parallel_linear.py": {
+      "original_git_blob": "043726c46c3705cf1bfa8ae10ab77d2b930e19d2",
+      "release_git_blob": "043726c46c3705cf1bfa8ae10ab77d2b930e19d2",
+      "sha256": "cc74ba5c9c3dc6e7e7051dc3d6c1954dcdb204dd9a1e551e7cf91c017fa649d2"
+    },
+    "verl/verl/models/llama/megatron/layers/parallel_mlp.py": {
+      "original_git_blob": "583a317eb6aedadeb26d82cef54b815d2b9d22e6",
+      "release_git_blob": "583a317eb6aedadeb26d82cef54b815d2b9d22e6",
+      "sha256": "d8cd610347584db7f6557c4324bce63a750af0a783168ba4d41e3f50af85af67"
+    },
+    "verl/verl/models/llama/megatron/layers/parallel_rmsnorm.py": {
+      "original_git_blob": "23a4a847ff875b2410f5c76b7386b806d86a5735",
+      "release_git_blob": "23a4a847ff875b2410f5c76b7386b806d86a5735",
+      "sha256": "116fe92eea5b9611dc0431fa216f4dc080080b6ddac89b87e858557632a4c999"
+    },
+    "verl/verl/models/llama/megatron/modeling_llama_megatron.py": {
+      "original_git_blob": "e8a7e2440e643fb48f87093f235a4834b4a23e48",
+      "release_git_blob": "e8a7e2440e643fb48f87093f235a4834b4a23e48",
+      "sha256": "f1a4e9476d72a6391412264d38f102ed8c7173e5b4e3cf0ac67656da24d3ba71"
+    },
+    "verl/verl/models/mcore/__init__.py": {
+      "original_git_blob": "5792ad703589236a3da8d3efeb6f8a821a254df4",
+      "release_git_blob": "5792ad703589236a3da8d3efeb6f8a821a254df4",
+      "sha256": "ba022679bfc5d4d0b11b87770504db1e5eec5696da65392a3e04375fcd8c887a"
+    },
+    "verl/verl/models/mcore/bridge.py": {
+      "original_git_blob": "dffb661b7b098a6d24352ae9583551da8048b055",
+      "release_git_blob": "dffb661b7b098a6d24352ae9583551da8048b055",
+      "sha256": "431dd5e9d375c5d5995dc6ae817b76aba9fb545ac6953aa7018915af56d4172d"
+    },
+    "verl/verl/models/mcore/config_converter.py": {
+      "original_git_blob": "c4df938286146ccf9d50bed3d0938d49d7f03875",
+      "release_git_blob": "c4df938286146ccf9d50bed3d0938d49d7f03875",
+      "sha256": "099f295c13e8bda2d78c72c28bac6790f281e141e5010300b9ff2619d02aecd5"
+    },
+    "verl/verl/models/mcore/loader.py": {
+      "original_git_blob": "577ffc5ecf4f138ab4183d9ee4bef445d6f8142c",
+      "release_git_blob": "577ffc5ecf4f138ab4183d9ee4bef445d6f8142c",
+      "sha256": "d07736ae2a75b5eb4944e5a28c3cc48a2f0459dd950903fb047c343225b8778e"
+    },
+    "verl/verl/models/mcore/mbridge.py": {
+      "original_git_blob": "9c6d5036e3f300720f98cc8ddee3df4f06335bb1",
+      "release_git_blob": "9c6d5036e3f300720f98cc8ddee3df4f06335bb1",
+      "sha256": "271e483de7145b86fac40e4bea2f9473b2bcd571cf52179ba7052c32cdcd6e12"
+    },
+    "verl/verl/models/mcore/model_forward.py": {
+      "original_git_blob": "d1ae01e3d13cecc8a81a67e876a7cbe48142d36d",
+      "release_git_blob": "d1ae01e3d13cecc8a81a67e876a7cbe48142d36d",
+      "sha256": "2d363032b594d8b6d2f70cffb427b6131195f2f3ce037a3989c90d0559bf32f8"
+    },
+    "verl/verl/models/mcore/model_forward_1f1b_overlap.py": {
+      "original_git_blob": "b8786e01f884e78fda4b37dc902a136ad0c1b5dd",
+      "release_git_blob": "b8786e01f884e78fda4b37dc902a136ad0c1b5dd",
+      "sha256": "96ec9f3867282a18a95d2e7d48c04cb635c16a2d6b2bd1f7525dd0740b9a5ad3"
+    },
+    "verl/verl/models/mcore/model_forward_fused.py": {
+      "original_git_blob": "273ade1f69ef796544beca51d431c9ae6eb7a099",
+      "release_git_blob": "273ade1f69ef796544beca51d431c9ae6eb7a099",
+      "sha256": "6296cd0ac3b40da7027c43d8a12596d7298508ed1c5c2c5105ed5be974c64474"
+    },
+    "verl/verl/models/mcore/model_initializer.py": {
+      "original_git_blob": "49a30bc9e2c982fa4e1182d6da745cdd34251dd5",
+      "release_git_blob": "49a30bc9e2c982fa4e1182d6da745cdd34251dd5",
+      "sha256": "2a74e48dbdf528b59ebe29853f0de91f86aafbab8948b9dff3d623528c9060d9"
+    },
+    "verl/verl/models/mcore/mtp_patch.py": {
+      "original_git_blob": "117b6e3f28c72e33855f74dcd2decec2cba4d461",
+      "release_git_blob": "117b6e3f28c72e33855f74dcd2decec2cba4d461",
+      "sha256": "cb2aab1ff22385823131f49d0687d44fd46e6a65234bf138c819b674f76408dc"
+    },
+    "verl/verl/models/mcore/patch.py": {
+      "original_git_blob": "ce861ce7b210fe65826c60f3f2e536e27dd52eee",
+      "release_git_blob": "ce861ce7b210fe65826c60f3f2e536e27dd52eee",
+      "sha256": "934050df735c1c8f7c28b72a16ee2113832a8be9c4ef866d65db5c4780647767"
+    },
+    "verl/verl/models/mcore/qwen2_5_vl/__init__.py": {
+      "original_git_blob": "8842d0249e1fa5397734bb0929e65d20978f815f",
+      "release_git_blob": "8842d0249e1fa5397734bb0929e65d20978f815f",
+      "sha256": "aef86e621b8b2e2c1c59334915e3e040b92e5e49df6574e5d20768d1bcf47828"
+    },
+    "verl/verl/models/mcore/qwen2_5_vl/attention.py": {
+      "original_git_blob": "2a87a053c59f9ad464ced527ec017498917d92d3",
+      "release_git_blob": "2a87a053c59f9ad464ced527ec017498917d92d3",
+      "sha256": "2124ebb76770de8d2fdd0c6c3242dd0158e8d91bc142a88ef00153b20aed2086"
+    },
+    "verl/verl/models/mcore/qwen2_5_vl/model.py": {
+      "original_git_blob": "91118edfb6c4d96107249e1be921b720c0498fa0",
+      "release_git_blob": "91118edfb6c4d96107249e1be921b720c0498fa0",
+      "sha256": "cf240452dfd9640f1d3f15e918e7a0b8949cfb7a1735be91315b9107b973611e"
+    },
+    "verl/verl/models/mcore/qwen2_5_vl/rope_utils.py": {
+      "original_git_blob": "fadc74daabe852f9e4561fe9981534815e5a148d",
+      "release_git_blob": "fadc74daabe852f9e4561fe9981534815e5a148d",
+      "sha256": "9202aaa71b9167efde1fdc9a726015e05e44d217a2d62187325debd447a72fd2"
+    },
+    "verl/verl/models/mcore/qwen2_5_vl/vision_config.py": {
+      "original_git_blob": "0631c90f61605f2ed0d659c8836f01c451e694a6",
+      "release_git_blob": "0631c90f61605f2ed0d659c8836f01c451e694a6",
+      "sha256": "f173783cc6213543063e65035c5ca3c927d93d5a0899d5555fa2a3979d8f1a22"
+    },
+    "verl/verl/models/mcore/qwen2_5_vl/vision_model.py": {
+      "original_git_blob": "06b4fd328064a1f50b32a7009aec8ecef573656e",
+      "release_git_blob": "06b4fd328064a1f50b32a7009aec8ecef573656e",
+      "sha256": "19d68643babddbe29893d641783b490a807206fb7601121b25596b589ea97002"
+    },
+    "verl/verl/models/mcore/qwen2_5_vl/vision_transformer_block.py": {
+      "original_git_blob": "8f765a0ff632f65771d1b1d19a4b0f052ee6ec37",
+      "release_git_blob": "8f765a0ff632f65771d1b1d19a4b0f052ee6ec37",
+      "sha256": "0041d05ef50a3301d3eeabfffaf5baf8d45abc3a83d54112724de53dfb5775d0"
+    },
+    "verl/verl/models/mcore/readme.md": {
+      "original_git_blob": "0807dbf50f71ae908ff6d28d4a1456f02dc27e29",
+      "release_git_blob": "0807dbf50f71ae908ff6d28d4a1456f02dc27e29",
+      "sha256": "f42da1668caffc7153b014db32f49d5c1fb0531b0e42d5b4ea8dc7d8bfe721ec"
+    },
+    "verl/verl/models/mcore/registry.py": {
+      "original_git_blob": "8f9e3447f9f42cf02b4097080b2db465b9800da0",
+      "release_git_blob": "8f9e3447f9f42cf02b4097080b2db465b9800da0",
+      "sha256": "4afb26850bdc7f21723596caa04461d83e2d9c2e68e9da82d13624674f3267b5"
+    },
+    "verl/verl/models/mcore/saver.py": {
+      "original_git_blob": "2a954b2417cd5b8d09e88b9935e52eeb6ef5273a",
+      "release_git_blob": "2a954b2417cd5b8d09e88b9935e52eeb6ef5273a",
+      "sha256": "a82703fade74e67efe7e65dac451d25b0f1489ccd4dc689a618399ef051858b4"
+    },
+    "verl/verl/models/mcore/util.py": {
+      "original_git_blob": "b5d16c48fa880bee089d25a021aa6097c304cfd0",
+      "release_git_blob": "b5d16c48fa880bee089d25a021aa6097c304cfd0",
+      "sha256": "1132681da978b4ffc50aea690bfd53a244824726d08b9abc0fb67c648824bdc6"
+    },
+    "verl/verl/models/mcore/weight_converter.py": {
+      "original_git_blob": "791513f32d1b7ab1e220d2c7f1abb5a2c8abeba3",
+      "release_git_blob": "791513f32d1b7ab1e220d2c7f1abb5a2c8abeba3",
+      "sha256": "2d6cf1ed29cf6cf0468dac4767fe450a98bba32495a35e80feb15713bdf403ce"
+    },
+    "verl/verl/models/qwen2/__init__.py": {
+      "original_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "release_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "sha256": "e65abd77db034b4f29eb1268c24867f84919dbce22e28d1997e563ed1d94179c"
+    },
+    "verl/verl/models/qwen2/megatron/__init__.py": {
+      "original_git_blob": "57e33ee9e905a64eb92df812d2f0bc6126066042",
+      "release_git_blob": "57e33ee9e905a64eb92df812d2f0bc6126066042",
+      "sha256": "8aee5796a576d05221db3a2fad83298ca997e9906a9d897575c1dc79455085c1"
+    },
+    "verl/verl/models/qwen2/megatron/checkpoint_utils/__init__.py": {
+      "original_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "release_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "sha256": "e65abd77db034b4f29eb1268c24867f84919dbce22e28d1997e563ed1d94179c"
+    },
+    "verl/verl/models/qwen2/megatron/checkpoint_utils/qwen2_loader.py": {
+      "original_git_blob": "3168635c7fe7b5b0e35a8e99b189057acbb8a5cb",
+      "release_git_blob": "3168635c7fe7b5b0e35a8e99b189057acbb8a5cb",
+      "sha256": "e9c79c8e11898f0eee4671ddd6bd8b2c669074078fd2987e4e9f3cd28f3da9d8"
+    },
+    "verl/verl/models/qwen2/megatron/checkpoint_utils/qwen2_loader_depracated.py": {
+      "original_git_blob": "770e3653366321159ec079c42009052aeaf26510",
+      "release_git_blob": "770e3653366321159ec079c42009052aeaf26510",
+      "sha256": "aa1fab9f73d274b1bc66dbcde02d96850872ba8c669b144cc58963322830bee6"
+    },
+    "verl/verl/models/qwen2/megatron/checkpoint_utils/qwen2_saver.py": {
+      "original_git_blob": "737f73b4c6163ee674d97466b4fb37b71df2534b",
+      "release_git_blob": "737f73b4c6163ee674d97466b4fb37b71df2534b",
+      "sha256": "cc9e10740645e7e00c8d3a3f929fd9f7d2e23fb7747496b1e48a9755a906dea8"
+    },
+    "verl/verl/models/qwen2/megatron/layers/__init__.py": {
+      "original_git_blob": "263ea596fa758fdef2201e9e99e4a5c7d435e434",
+      "release_git_blob": "263ea596fa758fdef2201e9e99e4a5c7d435e434",
+      "sha256": "9f705565e0ce116d7bf2844f845c2e77ed8759d76d59b8b9b9ac94434d4398b7"
+    },
+    "verl/verl/models/qwen2/megatron/layers/parallel_attention.py": {
+      "original_git_blob": "4e4f59101511e39a67e10d31f4a001c79f366ce5",
+      "release_git_blob": "4e4f59101511e39a67e10d31f4a001c79f366ce5",
+      "sha256": "9e5a62bdc8f419ddbe6fb151b0da8f0f3ef65143d89d098bd3356bdfae2d904e"
+    },
+    "verl/verl/models/qwen2/megatron/layers/parallel_decoder.py": {
+      "original_git_blob": "3c8a2a6ee946eb014658006a2da6d2d602c51063",
+      "release_git_blob": "3c8a2a6ee946eb014658006a2da6d2d602c51063",
+      "sha256": "be67a0f79d43f30fcb5a4878459bcc136cae71abee317967c6e8849416e9b082"
+    },
+    "verl/verl/models/qwen2/megatron/layers/parallel_linear.py": {
+      "original_git_blob": "e6d4a09f43013ed75feb03fdb427bc8ad86db093",
+      "release_git_blob": "e6d4a09f43013ed75feb03fdb427bc8ad86db093",
+      "sha256": "234bd3cdb743212308aeb8f501fc8b18e931d5c8b5b7367613bc24266ca08981"
+    },
+    "verl/verl/models/qwen2/megatron/layers/parallel_mlp.py": {
+      "original_git_blob": "672908a21ae8c8e69c0536eda7fadd0431cba5fe",
+      "release_git_blob": "672908a21ae8c8e69c0536eda7fadd0431cba5fe",
+      "sha256": "2bd521a8cd29ce446e0322d469d0f74bf7f0903d983db3cf3a2c7cfa8d9a04c0"
+    },
+    "verl/verl/models/qwen2/megatron/layers/parallel_rmsnorm.py": {
+      "original_git_blob": "2f4c90dd44e2b72f1116e3c097e52efca5567129",
+      "release_git_blob": "2f4c90dd44e2b72f1116e3c097e52efca5567129",
+      "sha256": "a0c7dfaaa31622b2e5195e23c338ed466054cd22ca7e385bb19daae2ee426604"
+    },
+    "verl/verl/models/qwen2/megatron/modeling_qwen2_megatron.py": {
+      "original_git_blob": "b3512f8afa5dc6bf2b786e753acc22cac8d75784",
+      "release_git_blob": "b3512f8afa5dc6bf2b786e753acc22cac8d75784",
+      "sha256": "329783627b0f70dbcd8db74a6c777562cc76eaa47a74e6f5f3b51c68ffcea606"
+    },
+    "verl/verl/models/registry.py": {
+      "original_git_blob": "667df01417934846776f9f27b622806132e37314",
+      "release_git_blob": "667df01417934846776f9f27b622806132e37314",
+      "sha256": "7c1523431efbf1977b583c7f8359ff2f2cfbb9d3c4af6cdc9f492f6c9d0370f0"
+    },
+    "verl/verl/models/transformers/__init__.py": {
+      "original_git_blob": "d992168f109c6a97d6749b1ab39c915b48330e19",
+      "release_git_blob": "d992168f109c6a97d6749b1ab39c915b48330e19",
+      "sha256": "f641be8f58d51770d492ea5d2dd21f1854f4441bd15a89246b136121d9327949"
+    },
+    "verl/verl/models/transformers/apertus.py": {
+      "original_git_blob": "a42f50957b62e3ae3800b8aadf54793a2c97f2fc",
+      "release_git_blob": "a42f50957b62e3ae3800b8aadf54793a2c97f2fc",
+      "sha256": "f8af594815550ce344b390133da1eb97ee9b4a6225d3b08642e10b9156d6d946"
+    },
+    "verl/verl/models/transformers/dense_common.py": {
+      "original_git_blob": "56fe293f5cbec4f9efa2a6a77a3374d09e358e56",
+      "release_git_blob": "56fe293f5cbec4f9efa2a6a77a3374d09e358e56",
+      "sha256": "9f455a8af01290eae28f78ce5329175edf31c2425b02722567c350619c3b548a"
+    },
+    "verl/verl/models/transformers/glm4v.py": {
+      "original_git_blob": "b2efe369a262155c62bca1d3bb026d101f2a46dc",
+      "release_git_blob": "b2efe369a262155c62bca1d3bb026d101f2a46dc",
+      "sha256": "4d897e504910f204763b929b3509449c9c42fd737d696d2cf5664be2eadb911e"
+    },
+    "verl/verl/models/transformers/kimi_vl.py": {
+      "original_git_blob": "cabb518f4a113fc52f421700d9f216b4ec3bd627",
+      "release_git_blob": "cabb518f4a113fc52f421700d9f216b4ec3bd627",
+      "sha256": "e38545c7093d68cf7100b63ddb9c70daf63bf5b1b61ba6ff1dd8fc330e393efc"
+    },
+    "verl/verl/models/transformers/llama.py": {
+      "original_git_blob": "b3efb8646d55808bf647bb9d490ab69b80dc6fe1",
+      "release_git_blob": "b3efb8646d55808bf647bb9d490ab69b80dc6fe1",
+      "sha256": "f64a63a7e8f5b3c96d569acc5518c8296160e2e2a9ab1422436821ed9c9d98fa"
+    },
+    "verl/verl/models/transformers/monkey_patch.py": {
+      "original_git_blob": "bb26dac2da9486d102509ccf55cfda94694a656d",
+      "release_git_blob": "bb26dac2da9486d102509ccf55cfda94694a656d",
+      "sha256": "259388f6be3365dcb4402786e3fe6bb7352158d52dbfa37833157bdeec11bdb3"
+    },
+    "verl/verl/models/transformers/npu_patch.py": {
+      "original_git_blob": "d224b884703116b751960cfe8321e349dc37e414",
+      "release_git_blob": "d224b884703116b751960cfe8321e349dc37e414",
+      "sha256": "1a8e0e6bbc79313d468886962fc822e7ea9dafe03125531b66de6fd4f08227ee"
+    },
+    "verl/verl/models/transformers/qwen2.py": {
+      "original_git_blob": "3bac76e9a142530e86a32c3ad4228e6964afc19a",
+      "release_git_blob": "3bac76e9a142530e86a32c3ad4228e6964afc19a",
+      "sha256": "e718af36c4b443e2bf4f98e4dcd4c61cc236caad709a3f92d170ad90194e495c"
+    },
+    "verl/verl/models/transformers/qwen2_vl.py": {
+      "original_git_blob": "5e82fdd4dd4bd3211350e46b05dfb38e7ed5ca30",
+      "release_git_blob": "5e82fdd4dd4bd3211350e46b05dfb38e7ed5ca30",
+      "sha256": "d16f9e29d3f3ffd4c8c0ab740a3a6e408524eb12580c5ef7c7b2cb88d67c449d"
+    },
+    "verl/verl/models/transformers/qwen3_vl.py": {
+      "original_git_blob": "972848a1a083b1c01525806a088acfd3229e6e83",
+      "release_git_blob": "972848a1a083b1c01525806a088acfd3229e6e83",
+      "sha256": "ddf503b07a48b064903a6070925dd7a37ae0ad8f69e5f7608dd56c7300592ccd"
+    },
+    "verl/verl/models/transformers/tiled_mlp.py": {
+      "original_git_blob": "b43fa6f4ab259888e02833f49d4b7fb7e1eba49f",
+      "release_git_blob": "b43fa6f4ab259888e02833f49d4b7fb7e1eba49f",
+      "sha256": "5993c82aef95bff5b06ffdb2b45da266886d004e067a5d0aa80d56298c76c09b"
+    },
+    "verl/verl/models/weight_loader_registry.py": {
+      "original_git_blob": "ee60ea71f0e003ed8d20e0ed2329ca770699e747",
+      "release_git_blob": "ee60ea71f0e003ed8d20e0ed2329ca770699e747",
+      "sha256": "22514c6fbf53af91aa425d02228086c0355af123d7b64c104d7b2d7cc5fc1806"
+    },
+    "verl/verl/protocol.py": {
+      "original_git_blob": "6f541f6b3cca10b37446575642ee53b0eb676741",
+      "release_git_blob": "6f541f6b3cca10b37446575642ee53b0eb676741",
+      "sha256": "aa719abd71323bfc5725e5e4a8617b6c6aef76a7edcb6adac0c2421664e63115"
+    },
+    "verl/verl/py.typed": {
+      "original_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "release_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verl/verl/single_controller/__init__.py": {
+      "original_git_blob": "ad6c42a80d188702247c23198e29a44611c81a0d",
+      "release_git_blob": "ad6c42a80d188702247c23198e29a44611c81a0d",
+      "sha256": "bc8a469c28cee85f4c7e7bcf75733a03316a56adfb8254abd33b368253b07fe3"
+    },
+    "verl/verl/single_controller/base/__init__.py": {
+      "original_git_blob": "b24bd9942b872b71f4c7b3a2dbfe6db5530cfe25",
+      "release_git_blob": "b24bd9942b872b71f4c7b3a2dbfe6db5530cfe25",
+      "sha256": "90b679f1bb261ca69ccc0ec2bec1fdae7372c3403521d82a420c3a6634e9b31b"
+    },
+    "verl/verl/single_controller/base/decorator.py": {
+      "original_git_blob": "13485bc0fd26377fb033afe54fd07f3e4ef3d83d",
+      "release_git_blob": "13485bc0fd26377fb033afe54fd07f3e4ef3d83d",
+      "sha256": "80bb8d3ad40390cd91727385bd50e4b8fe92a16555991d5a5699cd6493bde4c4"
+    },
+    "verl/verl/single_controller/base/worker.py": {
+      "original_git_blob": "6fc955cb049c76e753e108907d5c2847208ac04c",
+      "release_git_blob": "6fc955cb049c76e753e108907d5c2847208ac04c",
+      "sha256": "0c0729187b9c9e5f42897869691f505c91b1e5c46b1958311a2d1b0d432869e3"
+    },
+    "verl/verl/single_controller/base/worker_group.py": {
+      "original_git_blob": "f5df3d6b31b32ce216dfcc6595a1e835171fb097",
+      "release_git_blob": "f5df3d6b31b32ce216dfcc6595a1e835171fb097",
+      "sha256": "155d9de2d8c79e9fe4eff63c80c4e7f2eb393a3253bd4db61d77f54e96ec2712"
+    },
+    "verl/verl/single_controller/ray/__init__.py": {
+      "original_git_blob": "b60291d23acf0cde6480b3caa988dc1c872fddc5",
+      "release_git_blob": "b60291d23acf0cde6480b3caa988dc1c872fddc5",
+      "sha256": "b27efba504a3f8fc05f02d1f8145f6f00627e6e4540e1279814fbaaba154d758"
+    },
+    "verl/verl/single_controller/ray/base.py": {
+      "original_git_blob": "2f6ee47064fb24855bf12a4cef010ee9e0ab38ff",
+      "release_git_blob": "2f6ee47064fb24855bf12a4cef010ee9e0ab38ff",
+      "sha256": "6df6878fdc610843fd96388eaa072527fbc774eebd224f82dd87cec620fc3ec1"
+    },
+    "verl/verl/third_party/__init__.py": {
+      "original_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "release_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "sha256": "e65abd77db034b4f29eb1268c24867f84919dbce22e28d1997e563ed1d94179c"
+    },
+    "verl/verl/third_party/torch/__init__.py": {
+      "original_git_blob": "7664279b7411a806f615b52b2405fd2c40672517",
+      "release_git_blob": "7664279b7411a806f615b52b2405fd2c40672517",
+      "sha256": "0f05da82d47d83fc7f345b28278a44d925994b4357044c58cdf585229d3f8ad7"
+    },
+    "verl/verl/third_party/torch/distributed/__init__.py": {
+      "original_git_blob": "7664279b7411a806f615b52b2405fd2c40672517",
+      "release_git_blob": "7664279b7411a806f615b52b2405fd2c40672517",
+      "sha256": "0f05da82d47d83fc7f345b28278a44d925994b4357044c58cdf585229d3f8ad7"
+    },
+    "verl/verl/third_party/torch/distributed/_state_dict_utils.py": {
+      "original_git_blob": "d308449f7104e0c42afd48e38ed1696d2bf3072f",
+      "release_git_blob": "d308449f7104e0c42afd48e38ed1696d2bf3072f",
+      "sha256": "12276a59817e5f3020db3a2820ef0d5cbab7ff8a026bb3eab4741fca1beca8e9"
+    },
+    "verl/verl/third_party/torch/distributed/checkpoint/__init__.py": {
+      "original_git_blob": "7664279b7411a806f615b52b2405fd2c40672517",
+      "release_git_blob": "7664279b7411a806f615b52b2405fd2c40672517",
+      "sha256": "0f05da82d47d83fc7f345b28278a44d925994b4357044c58cdf585229d3f8ad7"
+    },
+    "verl/verl/third_party/torch/distributed/checkpoint/state_dict.py": {
+      "original_git_blob": "e4555802aed8c4b5963892a688b1ff41ae97fb56",
+      "release_git_blob": "e4555802aed8c4b5963892a688b1ff41ae97fb56",
+      "sha256": "7cf9abf992237d5dd99a2b5cb3845137a447ce802154fa3abba71cef0d1033a5"
+    },
+    "verl/verl/third_party/vllm/__init__.py": {
+      "original_git_blob": "2f6646f3b6939851190bc9ecf6b6e0b1cb8e63d5",
+      "release_git_blob": "2f6646f3b6939851190bc9ecf6b6e0b1cb8e63d5",
+      "sha256": "4e357b02aaa319b2373c46d79d5675ea1c62e2f17786af72b12834f8b81b7a9a"
+    },
+    "verl/verl/tools/__init__.py": {
+      "original_git_blob": "c4b932b1ae7eeeb4c53c98c684cf0ba9b670a86b",
+      "release_git_blob": "c4b932b1ae7eeeb4c53c98c684cf0ba9b670a86b",
+      "sha256": "0bae18fab65cb4028732b91a1215baf8e02f9fdf8b4762a523662a34374e7432"
+    },
+    "verl/verl/tools/base_tool.py": {
+      "original_git_blob": "bec813a51870de77b1179808d98c289f46ddc609",
+      "release_git_blob": "bec813a51870de77b1179808d98c289f46ddc609",
+      "sha256": "2a6ab14f689b9f44b8aa96f0bb881a2013a6c656bcb8ec088930bf8a4d2fc739"
+    },
+    "verl/verl/tools/geo3k_tool.py": {
+      "original_git_blob": "9697c757ee97668e3dfa3b9529ffa25016940b3c",
+      "release_git_blob": "9697c757ee97668e3dfa3b9529ffa25016940b3c",
+      "sha256": "c1b5c4d5ef3a75463f2b09f408055bc60f9d573d2bb14acb97500063dae809bf"
+    },
+    "verl/verl/tools/gsm8k_tool.py": {
+      "original_git_blob": "b9e6f0e66d48b9b2b95a72227b9b87828b280629",
+      "release_git_blob": "b9e6f0e66d48b9b2b95a72227b9b87828b280629",
+      "sha256": "11c30ee08687f189c715d9eb1ab5a3528d565c10a20298da83f12589be97f7aa"
+    },
+    "verl/verl/tools/image_zoom_in_tool.py": {
+      "original_git_blob": "07529478b3b716d89158defe7aa996958c4621ec",
+      "release_git_blob": "07529478b3b716d89158defe7aa996958c4621ec",
+      "sha256": "abb51cf87a2c0610f648e24cfb0ffd816613b55a34d2b1bd48f8c5c0c72f6d61"
+    },
+    "verl/verl/tools/mcp_base_tool.py": {
+      "original_git_blob": "9e1f7db6a7da47f3831fcedd5ca12ba970793afe",
+      "release_git_blob": "9e1f7db6a7da47f3831fcedd5ca12ba970793afe",
+      "sha256": "af816b3e811a0fb4bf3b936fabaa8851d3e23e775d7fb78d38d11c6d03454f77"
+    },
+    "verl/verl/tools/mcp_search_tool.py": {
+      "original_git_blob": "ac823719bbb6ecdc0ca02b918b9a6ef6833407bf",
+      "release_git_blob": "ac823719bbb6ecdc0ca02b918b9a6ef6833407bf",
+      "sha256": "1c4513ce18243045bc8d15ef0015cfb8a1b522d47d2463d4fbfaf10abbdffde6"
+    },
+    "verl/verl/tools/sandbox_fusion_tools.py": {
+      "original_git_blob": "ffba3d661f366af41915e8b8e4a8b470ee801e0f",
+      "release_git_blob": "ffba3d661f366af41915e8b8e4a8b470ee801e0f",
+      "sha256": "3db62a341dd0e6fd76e6034e9b2a1832741fa6010aa38b3d9c8bfaf579ef0ef7"
+    },
+    "verl/verl/tools/schemas.py": {
+      "original_git_blob": "aa01ae724566d75c2bcd7b57979d0004e50fb3c5",
+      "release_git_blob": "aa01ae724566d75c2bcd7b57979d0004e50fb3c5",
+      "sha256": "ee6c170b6a8eb16f8098885785bdaf2f91ac76e12a9379c311dd1f643ccfcaea"
+    },
+    "verl/verl/tools/search_tool.py": {
+      "original_git_blob": "b0f9f3ba87886952e5d06bc095e3a5ca8fb899b9",
+      "release_git_blob": "b0f9f3ba87886952e5d06bc095e3a5ca8fb899b9",
+      "sha256": "e1610d60bf5e6206dc4c92dd8688b5c8b44548f9a01e88db603ab6609e330aff"
+    },
+    "verl/verl/tools/utils/__init__.py": {
+      "original_git_blob": "c4b932b1ae7eeeb4c53c98c684cf0ba9b670a86b",
+      "release_git_blob": "c4b932b1ae7eeeb4c53c98c684cf0ba9b670a86b",
+      "sha256": "0bae18fab65cb4028732b91a1215baf8e02f9fdf8b4762a523662a34374e7432"
+    },
+    "verl/verl/tools/utils/mcp_clients/McpClientManager.py": {
+      "original_git_blob": "ee5fe31191321f653230f6dc0cfb9e71a42e1722",
+      "release_git_blob": "ee5fe31191321f653230f6dc0cfb9e71a42e1722",
+      "sha256": "63da1edd39965a601021e79e97bd2165291f92aa04fe2b489f149e334a760c37"
+    },
+    "verl/verl/tools/utils/mcp_clients/utils.py": {
+      "original_git_blob": "22a5f63532713dcb895b0a940bf9bc9dfe42cfdf",
+      "release_git_blob": "22a5f63532713dcb895b0a940bf9bc9dfe42cfdf",
+      "sha256": "f8b0f14030e90d5fce8e58d6beaf301b5477e1d2d40dc56b5c41cacc0a7429c0"
+    },
+    "verl/verl/tools/utils/search_r1_like_utils.py": {
+      "original_git_blob": "610698e3b602d44b1bc19919e397a2d4cfb08bc9",
+      "release_git_blob": "610698e3b602d44b1bc19919e397a2d4cfb08bc9",
+      "sha256": "105bc31a274852ab43f118d306b859251687f3e55a77f864041689c91d591374"
+    },
+    "verl/verl/tools/utils/tool_registry.py": {
+      "original_git_blob": "2b20fa48b96fab68da86a02932960d7b88d81928",
+      "release_git_blob": "2b20fa48b96fab68da86a02932960d7b88d81928",
+      "sha256": "8270f788b462f9d40da4ed8de934291a7c6bc5aae3f7aafbe5726915089b7f32"
+    },
+    "verl/verl/trainer/README.md": {
+      "original_git_blob": "d881d689b583d6e0e011f54a95e687e0d46523f2",
+      "release_git_blob": "d881d689b583d6e0e011f54a95e687e0d46523f2",
+      "sha256": "2a7fb3f66d9d293254e4172aff2d42ba78d0f8d1020c99981c0f01a324def893"
+    },
+    "verl/verl/trainer/__init__.py": {
+      "original_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "release_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "sha256": "e65abd77db034b4f29eb1268c24867f84919dbce22e28d1997e563ed1d94179c"
+    },
+    "verl/verl/trainer/config/__init__.py": {
+      "original_git_blob": "402475c3f0bac4aaea8ec15a9c2b24bf07fdf0e4",
+      "release_git_blob": "402475c3f0bac4aaea8ec15a9c2b24bf07fdf0e4",
+      "sha256": "8275f76e6ef284606a4f32c89e0563d93cb152801fbbc5716d260601b81d4ced"
+    },
+    "verl/verl/trainer/config/_generated_ppo_megatron_trainer.yaml": {
+      "original_git_blob": "9d3914e14944cfe89218695f6a71f9b126b5dc15",
+      "release_git_blob": "9d3914e14944cfe89218695f6a71f9b126b5dc15",
+      "sha256": "b93266e7510e21966d64238066df1b3c7cadd06d8bb2f85bcc1a8e68bf52bb64"
+    },
+    "verl/verl/trainer/config/_generated_ppo_torchtitan_trainer.yaml": {
+      "original_git_blob": "9459721df440828ec1ff8d971584ad120d193048",
+      "release_git_blob": "9459721df440828ec1ff8d971584ad120d193048",
+      "sha256": "45b7b175bda751357163b1b353dee6532784d5f43040c47a1f5995da102b2a7d"
+    },
+    "verl/verl/trainer/config/_generated_ppo_trainer.yaml": {
+      "original_git_blob": "79782a09b85e15855f8cb6e986c261625f86016a",
+      "release_git_blob": "79782a09b85e15855f8cb6e986c261625f86016a",
+      "sha256": "ff147f54da7b20729106a3dc105781fade5aad4b3e00e3d944830b6d932d4cc2"
+    },
+    "verl/verl/trainer/config/_generated_ppo_veomni_trainer.yaml": {
+      "original_git_blob": "b02e95348c4515b00a028c1f4cf72ce7456fca07",
+      "release_git_blob": "b02e95348c4515b00a028c1f4cf72ce7456fca07",
+      "sha256": "211082b7a6e47dd3942d3ba315f405c194c258ce7b211e847479c14f4ea24308"
+    },
+    "verl/verl/trainer/config/actor/actor.yaml": {
+      "original_git_blob": "a59ec11450e340cab5730913627e33662e31f652",
+      "release_git_blob": "a59ec11450e340cab5730913627e33662e31f652",
+      "sha256": "5f4aa413c62cbbdbc5015dcc58b5fe23d3153ec583983eadecfd3749d7ff9440"
+    },
+    "verl/verl/trainer/config/actor/dp_actor.yaml": {
+      "original_git_blob": "7fbe49c019e50f24dd69569ae42a1c934d5530e0",
+      "release_git_blob": "7fbe49c019e50f24dd69569ae42a1c934d5530e0",
+      "sha256": "5ce887cbd35daeef5a4b5ca500c3ec68b20f8edbb1b42a225d25656ec11df248"
+    },
+    "verl/verl/trainer/config/actor/megatron_actor.yaml": {
+      "original_git_blob": "fde70c363c4cd8b6f6c524998b06d79b8b821453",
+      "release_git_blob": "fde70c363c4cd8b6f6c524998b06d79b8b821453",
+      "sha256": "8fe0b41a1b07f16153c9dbc94d4baf07a16042327531ec7bdd66f5227c7ba5e7"
+    },
+    "verl/verl/trainer/config/actor/torchtitan_actor.yaml": {
+      "original_git_blob": "3bf25b9a5a7015f175c94074db407f55929719a3",
+      "release_git_blob": "3bf25b9a5a7015f175c94074db407f55929719a3",
+      "sha256": "590054064fc74f09171b96b12fda734dbdfe6134b0249ee52f6b111027556d96"
+    },
+    "verl/verl/trainer/config/actor/veomni_actor.yaml": {
+      "original_git_blob": "e07b9474793092748fc89ae71859fefb10796c15",
+      "release_git_blob": "e07b9474793092748fc89ae71859fefb10796c15",
+      "sha256": "45b9655e432a6d8d956dda93384fcdb462c190de6841a492d41a789420e666dc"
+    },
+    "verl/verl/trainer/config/algorithm.py": {
+      "original_git_blob": "a53fdd28394bc28ede848c1d5777d63b5712f34f",
+      "release_git_blob": "a53fdd28394bc28ede848c1d5777d63b5712f34f",
+      "sha256": "f7ec759a12de90bd3da21b256452b7e030be700fa32bab29baf85c9dd4156d8b"
+    },
+    "verl/verl/trainer/config/algorithm/rollout_correction.yaml": {
+      "original_git_blob": "2fd953184530df87b740f48b20ec5c98981321fa",
+      "release_git_blob": "2fd953184530df87b740f48b20ec5c98981321fa",
+      "sha256": "7535b2ca79f86399d88eb36a93bde3461db377f1fad150bd6f65d3b73333cba7"
+    },
+    "verl/verl/trainer/config/config.py": {
+      "original_git_blob": "8d31ba45623c66a8479dcb28ab25ebf12792f453",
+      "release_git_blob": "8d31ba45623c66a8479dcb28ab25ebf12792f453",
+      "sha256": "820fec2b5b009c0f72f34db346fc80507d896023ed12159aeb66cc31feb3bef0"
+    },
+    "verl/verl/trainer/config/critic/critic.yaml": {
+      "original_git_blob": "19b4c3d62ee754b8139d33510462df6ecf9a4117",
+      "release_git_blob": "19b4c3d62ee754b8139d33510462df6ecf9a4117",
+      "sha256": "1f4e71ed9aedcc1512230bbc627deed352002b45db86b0f0db32823cab35509f"
+    },
+    "verl/verl/trainer/config/critic/dp_critic.yaml": {
+      "original_git_blob": "1cbaf03444a30aa9da87c6786a6bb48f9fc84f9d",
+      "release_git_blob": "1cbaf03444a30aa9da87c6786a6bb48f9fc84f9d",
+      "sha256": "23d2af9360bf744d79c872bf5c6bc3e91da2d1a51a41bacd69fcc4b6d9dbbc82"
+    },
+    "verl/verl/trainer/config/critic/megatron_critic.yaml": {
+      "original_git_blob": "3f170575cdc63a28a804f26f42901ba79a1fc898",
+      "release_git_blob": "3f170575cdc63a28a804f26f42901ba79a1fc898",
+      "sha256": "9f205918c5673c81c39ddb6944a48cfe3e487ccb3de3047a9558eff61565401d"
+    },
+    "verl/verl/trainer/config/critic/torchtitan_critic.yaml": {
+      "original_git_blob": "4fafbd9d227621d83840c8f523c0f4be97f4877d",
+      "release_git_blob": "4fafbd9d227621d83840c8f523c0f4be97f4877d",
+      "sha256": "327d104bbd09d09861c41626e4afe2ce4add6ee14bf4b20421394f563dffbafe"
+    },
+    "verl/verl/trainer/config/critic/veomni_critic.yaml": {
+      "original_git_blob": "6745d17d0f2b2d53ce121cd0f6b239368c069c02",
+      "release_git_blob": "6745d17d0f2b2d53ce121cd0f6b239368c069c02",
+      "sha256": "0603e08c7f4c4f9700d9f0d226abe97e87253c52d7a96fa6e90279c8be3b0c66"
+    },
+    "verl/verl/trainer/config/data/legacy_data.yaml": {
+      "original_git_blob": "60818f9e198e86266f51c5ac6c997fe73fe38300",
+      "release_git_blob": "60818f9e198e86266f51c5ac6c997fe73fe38300",
+      "sha256": "4097e83aa09f26908ab1e8a654c6b9de8c2c0b3e8349cb8107a3dcf606b84d13"
+    },
+    "verl/verl/trainer/config/engine/fsdp.yaml": {
+      "original_git_blob": "ea690c02143f1dbfc2e34d09e35cb1850cac579f",
+      "release_git_blob": "ea690c02143f1dbfc2e34d09e35cb1850cac579f",
+      "sha256": "de1a0a79db70504fa0e5bd0c60af071450c89be6c763a5eadd6a2d243f8f590a"
+    },
+    "verl/verl/trainer/config/engine/megatron.yaml": {
+      "original_git_blob": "f9b9f903f145175c2480e8b9acf5a4695b5ff949",
+      "release_git_blob": "f9b9f903f145175c2480e8b9acf5a4695b5ff949",
+      "sha256": "8d53b9d1ad830516f9559a5129a2635a6a296156d29f1e782ae131ca11c86a4d"
+    },
+    "verl/verl/trainer/config/engine/torchtitan.yaml": {
+      "original_git_blob": "2c1e731b308389e5436e2e61ad093902f8ec91a6",
+      "release_git_blob": "2c1e731b308389e5436e2e61ad093902f8ec91a6",
+      "sha256": "0029b0ea3f0a457beaafff1eccc02803290f518df8cc6174f89b57a689545e57"
+    },
+    "verl/verl/trainer/config/engine/veomni.yaml": {
+      "original_git_blob": "1869dd745f900617dfa488ca7d8426e7286fccf4",
+      "release_git_blob": "1869dd745f900617dfa488ca7d8426e7286fccf4",
+      "sha256": "8e9e1f9240df550e7c13e16934ad3a41c3fb9f9e74ee9973069362be82c851ef"
+    },
+    "verl/verl/trainer/config/evaluation.yaml": {
+      "original_git_blob": "6a88d77f1e73b6c3cce1972f639fcafb412669fa",
+      "release_git_blob": "6a88d77f1e73b6c3cce1972f639fcafb412669fa",
+      "sha256": "2fd0dfd7cd4ce3eb9017f3c2985ca2a560b9a479837531816fb59d93e32c8cd1"
+    },
+    "verl/verl/trainer/config/legacy_reward_impl.yaml": {
+      "original_git_blob": "e1266ba9a895e423f4d8f3f9a0b85d8768d56656",
+      "release_git_blob": "e1266ba9a895e423f4d8f3f9a0b85d8768d56656",
+      "sha256": "be1fc9e281de1fc52c5b3f0d714d6fd5ffb829d7d9092e4d16b84c5b816efc7d"
+    },
+    "verl/verl/trainer/config/model/hf_model.yaml": {
+      "original_git_blob": "4002a7f68c239824510b53bd80e38c960bae9df6",
+      "release_git_blob": "4002a7f68c239824510b53bd80e38c960bae9df6",
+      "sha256": "b35380b4945b7feaf44df53e6b3caf4c0d8e83b69b895eae40f185f20dbfd874"
+    },
+    "verl/verl/trainer/config/model_engine/dp.yaml": {
+      "original_git_blob": "5612cd25b0474f19f27f9fa46825bed353176ad1",
+      "release_git_blob": "5612cd25b0474f19f27f9fa46825bed353176ad1",
+      "sha256": "34951d97bb4d0bb39b92bb9dc853bc36677f86ba58d82d0b3b93186b19170370"
+    },
+    "verl/verl/trainer/config/model_engine/torchtitan.yaml": {
+      "original_git_blob": "32a4b3d0611ecae040bece08aa06a06c8e6ac4ed",
+      "release_git_blob": "32a4b3d0611ecae040bece08aa06a06c8e6ac4ed",
+      "sha256": "cf2ca215001a84e8431261bb17a85e3fd44a4f1c7947396af96bffa780ef110f"
+    },
+    "verl/verl/trainer/config/model_engine/veomni.yaml": {
+      "original_git_blob": "dcc60410f65b76e2ef9a1b8c715bec8a24277d4e",
+      "release_git_blob": "dcc60410f65b76e2ef9a1b8c715bec8a24277d4e",
+      "sha256": "68a87faa9845e9d2ecf560df8def550c6a50e9f2175bc31df8da6434dd96a4a8"
+    },
+    "verl/verl/trainer/config/npu_profile/npu_profile.yaml": {
+      "original_git_blob": "bb34dc7cf5988cde5e03b1544020388d9dda1ec7",
+      "release_git_blob": "bb34dc7cf5988cde5e03b1544020388d9dda1ec7",
+      "sha256": "47d1d6b18d626975f652b7b24c05cbf8a48fae629f984bc6039232cfbe4d6f18"
+    },
+    "verl/verl/trainer/config/optim/fsdp.yaml": {
+      "original_git_blob": "ce6ced773b693675d7f7ff2df29df1b2a1dd5acb",
+      "release_git_blob": "ce6ced773b693675d7f7ff2df29df1b2a1dd5acb",
+      "sha256": "a6f1dd55acd5f34a723ce664c74e53d497beba51c9dc65e4f6d5c445f571f7b4"
+    },
+    "verl/verl/trainer/config/optim/megatron.yaml": {
+      "original_git_blob": "c3e49b7df8e59d33f51b50b943d9353af66d296c",
+      "release_git_blob": "c3e49b7df8e59d33f51b50b943d9353af66d296c",
+      "sha256": "7e2e8cbed63557fb4b505fb0de6fac5470093289e3978009ebb0a1afa3d3bd9d"
+    },
+    "verl/verl/trainer/config/optim/torchtitan.yaml": {
+      "original_git_blob": "baea31ee5279b85cb1fbf19217db23167c7d9c32",
+      "release_git_blob": "baea31ee5279b85cb1fbf19217db23167c7d9c32",
+      "sha256": "6b2c64ab2136f577f1844b8ef2f954da78674aa6f117e79af22d2228666fae4b"
+    },
+    "verl/verl/trainer/config/optim/veomni.yaml": {
+      "original_git_blob": "ed9c69deb97a17902902f2cabd28a3c5ebe13377",
+      "release_git_blob": "ed9c69deb97a17902902f2cabd28a3c5ebe13377",
+      "sha256": "4a7971f354174685133e5e31014f5a24cd63c39e2ee26715029781569e4348b1"
+    },
+    "verl/verl/trainer/config/ppo_megatron_trainer.yaml": {
+      "original_git_blob": "17dddd60dc6e76ded09253bcad45d123d33dbe49",
+      "release_git_blob": "17dddd60dc6e76ded09253bcad45d123d33dbe49",
+      "sha256": "e63ca551e477cd8b1190f0faae295acc40548ee2ce3be423327c1e1780ccb8d6"
+    },
+    "verl/verl/trainer/config/ppo_trainer.yaml": {
+      "original_git_blob": "fd9b59862ae0eaa150d41b7fae45f92616a2ea7c",
+      "release_git_blob": "fd9b59862ae0eaa150d41b7fae45f92616a2ea7c",
+      "sha256": "9a6c1c3ed1082f3ada1287c615fd15c442238ccb0978e9a4d02ac52958c6dcd2"
+    },
+    "verl/verl/trainer/config/profiler/profiler.yaml": {
+      "original_git_blob": "2004ba3f5f00d0f79c449991b55860f670d6d8ae",
+      "release_git_blob": "2004ba3f5f00d0f79c449991b55860f670d6d8ae",
+      "sha256": "09cff9dddf87e12bb3503daa347af4be75e2d79a8951753615224ed9809c1de8"
+    },
+    "verl/verl/trainer/config/ref/dp_ref.yaml": {
+      "original_git_blob": "64b7d2abbc0fe920f7ad3bf3424f9198865e9811",
+      "release_git_blob": "64b7d2abbc0fe920f7ad3bf3424f9198865e9811",
+      "sha256": "195d1b6974a58f9bfa6a09ce0f00a4c2ce10140f557738caf3a06d3cdeb784f3"
+    },
+    "verl/verl/trainer/config/ref/megatron_ref.yaml": {
+      "original_git_blob": "ca1fbb3c0739ef9286fac15c7829a8f8869766ea",
+      "release_git_blob": "ca1fbb3c0739ef9286fac15c7829a8f8869766ea",
+      "sha256": "865488f7084f5105099c3ebd87b3ca78d7ac739845430996e511081e4d1c953c"
+    },
+    "verl/verl/trainer/config/ref/ref.yaml": {
+      "original_git_blob": "9034aa3e652ac4aa6ed9df7e42b85aed8dcd2d65",
+      "release_git_blob": "9034aa3e652ac4aa6ed9df7e42b85aed8dcd2d65",
+      "sha256": "34a131c2cf39df0a3ee3b80a737a730c7e74770a493a8b646f585fc08f92770c"
+    },
+    "verl/verl/trainer/config/ref/torchtitan_ref.yaml": {
+      "original_git_blob": "80cc01b1098d9b733b791240ce94c7254d93d5de",
+      "release_git_blob": "80cc01b1098d9b733b791240ce94c7254d93d5de",
+      "sha256": "1ebdd225f8d9933f8dce5d4effebc74456fb19ce0d6b4a6536bfed342cf72ca8"
+    },
+    "verl/verl/trainer/config/ref/veomni_ref.yaml": {
+      "original_git_blob": "738962356fe84cdf92600c78a2db9a97e0f7c1dc",
+      "release_git_blob": "738962356fe84cdf92600c78a2db9a97e0f7c1dc",
+      "sha256": "e896c6dd6c6630226cb66871810cebc0c166d8ec2664d7dbbf5b21558f129b80"
+    },
+    "verl/verl/trainer/config/reward/reward.yaml": {
+      "original_git_blob": "bb647eb1f34164f8dfdc0fd28858af30e8b2fa1a",
+      "release_git_blob": "bb647eb1f34164f8dfdc0fd28858af30e8b2fa1a",
+      "sha256": "985bd83321f490b7b43059e033e69d7bee66c5dd98b852be7522d716eacc616d"
+    },
+    "verl/verl/trainer/config/rollout/rollout.yaml": {
+      "original_git_blob": "e6afed37de2614fdc5e260aa08e318d821b1fcad",
+      "release_git_blob": "e6afed37de2614fdc5e260aa08e318d821b1fcad",
+      "sha256": "27ad544f901914b180acc2f8638bfed1aab315c6ac17eeb5b99b05f4a0baa382"
+    },
+    "verl/verl/trainer/config/sft_trainer_engine.yaml": {
+      "original_git_blob": "e385e88c46cb100f54d1910e425501a9efc9528c",
+      "release_git_blob": "e385e88c46cb100f54d1910e425501a9efc9528c",
+      "sha256": "b6ece4fc2df09d62c5f46bc63736681d70fe116f3e0c049190c4dc69517c4c88"
+    },
+    "verl/verl/trainer/constants_ppo.py": {
+      "original_git_blob": "cc5877137728b0e8cea0527bda87ef5a9909edee",
+      "release_git_blob": "cc5877137728b0e8cea0527bda87ef5a9909edee",
+      "sha256": "975862902b493fb6f1030f755596215f2a7a02e617d08da1802fa5fecfb89219"
+    },
+    "verl/verl/trainer/main_eval.py": {
+      "original_git_blob": "11846941d7c5046ce93ea4470982565a4df573c9",
+      "release_git_blob": "11846941d7c5046ce93ea4470982565a4df573c9",
+      "sha256": "f437f3e57e6d801ef832989ddb20218e283b82b0c7e76042373c84fd1c7c490d"
+    },
+    "verl/verl/trainer/main_generation_server.py": {
+      "original_git_blob": "807f59e9c2da9d6acd80e2088a4d64060a767bad",
+      "release_git_blob": "807f59e9c2da9d6acd80e2088a4d64060a767bad",
+      "sha256": "d6c7f2bc1ff979395d1342be6f30d7aece06726b3388597cb385bb94b7a5a8db"
+    },
+    "verl/verl/trainer/main_ppo.py": {
+      "original_git_blob": "9fb3d577f3b2b71b59eb33bfe4bea0e3a6954cfb",
+      "release_git_blob": "9fb3d577f3b2b71b59eb33bfe4bea0e3a6954cfb",
+      "sha256": "7fd79c1ba9ec17d2b46aa19c2b29a17c9e315f8ab934e14597c092f6bb5c8743"
+    },
+    "verl/verl/trainer/ppo/__init__.py": {
+      "original_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "release_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "sha256": "e65abd77db034b4f29eb1268c24867f84919dbce22e28d1997e563ed1d94179c"
+    },
+    "verl/verl/trainer/ppo/core_algos.py": {
+      "original_git_blob": "b0623fb47e9bb9b94ca3fe9e9885bd8121f78262",
+      "release_git_blob": "b0623fb47e9bb9b94ca3fe9e9885bd8121f78262",
+      "sha256": "3ee39c247961415c23d7069be9d561fa0955c0826a754e8fa55e69e2c278a329"
+    },
+    "verl/verl/trainer/ppo/metric_utils.py": {
+      "original_git_blob": "beb1410dbceca0577916f2c5c1576f560c7034b8",
+      "release_git_blob": "beb1410dbceca0577916f2c5c1576f560c7034b8",
+      "sha256": "1bcdf6916655e64d9f5467f19024dd5f921e76e8a4def61e11ade4b7a3405622"
+    },
+    "verl/verl/trainer/ppo/prefix_grouper_utils.py": {
+      "original_git_blob": "97b5f36237e53fef23e119d4042de2d0f83810b8",
+      "release_git_blob": "97b5f36237e53fef23e119d4042de2d0f83810b8",
+      "sha256": "22f66f26c8c918f7ecf5e8522ed434f40e94660733b1f3dadfd31ff8b7699db0"
+    },
+    "verl/verl/trainer/ppo/ray_trainer.py": {
+      "original_git_blob": "3af0ed83342cda4bddb853e2608fc63d9952130f",
+      "release_git_blob": "d57ab4a7fe0345f8f90cf33fcd74749801be6819",
+      "sha256": "b1890ea14e7ab4e3921d37d229889cbd322aad5720f268adf1a6116c73fddbb9"
+    },
+    "verl/verl/trainer/ppo/reward.py": {
+      "original_git_blob": "f13a3abf9763c1da3df4138274d919e3037ffeb2",
+      "release_git_blob": "f13a3abf9763c1da3df4138274d919e3037ffeb2",
+      "sha256": "08fcaabb542f7a612c08bd7f0ba8c65c4f92029c03b2ba3f2d3a60e595bf376e"
+    },
+    "verl/verl/trainer/ppo/rollout_corr_helper.py": {
+      "original_git_blob": "6f770b38274d0692f32273d96edd1d2a35602a24",
+      "release_git_blob": "6f770b38274d0692f32273d96edd1d2a35602a24",
+      "sha256": "d7c584d1c3f2fd31e4c2e508e32a7a54b12b94284cd441f1f1c7889f5258c304"
+    },
+    "verl/verl/trainer/ppo/utils.py": {
+      "original_git_blob": "5fe8af0949cf4de8c5173262038f01933e61f702",
+      "release_git_blob": "5fe8af0949cf4de8c5173262038f01933e61f702",
+      "sha256": "09ca06bd18343e778ab9b407e7a3c1eb004b5bc29fde10e6deea9d10cb8abfc8"
+    },
+    "verl/verl/trainer/runtime_env.yaml": {
+      "original_git_blob": "7d38fdde25dadc65d5991b84a1082c112474a81e",
+      "release_git_blob": "7d38fdde25dadc65d5991b84a1082c112474a81e",
+      "sha256": "6f2cb555377e3d40f7213d4faad45dd71c39be75d2fc9fdc62ac1461fdf89a52"
+    },
+    "verl/verl/trainer/sft_trainer.py": {
+      "original_git_blob": "14924692f2f3fe4f5bf454d2629c066577658a81",
+      "release_git_blob": "14924692f2f3fe4f5bf454d2629c066577658a81",
+      "sha256": "2ac9446cf87296410145d460d79bed35140177ee43d217be82c02898697f0c98"
+    },
+    "verl/verl/trainer/sft_trainer_ray.py": {
+      "original_git_blob": "ed536d3729fc4e6a15d7edccb274f7fda6a8d52b",
+      "release_git_blob": "ed536d3729fc4e6a15d7edccb274f7fda6a8d52b",
+      "sha256": "4566e975850f0f3aef341230fbefcf34c9ce6090ee188392de40c12d9295d701"
+    },
+    "verl/verl/utils/__init__.py": {
+      "original_git_blob": "449c14764a713b24ce7fdab62285409120a181cc",
+      "release_git_blob": "449c14764a713b24ce7fdab62285409120a181cc",
+      "sha256": "fed5de3ffcc0f8d963434095dfe4206027d85d4659978345a678c20001d2a4cf"
+    },
+    "verl/verl/utils/activation_offload.py": {
+      "original_git_blob": "2358b8ce7e02736758ec98e58a1f05a3594eda96",
+      "release_git_blob": "2358b8ce7e02736758ec98e58a1f05a3594eda96",
+      "sha256": "fadc0f0911af4f17bab6748659e6193dfb5826b491db8dda8d4814ba2101e8d9"
+    },
+    "verl/verl/utils/attention_utils.py": {
+      "original_git_blob": "ae66e537c40ce11ca2873e00b1db4a6453455547",
+      "release_git_blob": "ae66e537c40ce11ca2873e00b1db4a6453455547",
+      "sha256": "8da49fde853e5b5748db887bf2602fc290bb2a514041c9589482bb0d846d2ec0"
+    },
+    "verl/verl/utils/chat_template.py": {
+      "original_git_blob": "39a1dd9cdf849d6cbc71e486a80e86e287533b76",
+      "release_git_blob": "39a1dd9cdf849d6cbc71e486a80e86e287533b76",
+      "sha256": "be45c716739a1a63eb5f22c4f9f274fceed061eecdc7287027b6ec7821c24592"
+    },
+    "verl/verl/utils/checkpoint/__init__.py": {
+      "original_git_blob": "df9275830f0654a585435ea6ac74659e03a1cbb4",
+      "release_git_blob": "df9275830f0654a585435ea6ac74659e03a1cbb4",
+      "sha256": "05095d2f0364172b6db45253807cae0e1f73ca9e1dcf0c85b3fb804e0db45c4b"
+    },
+    "verl/verl/utils/checkpoint/checkpoint_handler.py": {
+      "original_git_blob": "65c9d1d32caa81bd9233f4db42b40e63a322b9a2",
+      "release_git_blob": "65c9d1d32caa81bd9233f4db42b40e63a322b9a2",
+      "sha256": "3b547c2b97e01b7587866053b4aa624d81b8cdd9d75fff20a97420690206a896"
+    },
+    "verl/verl/utils/checkpoint/checkpoint_manager.py": {
+      "original_git_blob": "9f48147b8f538af45921798be1790b79a805dbda",
+      "release_git_blob": "9f48147b8f538af45921798be1790b79a805dbda",
+      "sha256": "97ad2cf3d38ca6ba16449ad27772707a82cdfbee8fea5eeaae2c36b1cebcc38a"
+    },
+    "verl/verl/utils/checkpoint/fsdp_checkpoint_manager.py": {
+      "original_git_blob": "245a0ce53401b6282a017c92b12838edf8cfe042",
+      "release_git_blob": "245a0ce53401b6282a017c92b12838edf8cfe042",
+      "sha256": "356cc673e98219dc42eb72455fd47f3a54b78a2798e88a5ac4a5cfbec8d2e90e"
+    },
+    "verl/verl/utils/checkpoint/megatron_checkpoint_manager.py": {
+      "original_git_blob": "d2dd29f8219bdca25500420b054b7e81c04bffeb",
+      "release_git_blob": "d2dd29f8219bdca25500420b054b7e81c04bffeb",
+      "sha256": "ee2956257fcbf9dc8aefb56973982e15144df7e7f1628aa6405a5e49bc79b13b"
+    },
+    "verl/verl/utils/config.py": {
+      "original_git_blob": "ccac5f1764f2b001068af5a4ed46da3138ae8e85",
+      "release_git_blob": "ccac5f1764f2b001068af5a4ed46da3138ae8e85",
+      "sha256": "c897135fa07997d387a942a3dbb8ca0d4b84ef43ac961dd000ea72ec3c2ae592"
+    },
+    "verl/verl/utils/dataset/README.md": {
+      "original_git_blob": "f886a70aabf443fb167453d667529b62f3311765",
+      "release_git_blob": "f886a70aabf443fb167453d667529b62f3311765",
+      "sha256": "de346fc1a883566c1b8f1f22c0ba4563efadfdb7b53d5935796401ad18d56f57"
+    },
+    "verl/verl/utils/dataset/__init__.py": {
+      "original_git_blob": "423bd9a9ccd635b866ea9129d77f4e79f3b115aa",
+      "release_git_blob": "423bd9a9ccd635b866ea9129d77f4e79f3b115aa",
+      "sha256": "cec02a3cb275b92d1ba70c95623daef6d25efa8c94d5179dd996f2f8fa901e88"
+    },
+    "verl/verl/utils/dataset/dataset_utils.py": {
+      "original_git_blob": "03bde7b01d2e5ec37af8adf535aaaa199ce5f90e",
+      "release_git_blob": "03bde7b01d2e5ec37af8adf535aaaa199ce5f90e",
+      "sha256": "cd20fede22782922eb3b1984ccdf6fcf8cf73374f1d174521df2fd99f304b6a6"
+    },
+    "verl/verl/utils/dataset/multiturn_sft_dataset.py": {
+      "original_git_blob": "846e84c431e34fa70d3cb540ad9dfd758bee9bcd",
+      "release_git_blob": "846e84c431e34fa70d3cb540ad9dfd758bee9bcd",
+      "sha256": "a7d4a5045a385af8e21d47c83c3cd6d05a36bb594c286448238b3c1bbfa96d69"
+    },
+    "verl/verl/utils/dataset/rl_dataset.py": {
+      "original_git_blob": "2db7549e01df72648695a9619ddc406807005f4d",
+      "release_git_blob": "2db7549e01df72648695a9619ddc406807005f4d",
+      "sha256": "01c20d31e531b1b631bf975b95bb6a69f2e9a43e38ac7f33e7b011285014c003"
+    },
+    "verl/verl/utils/dataset/rm_dataset.py": {
+      "original_git_blob": "e55308e35844f54d2c28845073ca44733b0ee960",
+      "release_git_blob": "e55308e35844f54d2c28845073ca44733b0ee960",
+      "sha256": "f7735d42105a4b2be4ab1ea0c064614b4d65ec71b8749188becf8d16fc0a60d7"
+    },
+    "verl/verl/utils/dataset/vision_utils.py": {
+      "original_git_blob": "c3fa1d5dfca0582b7bae9cb00419c964ef42fe4a",
+      "release_git_blob": "c3fa1d5dfca0582b7bae9cb00419c964ef42fe4a",
+      "sha256": "206c1d3601aa86c40718e337a07390e61360ca7699e6adbdbc3bea44460a5700"
+    },
+    "verl/verl/utils/debug/__init__.py": {
+      "original_git_blob": "027cdbaf73706756ac3a068a411c57ff4253a064",
+      "release_git_blob": "027cdbaf73706756ac3a068a411c57ff4253a064",
+      "sha256": "bfd72ae3a337352475f925c6f592d6a1a3a9426997267d7483d637fd94e1ff56"
+    },
+    "verl/verl/utils/debug/metrics.py": {
+      "original_git_blob": "e7d57a2fec3e596a8fbc3bb9db511e359f0b3aa7",
+      "release_git_blob": "e7d57a2fec3e596a8fbc3bb9db511e359f0b3aa7",
+      "sha256": "789bfd9228c9d01900d0aab617de68b5bfa53a035dc565c04572b68fedb13357"
+    },
+    "verl/verl/utils/debug/performance.py": {
+      "original_git_blob": "986c9ff3dc647fe97ddde05a3338c41574c86728",
+      "release_git_blob": "986c9ff3dc647fe97ddde05a3338c41574c86728",
+      "sha256": "8d098eaba0968b242e0bb79ed266cdccae77fbb20520a0664e9d2e8b99c74b40"
+    },
+    "verl/verl/utils/debug/trajectory_tracker.py": {
+      "original_git_blob": "73afb8540e330f1d028d83dbb43c9bc537d1bb46",
+      "release_git_blob": "73afb8540e330f1d028d83dbb43c9bc537d1bb46",
+      "sha256": "2600fcdfca5a59fdc1a7ab63e41b8278d89ff47459bad1a78fdcebc348b3a72f"
+    },
+    "verl/verl/utils/device.py": {
+      "original_git_blob": "e0e917a7fe8616521babd1344218f96a42c467f4",
+      "release_git_blob": "e0e917a7fe8616521babd1344218f96a42c467f4",
+      "sha256": "f34a09de87114adc20c835d8d72db94800c03a27b02812bf4b0a90c02b8dda2a"
+    },
+    "verl/verl/utils/distributed.py": {
+      "original_git_blob": "17135584edf4f7e944cfde538c152e3616b0e5d4",
+      "release_git_blob": "17135584edf4f7e944cfde538c152e3616b0e5d4",
+      "sha256": "42ab274808241300435137431e4531a1ce40773addbcfdec0f9d44bd0c340db8"
+    },
+    "verl/verl/utils/experimental/__init__.py": {
+      "original_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "release_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "sha256": "e65abd77db034b4f29eb1268c24867f84919dbce22e28d1997e563ed1d94179c"
+    },
+    "verl/verl/utils/experimental/torch_functional.py": {
+      "original_git_blob": "0b4ce5c61740f5424f062ab597db715368956dde",
+      "release_git_blob": "0b4ce5c61740f5424f062ab597db715368956dde",
+      "sha256": "ce635532bed786a9e4179f25de0925a8ff87d7574d2085d44ed8c74547fa3802"
+    },
+    "verl/verl/utils/flops_counter.py": {
+      "original_git_blob": "a0a490c11f3e9651073948fb72c8a2c69078e71e",
+      "release_git_blob": "a0a490c11f3e9651073948fb72c8a2c69078e71e",
+      "sha256": "8c3f82c86e4cc055cb04b4c10e18d36d457fe599632c620374ec84ed4e4716e4"
+    },
+    "verl/verl/utils/fp8_utils.py": {
+      "original_git_blob": "a6a8efb0370854bb5bbd0d7d64e3a0d6d2fcbe76",
+      "release_git_blob": "a6a8efb0370854bb5bbd0d7d64e3a0d6d2fcbe76",
+      "sha256": "769610eb8390343a55695eb4a28c01a5c997895698a9cce71c024759c7637c7a"
+    },
+    "verl/verl/utils/fs.py": {
+      "original_git_blob": "bd326de143f82f742a872837d2c6e3d1719dfc16",
+      "release_git_blob": "bd326de143f82f742a872837d2c6e3d1719dfc16",
+      "sha256": "fcc6443d2e42b44c510ad9f25979d08a3373927e3660518bae6711790cdc8c51"
+    },
+    "verl/verl/utils/fsdp_utils.py": {
+      "original_git_blob": "8bca54fa88cff2619467cf6baa4c2d834ce55e34",
+      "release_git_blob": "8bca54fa88cff2619467cf6baa4c2d834ce55e34",
+      "sha256": "4ccc8f3604328fba0aaa24495579ed833616a1f5537768573e2586a89a113745"
+    },
+    "verl/verl/utils/groupwise.py": {
+      "original_git_blob": "173872aa9031527a785525590f8b6e28bba60b1f",
+      "release_git_blob": "173872aa9031527a785525590f8b6e28bba60b1f",
+      "sha256": "bf7160dab08d93454576ed30906a2ff88925d43859a379becff8d97a39f8ec17"
+    },
+    "verl/verl/utils/hdfs_io.py": {
+      "original_git_blob": "31edda1f6156a2adc51b3e47b70f2dcfc2c27775",
+      "release_git_blob": "31edda1f6156a2adc51b3e47b70f2dcfc2c27775",
+      "sha256": "14ea05cfdf000666899109a417d8d8bd23cb02afc43e06c16a861a3020590bd8"
+    },
+    "verl/verl/utils/import_utils.py": {
+      "original_git_blob": "ee78b580675921490124b2e033f6bcac349f9acc",
+      "release_git_blob": "ee78b580675921490124b2e033f6bcac349f9acc",
+      "sha256": "03dbff8122e4f6830d3fa2ff30eec1703611b9c9cc6e18846f52c74dddc4550c"
+    },
+    "verl/verl/utils/kernel/__init__.py": {
+      "original_git_blob": "e32d583d35d90e2ed0562f94a8d25123d69a1298",
+      "release_git_blob": "e32d583d35d90e2ed0562f94a8d25123d69a1298",
+      "sha256": "db5168f476482dee94850c08859bc403f08f8eb0673d32a918b89b3ce9a430ef"
+    },
+    "verl/verl/utils/kernel/fp8_kernel.py": {
+      "original_git_blob": "1a17e7bb52d97b782e6d094630e20b84aa90ad58",
+      "release_git_blob": "1a17e7bb52d97b782e6d094630e20b84aa90ad58",
+      "sha256": "bc04247611fcbb9a0943d6e31bca6d1d765a6b1e2cf82f44bf4d3748a368dd10"
+    },
+    "verl/verl/utils/kernel/kernels.py": {
+      "original_git_blob": "3eca28cb6fd11fa6593468d9b510eb00178c7ea6",
+      "release_git_blob": "3eca28cb6fd11fa6593468d9b510eb00178c7ea6",
+      "sha256": "6d8dda8032ffd3caeb8fb2b6c3307126e0892135aee719f69dd26febc76c012b"
+    },
+    "verl/verl/utils/kernel/linear_cross_entropy.py": {
+      "original_git_blob": "84191d748f7e95368e7b29b684e73e11c865ee62",
+      "release_git_blob": "84191d748f7e95368e7b29b684e73e11c865ee62",
+      "sha256": "b608f75336e18faef233c3d37fe4763a6b08605d92cd977a130bee013ed2e12a"
+    },
+    "verl/verl/utils/logger/__init__.py": {
+      "original_git_blob": "e3184368bd587551fc130fd8defae7a4140e2f42",
+      "release_git_blob": "e3184368bd587551fc130fd8defae7a4140e2f42",
+      "sha256": "d4e7601565ea3c5126abd8e8b60751f62fdd3bdabf55f80eb9589abe7b342867"
+    },
+    "verl/verl/utils/logger/aggregate_logger.py": {
+      "original_git_blob": "d29698acc6fbac0d1947982dcc17b1d4cce62a9a",
+      "release_git_blob": "d29698acc6fbac0d1947982dcc17b1d4cce62a9a",
+      "sha256": "64d8556b0d6acc667a5be2dd43908111c9e58aae58d779ee9b02f0f28e2b42f7"
+    },
+    "verl/verl/utils/logging_utils.py": {
+      "original_git_blob": "13fa9170b5e38b16530e3433a696eb3a45a8011c",
+      "release_git_blob": "13fa9170b5e38b16530e3433a696eb3a45a8011c",
+      "sha256": "72f6abe76274ecee5812c90879dc8f0b40e68d105c91da32a8923b8862320294"
+    },
+    "verl/verl/utils/megatron/__init__.py": {
+      "original_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "release_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "sha256": "e65abd77db034b4f29eb1268c24867f84919dbce22e28d1997e563ed1d94179c"
+    },
+    "verl/verl/utils/megatron/dist_checkpointing.py": {
+      "original_git_blob": "081396610bc20f281c5e94dd6e5fef7f8f7ace51",
+      "release_git_blob": "081396610bc20f281c5e94dd6e5fef7f8f7ace51",
+      "sha256": "3c306ee073082853ce7a8d22a9b7b874d013a705dde87c5f384b638196acdf1f"
+    },
+    "verl/verl/utils/megatron/memory.py": {
+      "original_git_blob": "bc62d427ea57e83a4b99862364bb4c7af3bc6d6d",
+      "release_git_blob": "bc62d427ea57e83a4b99862364bb4c7af3bc6d6d",
+      "sha256": "b5e9dd018ea85a9d99ac80bc6bf7820b3d75cecd61fab4cfdfb9f78f5a992fdd"
+    },
+    "verl/verl/utils/megatron/optimizer.py": {
+      "original_git_blob": "625cd24b921412899bc89515579acfdc1b7719de",
+      "release_git_blob": "625cd24b921412899bc89515579acfdc1b7719de",
+      "sha256": "e9b6c1cb7d0ae7fa25135e387ee850730329ae1f74a707813bd43f01dbbe39f0"
+    },
+    "verl/verl/utils/megatron/pipeline_parallel.py": {
+      "original_git_blob": "50ba697362550eb410ccb1d5f55789232bc85531",
+      "release_git_blob": "50ba697362550eb410ccb1d5f55789232bc85531",
+      "sha256": "b1bcc5ed48abd97f520b95f2c650d93e3a5f2c0c3518eb7baa4984c069f74781"
+    },
+    "verl/verl/utils/megatron/router_replay_patch.py": {
+      "original_git_blob": "012ab3ff69fb21f0ff21faf6903e316e6b2eb1bc",
+      "release_git_blob": "012ab3ff69fb21f0ff21faf6903e316e6b2eb1bc",
+      "sha256": "48073eb6c979a76111f9823a2d3f098fd7edc4d4397a3bc57b30cc9eb508333d"
+    },
+    "verl/verl/utils/megatron/router_replay_utils.py": {
+      "original_git_blob": "7024a500d933e0673a791e564acdd295adbf290c",
+      "release_git_blob": "7024a500d933e0673a791e564acdd295adbf290c",
+      "sha256": "72281619040fe69cb83e7b364904d2548df9eaed462192518ecdd0cb7bf760a8"
+    },
+    "verl/verl/utils/megatron/sequence_parallel.py": {
+      "original_git_blob": "52fda9b30cce243cafa1cf2a039c91bf92d73279",
+      "release_git_blob": "52fda9b30cce243cafa1cf2a039c91bf92d73279",
+      "sha256": "8acb3406dd403eeab34a972e172982001c451e5e804ba0cf833a511a43f2a915"
+    },
+    "verl/verl/utils/megatron/tensor_parallel.py": {
+      "original_git_blob": "d4a99b9d8a79d588fcd4acdec27d8e3fd5da553a",
+      "release_git_blob": "d4a99b9d8a79d588fcd4acdec27d8e3fd5da553a",
+      "sha256": "b7ec4767856a0f83e423f1e7a2a56bdcce122a2a90cba94b0507f768dc8559d9"
+    },
+    "verl/verl/utils/megatron_peft_utils.py": {
+      "original_git_blob": "ae80069287bb0ec64ee322bc7e529752b96430b9",
+      "release_git_blob": "ae80069287bb0ec64ee322bc7e529752b96430b9",
+      "sha256": "34a8ed4e53fba42ad9fa56539d6fab6d1b1d0e8c13e61656d13624d979729eb2"
+    },
+    "verl/verl/utils/megatron_utils.py": {
+      "original_git_blob": "dba32d0253914d2de26e06b975b1c0e55e031506",
+      "release_git_blob": "dba32d0253914d2de26e06b975b1c0e55e031506",
+      "sha256": "b2fada18ad132760247ecca61ecb753013bc66964c0f274ef646a3d410d8f82f"
+    },
+    "verl/verl/utils/memory_utils.py": {
+      "original_git_blob": "596bfae74c32e87477a09ff7c371924acbffc36b",
+      "release_git_blob": "596bfae74c32e87477a09ff7c371924acbffc36b",
+      "sha256": "915d371524dbaba14f0ae0b8b714e833944f98c6d3eeca8d00fa1e75ed4f2427"
+    },
+    "verl/verl/utils/metric/__init__.py": {
+      "original_git_blob": "92bfa56787b5917a1fde62810811f69e165389cc",
+      "release_git_blob": "92bfa56787b5917a1fde62810811f69e165389cc",
+      "sha256": "5bf1e099a2931ba8727c8cf4256fc3d155f6cb92c89a1b747dcbdc98e804385e"
+    },
+    "verl/verl/utils/metric/utils.py": {
+      "original_git_blob": "2efd44d183cf0397a325236da8703193e9735eb4",
+      "release_git_blob": "2efd44d183cf0397a325236da8703193e9735eb4",
+      "sha256": "b17a4ce737d154a2b7ccbf2dc238be48b0d580203133082d3f98e72e70e0e3bd"
+    },
+    "verl/verl/utils/model.py": {
+      "original_git_blob": "1ef7275355cb8cc29fbf00738b3cc98ab5942d5c",
+      "release_git_blob": "1ef7275355cb8cc29fbf00738b3cc98ab5942d5c",
+      "sha256": "83e804fabfdab02b0fe5930be6a35ccf379a0e0df25b8cb46ea3d4c587c90447"
+    },
+    "verl/verl/utils/net_utils.py": {
+      "original_git_blob": "0c6ee35d118c95d6cda4652a83c8a7d1b524b6fa",
+      "release_git_blob": "0c6ee35d118c95d6cda4652a83c8a7d1b524b6fa",
+      "sha256": "ff4a4374b53f818cf59fc50af77f7dbc0f1e7677a23187340f2c36317117b7a4"
+    },
+    "verl/verl/utils/npu_flash_attn_utils.py": {
+      "original_git_blob": "eb31a304040d14abbf0cb7d050816d9d9c51c7cd",
+      "release_git_blob": "eb31a304040d14abbf0cb7d050816d9d9c51c7cd",
+      "sha256": "395678be930c95bb43a47e4ee2286e729099cbb515290c87c0c8dc1c3a450c1e"
+    },
+    "verl/verl/utils/profiler/__init__.py": {
+      "original_git_blob": "98e3ba177a56ced4f0a55d59525401cb8e4ed1bf",
+      "release_git_blob": "98e3ba177a56ced4f0a55d59525401cb8e4ed1bf",
+      "sha256": "5dae238e58dff2d85731af37a342a66fb9b407033cbbd12eeb7d9cea602bb435"
+    },
+    "verl/verl/utils/profiler/config.py": {
+      "original_git_blob": "e31cf4c892987b1078a042bb3d943fd19f1a64aa",
+      "release_git_blob": "e31cf4c892987b1078a042bb3d943fd19f1a64aa",
+      "sha256": "2323db5c78ad3530b002f4e2dda042c15048c0c5b0569f79ba2ce30d40bee0ed"
+    },
+    "verl/verl/utils/profiler/empty_annotations.py": {
+      "original_git_blob": "ed18dd359b7e0329a2d22e3981ab73da523e641e",
+      "release_git_blob": "ed18dd359b7e0329a2d22e3981ab73da523e641e",
+      "sha256": "19d56f53436bdd181b79a5dbee0dca77a232131a382883c302de30eaa2a80c30"
+    },
+    "verl/verl/utils/profiler/mstx_profile.py": {
+      "original_git_blob": "1a728ac8ca3f205590fa9aa0e637dc772695f151",
+      "release_git_blob": "1a728ac8ca3f205590fa9aa0e637dc772695f151",
+      "sha256": "f4b7afb0567e435d02036e3061627e624df72a6cf462837009df8e36c5b250b3"
+    },
+    "verl/verl/utils/profiler/nvtx_profile.py": {
+      "original_git_blob": "0cb84f66895e7fb37dad26711d34c9ec305ccc39",
+      "release_git_blob": "0cb84f66895e7fb37dad26711d34c9ec305ccc39",
+      "sha256": "1e17cc940745b7b54c4099c20c23ef8c702873a726303a710c2763952c1300a7"
+    },
+    "verl/verl/utils/profiler/performance.py": {
+      "original_git_blob": "35e51e270c84e011a092ccadea9dbef5ddfaeb92",
+      "release_git_blob": "35e51e270c84e011a092ccadea9dbef5ddfaeb92",
+      "sha256": "4cac930bbbe75df039fe8201ef0c9bca6e473060ac06f12146a348436395f332"
+    },
+    "verl/verl/utils/profiler/profile.py": {
+      "original_git_blob": "8e3145a66bb4fa0549ccaac1d55c1d535bb36201",
+      "release_git_blob": "8e3145a66bb4fa0549ccaac1d55c1d535bb36201",
+      "sha256": "ad6a8b287cbe7f8bf635c009eb1b68612cf797ac6b128aa8e1141a650081a76d"
+    },
+    "verl/verl/utils/profiler/torch_profile.py": {
+      "original_git_blob": "e0ccd09f3d3186ac4e4e0a9e122d22c122d5f646",
+      "release_git_blob": "e0ccd09f3d3186ac4e4e0a9e122d22c122d5f646",
+      "sha256": "c94478b7010dae0b1671b79fad97676743bb3223e5d35c0a1e86adc287a10a76"
+    },
+    "verl/verl/utils/py_functional.py": {
+      "original_git_blob": "bb8a60bfea6da0241e9cc3a2609e1ed4f7bc18cc",
+      "release_git_blob": "bb8a60bfea6da0241e9cc3a2609e1ed4f7bc18cc",
+      "sha256": "e3f6bef93108c87ac07c2bf814f06d912d770fdaae267de2934bc49e3e0c6ecc"
+    },
+    "verl/verl/utils/qat/__init__.py": {
+      "original_git_blob": "6f2a85c814dcceadf3517983c49f923adbf75320",
+      "release_git_blob": "6f2a85c814dcceadf3517983c49f923adbf75320",
+      "sha256": "1b2540ff1a1dc77119f9e60867d99aff50e59ff192dc8c447b7845b3a3f9aa60"
+    },
+    "verl/verl/utils/qat/core.py": {
+      "original_git_blob": "9f3a1fbe6a85a444217c2a831da858b3cab4b5f2",
+      "release_git_blob": "9f3a1fbe6a85a444217c2a831da858b3cab4b5f2",
+      "sha256": "2d486eff92cfc62b60524c96fb964edbc9fd1ee13137f45748de010b601196ad"
+    },
+    "verl/verl/utils/qat/linear.py": {
+      "original_git_blob": "4b6c6bc8f41caea75af7bcabe7eb078d29012809",
+      "release_git_blob": "4b6c6bc8f41caea75af7bcabe7eb078d29012809",
+      "sha256": "fe9cafc7450ac1989940826893842fd638b81026344bea9a6809b2bdc91e8935"
+    },
+    "verl/verl/utils/qat/quantizer.py": {
+      "original_git_blob": "5ed96d46a3e32660f15f71e8b06125e76c17007a",
+      "release_git_blob": "5ed96d46a3e32660f15f71e8b06125e76c17007a",
+      "sha256": "fd6c8b7bea85bc8aeeae56a4b63ab7989c12c15e2a8b9ab8e4e4e2ae0b302453"
+    },
+    "verl/verl/utils/qat/vllm_patch.py": {
+      "original_git_blob": "77d2ec17eebdd6e3d7b21296ca3c883a52e8155d",
+      "release_git_blob": "77d2ec17eebdd6e3d7b21296ca3c883a52e8155d",
+      "sha256": "5e2b80a02d087b0a3b3238152da0b69eae8a3b94da1d29680ef74ab217fcf53a"
+    },
+    "verl/verl/utils/ray_utils.py": {
+      "original_git_blob": "eff3d91085f8ec84a97e0b0b1d14692eb4ee5b76",
+      "release_git_blob": "eff3d91085f8ec84a97e0b0b1d14692eb4ee5b76",
+      "sha256": "1f70a9ac05b4a6f92a3ad2486bee17ac9721a9568e7e72b17e76172a60a7751b"
+    },
+    "verl/verl/utils/rendezvous/__init__.py": {
+      "original_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "release_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "sha256": "e65abd77db034b4f29eb1268c24867f84919dbce22e28d1997e563ed1d94179c"
+    },
+    "verl/verl/utils/rendezvous/ray_backend.py": {
+      "original_git_blob": "d9911815d5b54fcb5364e0e2a760c0aa5c6fc2d0",
+      "release_git_blob": "d9911815d5b54fcb5364e0e2a760c0aa5c6fc2d0",
+      "sha256": "ae45c1c6e1a204b8c4d99849b03f1a571ce05a0e143a3b1dcc27522c7aee0ff9"
+    },
+    "verl/verl/utils/reward_score/__init__.py": {
+      "original_git_blob": "b65d94ec14dc8704d2f2939aca7a563e33a0485d",
+      "release_git_blob": "b65d94ec14dc8704d2f2939aca7a563e33a0485d",
+      "sha256": "31cee0ae7075b2dff9694d0352cf4f0d0d53616bdb11e63196da410599e0874c"
+    },
+    "verl/verl/utils/reward_score/geo3k.py": {
+      "original_git_blob": "8a8508758a63ef929ad76385f5929985c41f2929",
+      "release_git_blob": "8a8508758a63ef929ad76385f5929985c41f2929",
+      "sha256": "7e2821b85e2e07bf03e36f8fcd5f27faf2506e6f287098154b518c0a128b1e6c"
+    },
+    "verl/verl/utils/reward_score/gsm8k.py": {
+      "original_git_blob": "98a8c24dc8c66922ec0518ee31072691db81d4e5",
+      "release_git_blob": "98a8c24dc8c66922ec0518ee31072691db81d4e5",
+      "sha256": "497c6e32b708d0bc8803b5a048ca5983de7756eb9c146abdc56e6f5d28767189"
+    },
+    "verl/verl/utils/reward_score/math_batch.py": {
+      "original_git_blob": "20b38e1bb146973b56e48cc0de78516fa7acacd6",
+      "release_git_blob": "20b38e1bb146973b56e48cc0de78516fa7acacd6",
+      "sha256": "a98fae3cd0d177c325019a5a6cdc69e60360fcf9156e2c849f89a5215b80f691"
+    },
+    "verl/verl/utils/reward_score/math_dapo.py": {
+      "original_git_blob": "940500fd59ea115d7d1d366b093f36105a997626",
+      "release_git_blob": "940500fd59ea115d7d1d366b093f36105a997626",
+      "sha256": "4d8db99737fc392285772f4dd71dc54995ec57013f320a31d7ab027902e59d6f"
+    },
+    "verl/verl/utils/reward_score/math_reward.py": {
+      "original_git_blob": "cc6b8fe8561ec8a51a860f8639493dff50968447",
+      "release_git_blob": "cc6b8fe8561ec8a51a860f8639493dff50968447",
+      "sha256": "085eb67055c6976fea529d5ed9c8f0c63a989e85295d532db0d41fde8db50974"
+    },
+    "verl/verl/utils/reward_score/math_verify.py": {
+      "original_git_blob": "c1ce7c1a483eaf07316afa7d8b7b8becb1bdc51b",
+      "release_git_blob": "c1ce7c1a483eaf07316afa7d8b7b8becb1bdc51b",
+      "sha256": "0bf89ab36401642a42bfacc53b8a954d87b168a11fca0dc9014c9d1e21ecded3"
+    },
+    "verl/verl/utils/reward_score/prime_code/README.md": {
+      "original_git_blob": "ddd44571415b0ac2eddf599fa643df74a724fea2",
+      "release_git_blob": "ddd44571415b0ac2eddf599fa643df74a724fea2",
+      "sha256": "cd5d1f2d0f2dc84ddfe9f4a8b221990c816628870c95c6f0fe46a078397549fb"
+    },
+    "verl/verl/utils/reward_score/prime_code/__init__.py": {
+      "original_git_blob": "214f99bdd8bd855ffb081814a598853348f8885f",
+      "release_git_blob": "214f99bdd8bd855ffb081814a598853348f8885f",
+      "sha256": "139690b83b2b21c0797696e07a36f24a206808183793d29fb15a5d49b8e58efc"
+    },
+    "verl/verl/utils/reward_score/prime_code/testing_util.py": {
+      "original_git_blob": "2f223251854eaf345366578709626653743d00f5",
+      "release_git_blob": "2f223251854eaf345366578709626653743d00f5",
+      "sha256": "953c97e7fcdda429a27ab45eb2a5246fb40b8ed98fe42375f876e8a4ed8c28dc"
+    },
+    "verl/verl/utils/reward_score/prime_code/utils.py": {
+      "original_git_blob": "91232659e5fd0ac7d129b81ffbaecd2e3116f835",
+      "release_git_blob": "91232659e5fd0ac7d129b81ffbaecd2e3116f835",
+      "sha256": "a85e7d0cb7f5caf2615c6d0861e695102f3c0e0a19ddae29efb1e726297aa67c"
+    },
+    "verl/verl/utils/reward_score/prime_math/__init__.py": {
+      "original_git_blob": "72626573e4dc066fbba50d6f5a660e2edd8a2af8",
+      "release_git_blob": "72626573e4dc066fbba50d6f5a660e2edd8a2af8",
+      "sha256": "59515c65270d20a56de5ad08e18368b799c89616af2eb3412fa4753ce238f1b9"
+    },
+    "verl/verl/utils/reward_score/prime_math/grader.py": {
+      "original_git_blob": "d784be3ad6aa34af1947a0201d53f17e352cbd77",
+      "release_git_blob": "d784be3ad6aa34af1947a0201d53f17e352cbd77",
+      "sha256": "7a188b372e94a87791cf3727034eb38f795f513d882f9aaa8f09a2401d1d67b6"
+    },
+    "verl/verl/utils/reward_score/prime_math/math_normalize.py": {
+      "original_git_blob": "3ab0ecb9cae12eff0e6b722073beab4f66e45a60",
+      "release_git_blob": "3ab0ecb9cae12eff0e6b722073beab4f66e45a60",
+      "sha256": "cf84ffc205098e8f7ed3c8c2c55016a73cc1afb059325b9566442521937f639a"
+    },
+    "verl/verl/utils/reward_score/rlla.py": {
+      "original_git_blob": "9591207b2a66270f920c146157113970a899cfd2",
+      "release_git_blob": "9591207b2a66270f920c146157113970a899cfd2",
+      "sha256": "4b437fdbc4a834953b640f59c0b966b1838dd771a0d86da89e2398c7fe37046c"
+    },
+    "verl/verl/utils/reward_score/sandbox_fusion/__init__.py": {
+      "original_git_blob": "5dbeb1449113acf79cd44268ef2d652c154b5f02",
+      "release_git_blob": "5dbeb1449113acf79cd44268ef2d652c154b5f02",
+      "sha256": "0cdc74091cb1b151edea9cf9710606d0b4093a649eb4fd6c366c5ed70032f55e"
+    },
+    "verl/verl/utils/reward_score/sandbox_fusion/utils.py": {
+      "original_git_blob": "7b6c27952e0cd1aadd6d798a572ecb6d38bc2ec2",
+      "release_git_blob": "7b6c27952e0cd1aadd6d798a572ecb6d38bc2ec2",
+      "sha256": "9e048a4a471ae200dd594836d39c869ff0224207fc58ef0820937b59f67a2930"
+    },
+    "verl/verl/utils/reward_score/search_r1_like_qa_em.py": {
+      "original_git_blob": "56782fcb34329ba23a77881237c8a58478098a13",
+      "release_git_blob": "56782fcb34329ba23a77881237c8a58478098a13",
+      "sha256": "8070e4d07719f23e626968b983c597918c73d15c6ab5b09c5346e7311d0cac83"
+    },
+    "verl/verl/utils/rollout_skip.py": {
+      "original_git_blob": "3909d48b6f0f7c4887d18ac9ddba180629f6faf2",
+      "release_git_blob": "3909d48b6f0f7c4887d18ac9ddba180629f6faf2",
+      "sha256": "dca3a56b22bc13e726e5f4ac59f50d6bc618682263ae7daab621285dc33c5713"
+    },
+    "verl/verl/utils/rollout_trace.py": {
+      "original_git_blob": "45a3f3461017dff121d8545bff2725141ba4e57a",
+      "release_git_blob": "45a3f3461017dff121d8545bff2725141ba4e57a",
+      "sha256": "58801ed4057792a5dd3dd8550c247c81b879936d48e145f917864ed42e30ec7e"
+    },
+    "verl/verl/utils/seqlen_balancing.py": {
+      "original_git_blob": "4e172722a896ced6296143ed3d428bc0eaaa6187",
+      "release_git_blob": "4e172722a896ced6296143ed3d428bc0eaaa6187",
+      "sha256": "c114cd1a2908292763fbcae34788a1b010c262ded33712d3f035bc25ff8c2a06"
+    },
+    "verl/verl/utils/sglang/sglang_fp8_utils.py": {
+      "original_git_blob": "ac3a8ff0699fab957fb126cde942d97f6fada5f4",
+      "release_git_blob": "ac3a8ff0699fab957fb126cde942d97f6fada5f4",
+      "sha256": "c919a3efc1465a5226055f8a6b01190d75c93213cce8ad74b73637e9d0e631b6"
+    },
+    "verl/verl/utils/tensordict_utils.py": {
+      "original_git_blob": "9e6afb78f67d070d2ec124a4f143d2d5a1b92b20",
+      "release_git_blob": "9e6afb78f67d070d2ec124a4f143d2d5a1b92b20",
+      "sha256": "6c30a851bd4378a1dc84f2c5704e1047ee6bb5dca5d33e9f3797be7f6c2977d0"
+    },
+    "verl/verl/utils/tokenizer.py": {
+      "original_git_blob": "0cd521f9e9605039c86274d3fbc4cefc61ab1b9f",
+      "release_git_blob": "0cd521f9e9605039c86274d3fbc4cefc61ab1b9f",
+      "sha256": "90b5f8d21af6e5857cd124fa363db3a38993b561722fece279bbcc1b2ae98b11"
+    },
+    "verl/verl/utils/torch_dtypes.py": {
+      "original_git_blob": "f2f445c26140ceeec25c1d3cf5b3df249c6dffb1",
+      "release_git_blob": "f2f445c26140ceeec25c1d3cf5b3df249c6dffb1",
+      "sha256": "d189134cac9dcd237823d60fcfe52459ca6ea7e42117621f3c7f9a8c5be302e9"
+    },
+    "verl/verl/utils/torch_functional.py": {
+      "original_git_blob": "8666bec2d1607c1586c759a1f895ef3c0f0c069f",
+      "release_git_blob": "8666bec2d1607c1586c759a1f895ef3c0f0c069f",
+      "sha256": "cb37d045dec2161d637e2633032cc97c97334e5547cea62dace42630c9683259"
+    },
+    "verl/verl/utils/tracking.py": {
+      "original_git_blob": "f4c1e4a7f8d3085f6c25e04bf69af19f19f63c69",
+      "release_git_blob": "f4c1e4a7f8d3085f6c25e04bf69af19f19f63c69",
+      "sha256": "08838bc569cbe508195f9a693e5fbe02c30395a82da5aca71f2fe4d3a5635c8f"
+    },
+    "verl/verl/utils/transformers_compat.py": {
+      "original_git_blob": "9a03c658512d48b55760f406290ccaa00cc04b02",
+      "release_git_blob": "9a03c658512d48b55760f406290ccaa00cc04b02",
+      "sha256": "98b7743f00174fc0ce8fd4da5ff98aaf56568091cb1507b16d316d74a005c7b4"
+    },
+    "verl/verl/utils/trtllm/trtllm_fp8_utils.py": {
+      "original_git_blob": "43c15351c06057efbdc82b2ab1b3940a3601b106",
+      "release_git_blob": "43c15351c06057efbdc82b2ab1b3940a3601b106",
+      "sha256": "e3297c939a3087c8fecd003b7694baa9e35e1df64d1c1c1fa67103782feddff5"
+    },
+    "verl/verl/utils/ulysses.py": {
+      "original_git_blob": "17842b407878fbd2c6e2db59c9f50476b7f1e099",
+      "release_git_blob": "17842b407878fbd2c6e2db59c9f50476b7f1e099",
+      "sha256": "8416477fc8b0288ba7b8b57589453a4c43df5eac7f74c99c4dcb7112de4e1d25"
+    },
+    "verl/verl/utils/vllm/__init__.py": {
+      "original_git_blob": "00aa7bdb642484b5c3ac65b6cf1e839a427c7bf1",
+      "release_git_blob": "00aa7bdb642484b5c3ac65b6cf1e839a427c7bf1",
+      "sha256": "302d23a783660262dff139423467ea61ae972c1d15dc598d63830aeb7afa348f"
+    },
+    "verl/verl/utils/vllm/patch.py": {
+      "original_git_blob": "7a52a3c97ae27753d90d72af5c0314480a51efd7",
+      "release_git_blob": "7a52a3c97ae27753d90d72af5c0314480a51efd7",
+      "sha256": "4f74dd75971976ca20a2863f9a13973cbfedb71db547afecfda6e526f13366ea"
+    },
+    "verl/verl/utils/vllm/utils.py": {
+      "original_git_blob": "1ac655fcf603b660a28ed56c93f0fd2d4117f0e6",
+      "release_git_blob": "1ac655fcf603b660a28ed56c93f0fd2d4117f0e6",
+      "sha256": "8e2577fd0c1e9f3c44c91256573fc13cf0657c5f6ef715c0bbdbd94da812ee4c"
+    },
+    "verl/verl/utils/vllm/vllm_fp8_utils.py": {
+      "original_git_blob": "6aa1389354e1a29c81a6db96d9215716298eb103",
+      "release_git_blob": "6aa1389354e1a29c81a6db96d9215716298eb103",
+      "sha256": "e20aad043776cc7a190fbcfbd458906e5cb0f9905bde7d0551a10f4eb2a6771d"
+    },
+    "verl/verl/version/version": {
+      "original_git_blob": "7188dbafb438572b3bd7e02ee7ab16529b1be225",
+      "release_git_blob": "7188dbafb438572b3bd7e02ee7ab16529b1be225",
+      "sha256": "48abec5e45064c86795cfa14e8ac389f7203e4c761e484a7782459ba2da136b5"
+    },
+    "verl/verl/workers/__init__.py": {
+      "original_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "release_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "sha256": "e65abd77db034b4f29eb1268c24867f84919dbce22e28d1997e563ed1d94179c"
+    },
+    "verl/verl/workers/actor/__init__.py": {
+      "original_git_blob": "7a1404e17695436516c55794f9094c094dba61ce",
+      "release_git_blob": "7a1404e17695436516c55794f9094c094dba61ce",
+      "sha256": "3053474474716dc57f7e1b5d80d23b28c7b146d9257f8b6bf3b7878de4eae219"
+    },
+    "verl/verl/workers/actor/base.py": {
+      "original_git_blob": "2d1ba290d4d717e2be039422d83e7b7a4bbfefd7",
+      "release_git_blob": "2d1ba290d4d717e2be039422d83e7b7a4bbfefd7",
+      "sha256": "4b0be9f5c3024e079b3aecd6fe755ff880eb2664d884cd52a1d79dc73897202e"
+    },
+    "verl/verl/workers/actor/dp_actor.py": {
+      "original_git_blob": "10485a21e61271d24f8970170af2454f2f4365eb",
+      "release_git_blob": "10485a21e61271d24f8970170af2454f2f4365eb",
+      "sha256": "630451d3bd239ee77fe9c460602ccfc52f80788204bf68acfc178b5e31c39735"
+    },
+    "verl/verl/workers/actor/megatron_actor.py": {
+      "original_git_blob": "9244c78da27315711c68af7c68ff7d1b75e28c28",
+      "release_git_blob": "9244c78da27315711c68af7c68ff7d1b75e28c28",
+      "sha256": "9358d1e004c84333325cd6debfa97ebbdbd2a77b2e586037b739c859eb291a3b"
+    },
+    "verl/verl/workers/config/__init__.py": {
+      "original_git_blob": "65a151a9129a5b6d81031c0e7aa3d7b7af728fee",
+      "release_git_blob": "65a151a9129a5b6d81031c0e7aa3d7b7af728fee",
+      "sha256": "68c27744af65ccaaf3ad61d98284ee587d56f868c43451c65661b32e1c875b97"
+    },
+    "verl/verl/workers/config/actor.py": {
+      "original_git_blob": "f0f4368802e001b2e917eef0deae24adc93138b5",
+      "release_git_blob": "f0f4368802e001b2e917eef0deae24adc93138b5",
+      "sha256": "0a9f5de17a222a7733870c012d30fa2c26a844d179fdfef2dff92cb98b722154"
+    },
+    "verl/verl/workers/config/critic.py": {
+      "original_git_blob": "caca5bac6ac9eb0635da81c9cf29608aeffbb3d0",
+      "release_git_blob": "caca5bac6ac9eb0635da81c9cf29608aeffbb3d0",
+      "sha256": "69b6c044d77cbda3d3ae176521679270011517d83a4d330b2564698a0db1b224"
+    },
+    "verl/verl/workers/config/engine.py": {
+      "original_git_blob": "41fc8181c2a3b0e9b630e3378f3c17dddffdca3a",
+      "release_git_blob": "41fc8181c2a3b0e9b630e3378f3c17dddffdca3a",
+      "sha256": "f9cba94be6f0934a2a195f484bf72c5d84edb37de43d77e2d22c2dfa245889ab"
+    },
+    "verl/verl/workers/config/megatron_peft.py": {
+      "original_git_blob": "15d7ce46eeb66eaa073fa862011c38b181d77928",
+      "release_git_blob": "15d7ce46eeb66eaa073fa862011c38b181d77928",
+      "sha256": "f5dc3d4911a3ab72be62978785be2a7b67dea0345f746a5b69797751a38716fd"
+    },
+    "verl/verl/workers/config/model.py": {
+      "original_git_blob": "1a11cfabc071256067613ddb4f272270f8d11e03",
+      "release_git_blob": "1a11cfabc071256067613ddb4f272270f8d11e03",
+      "sha256": "67fdc7c31da98a3021395d0458741605baa55befa1bf90ad7246023c46e1ae10"
+    },
+    "verl/verl/workers/config/optimizer.py": {
+      "original_git_blob": "467db0044e8e41bd1b882681b3af43c6a2ffb947",
+      "release_git_blob": "467db0044e8e41bd1b882681b3af43c6a2ffb947",
+      "sha256": "e9e72ca40019f6ca93a341353c1004625af7e50c3a730ca2a8bf50af605ae7ae"
+    },
+    "verl/verl/workers/config/reward.py": {
+      "original_git_blob": "db54b1e4bbcac45d55b010ba1b31f39e42934bd9",
+      "release_git_blob": "db54b1e4bbcac45d55b010ba1b31f39e42934bd9",
+      "sha256": "e8d9bb10ae41606f2732ac21594eb692c730bd3157b7cd0a38a658fd8b3d37c9"
+    },
+    "verl/verl/workers/config/rollout.py": {
+      "original_git_blob": "6b97ed11915e1a8355b9348bb33c1f9bb7d2a8b7",
+      "release_git_blob": "6b97ed11915e1a8355b9348bb33c1f9bb7d2a8b7",
+      "sha256": "e96e167a5c0d5e9ed4fac57d3cf754e6ac60cc16c0a7bc405fc59bd035962cfb"
+    },
+    "verl/verl/workers/critic/__init__.py": {
+      "original_git_blob": "80808f10634b74ee3be94e3dc19e86855f884cc8",
+      "release_git_blob": "80808f10634b74ee3be94e3dc19e86855f884cc8",
+      "sha256": "a61c624ef2dd6bec59cc59302d88d1ccdc151ea5beb776b9733ac19bcfbe8fb7"
+    },
+    "verl/verl/workers/critic/base.py": {
+      "original_git_blob": "8201758f33ea453af67c42798f7ba0337eb74193",
+      "release_git_blob": "8201758f33ea453af67c42798f7ba0337eb74193",
+      "sha256": "9088e17a21d2aea6c524380e1eeb10eaf19df2719cc5d343cb4debafd8da033a"
+    },
+    "verl/verl/workers/critic/dp_critic.py": {
+      "original_git_blob": "cc91a4630b28fc2ea8931c3cd91f504461b4b248",
+      "release_git_blob": "cc91a4630b28fc2ea8931c3cd91f504461b4b248",
+      "sha256": "ab19baa918f1a6dcdc33b8b54cdca867c1f4df6e356172149935fa2db2a085ad"
+    },
+    "verl/verl/workers/critic/megatron_critic.py": {
+      "original_git_blob": "af87cb74c09caae4e6769c35d241ae6a451294ca",
+      "release_git_blob": "af87cb74c09caae4e6769c35d241ae6a451294ca",
+      "sha256": "82fec6462704d647a1df8294de823e157f624249d66863ba5bc157282927e731"
+    },
+    "verl/verl/workers/engine/__init__.py": {
+      "original_git_blob": "8f01080fdcb1f8e85d6b320ee8f0d2447b327d81",
+      "release_git_blob": "8f01080fdcb1f8e85d6b320ee8f0d2447b327d81",
+      "sha256": "4d4548795a805e04fa8e269407b4b9d7486b9607c3a5288c026f44fb797ad6d7"
+    },
+    "verl/verl/workers/engine/base.py": {
+      "original_git_blob": "fedfc7320eeacb53475921e7e56d0a65412ca926",
+      "release_git_blob": "fedfc7320eeacb53475921e7e56d0a65412ca926",
+      "sha256": "c294122e50189af9e99ab660a52d02e2c36cd6d257f17cd9ed4c54d4b76e67f0"
+    },
+    "verl/verl/workers/engine/fsdp/__init__.py": {
+      "original_git_blob": "a1bdb16b47cec72d684b5c9fbc61ab787e7e81c1",
+      "release_git_blob": "a1bdb16b47cec72d684b5c9fbc61ab787e7e81c1",
+      "sha256": "2879ac3976f7cb994c5a45e85458076a7e4f6e1e346aa8acc3d53503b30bbcd8"
+    },
+    "verl/verl/workers/engine/fsdp/transformer_impl.py": {
+      "original_git_blob": "c7974cef7f61ba3c6f4ca11da3c45d97ef462229",
+      "release_git_blob": "c7974cef7f61ba3c6f4ca11da3c45d97ef462229",
+      "sha256": "4155a67c32b805382418cc58e7a13117cc914a793cc42b3ac134286cc8611a89"
+    },
+    "verl/verl/workers/engine/fsdp/utils.py": {
+      "original_git_blob": "6336bd8794cc915af0aa03380fd92a5fecd25795",
+      "release_git_blob": "6336bd8794cc915af0aa03380fd92a5fecd25795",
+      "sha256": "ab95a4a6ef9a6760e7b7de298dab9610bdbbc94c0d3b53e23ddd028d1d305cec"
+    },
+    "verl/verl/workers/engine/megatron/__init__.py": {
+      "original_git_blob": "c2f334fd9ee6b1ee6070f2f0520002b108c95290",
+      "release_git_blob": "c2f334fd9ee6b1ee6070f2f0520002b108c95290",
+      "sha256": "1056f084a1d44c5e23b8d7bd6e0f0dc5d92699230f4e8ad9d477055292e63584"
+    },
+    "verl/verl/workers/engine/megatron/transformer_impl.py": {
+      "original_git_blob": "871b6f8c61cd89d153b7a49853790ee3cf567a84",
+      "release_git_blob": "871b6f8c61cd89d153b7a49853790ee3cf567a84",
+      "sha256": "eb99a338759142b8c518e730c39173421309739e853f7940fa87b5b933cc4c45"
+    },
+    "verl/verl/workers/engine/megatron/utils.py": {
+      "original_git_blob": "0d9f3b8aadfffe82e17c04094805baa3751c4e7c",
+      "release_git_blob": "0d9f3b8aadfffe82e17c04094805baa3751c4e7c",
+      "sha256": "3083b5bcd3d8460cb645a7a6629a98aef083887501582318c663cb2da49791f9"
+    },
+    "verl/verl/workers/engine/mindspeed/__init__.py": {
+      "original_git_blob": "63a83da7872648ecfafdae7493564a068e702b53",
+      "release_git_blob": "63a83da7872648ecfafdae7493564a068e702b53",
+      "sha256": "038d11f1f9eea3ca50927657f8f20c6c964a9e7ddc08d8b11dad43ecca1b059a"
+    },
+    "verl/verl/workers/engine/mindspeed/transformer_impl.py": {
+      "original_git_blob": "6f49857ea205fdf5e0bbcfc64f49927a7e739313",
+      "release_git_blob": "6f49857ea205fdf5e0bbcfc64f49927a7e739313",
+      "sha256": "211e6e0010d8ee39c0d95d6b957d3b42aa2e2204f3e68b66d3d699714a0e0caa"
+    },
+    "verl/verl/workers/engine/torchtitan/__init__.py": {
+      "original_git_blob": "345757277af1504e14f8921143b0afc04d897554",
+      "release_git_blob": "345757277af1504e14f8921143b0afc04d897554",
+      "sha256": "ef97ff5ac13df9e97e346850930fafc86bc650b924101c1e822f38bb34344f13"
+    },
+    "verl/verl/workers/engine/torchtitan/transformer_impl.py": {
+      "original_git_blob": "739ccf290433c553a31e7b527d7bb3f3e3e109b7",
+      "release_git_blob": "739ccf290433c553a31e7b527d7bb3f3e3e109b7",
+      "sha256": "101f5ac398a3403494adb90c92d5951199e7d7eb9caebf10b6ad948f8d63eacd"
+    },
+    "verl/verl/workers/engine/torchtitan/utils.py": {
+      "original_git_blob": "a88c82e48370f23408af365bd3f363a69034a740",
+      "release_git_blob": "a88c82e48370f23408af365bd3f363a69034a740",
+      "sha256": "db989acb85f0c57dc49e407d042479dab898d543b7ae05e9bd35d811cd5b54ae"
+    },
+    "verl/verl/workers/engine/utils.py": {
+      "original_git_blob": "ebc5d430d810c34335e2620a55a13644b8b35991",
+      "release_git_blob": "ebc5d430d810c34335e2620a55a13644b8b35991",
+      "sha256": "2d82978cdb48b58181c87e9298ee33f2342522131012d74d85fbcd675049fc82"
+    },
+    "verl/verl/workers/engine/veomni/__init__.py": {
+      "original_git_blob": "057facf27d33d3af60526eed5ef95784ee199878",
+      "release_git_blob": "057facf27d33d3af60526eed5ef95784ee199878",
+      "sha256": "bb8d5908a444f6b630ce3030a17b9d66b1966b1bad1822005aa5a72b441b3ab4"
+    },
+    "verl/verl/workers/engine/veomni/transformer_impl.py": {
+      "original_git_blob": "dfc5eeb43a1d889d5d2bd307bf98e2ad63930a03",
+      "release_git_blob": "dfc5eeb43a1d889d5d2bd307bf98e2ad63930a03",
+      "sha256": "aade05ff61bb81b69822a728baae4c0b7fdfce5bda3f15328176f3bc73374602"
+    },
+    "verl/verl/workers/engine/veomni/utils.py": {
+      "original_git_blob": "363855a7bebdbaf9ea9c5805f8437aa19d9e7c9a",
+      "release_git_blob": "363855a7bebdbaf9ea9c5805f8437aa19d9e7c9a",
+      "sha256": "074b0aada0bbfe985670699a294dab3ce406d88bd6f13321f69e42ae1d348d3e"
+    },
+    "verl/verl/workers/engine_workers.py": {
+      "original_git_blob": "d0c065e4dfdaf9780f72e37236a2f607cdb06341",
+      "release_git_blob": "d0c065e4dfdaf9780f72e37236a2f607cdb06341",
+      "sha256": "9d796314191445f3a83a4b03d381a2f0d00020bc85877ebf4efc9b41b2b41fe6"
+    },
+    "verl/verl/workers/fsdp_workers.py": {
+      "original_git_blob": "2bdf56c0f1e892bcf1a0194dce850c02a3e16398",
+      "release_git_blob": "2bdf56c0f1e892bcf1a0194dce850c02a3e16398",
+      "sha256": "63e81719d0e1a4d8776bb0a46ef036b702bd6787f8cd6388c1c23746f9e0b571"
+    },
+    "verl/verl/workers/megatron_workers.py": {
+      "original_git_blob": "2eafb77a8e3a6d903f1397d3bf734becc8ceb143",
+      "release_git_blob": "2eafb77a8e3a6d903f1397d3bf734becc8ceb143",
+      "sha256": "66c4c04503abc92973023674f94521da9a62e5bb9213e4a9ea74e14507dd1330"
+    },
+    "verl/verl/workers/reward_manager/__init__.py": {
+      "original_git_blob": "06b693697f0383ff9bc1ace9a24a914b0fa1096c",
+      "release_git_blob": "06b693697f0383ff9bc1ace9a24a914b0fa1096c",
+      "sha256": "efacfedb523dc02d5f73d9b5fd273370ed6f74ad4c0b18c25205a55cc3135e09"
+    },
+    "verl/verl/workers/reward_manager/abstract.py": {
+      "original_git_blob": "494c87c5597e1e427712410e72bd040fd50204cf",
+      "release_git_blob": "494c87c5597e1e427712410e72bd040fd50204cf",
+      "sha256": "04dc770c5a47670e71e5c635574df07f7625a9876d943a4700ab9756d22499a3"
+    },
+    "verl/verl/workers/reward_manager/batch.py": {
+      "original_git_blob": "078e301d45f93c4e4b1092245bd6c9c55476b8e0",
+      "release_git_blob": "078e301d45f93c4e4b1092245bd6c9c55476b8e0",
+      "sha256": "120516b953a36db51f8b988902839c0dd03e664f0ff978dd30bd9149ff1ae433"
+    },
+    "verl/verl/workers/reward_manager/dapo.py": {
+      "original_git_blob": "f44cb3d8f9d78ee2ebe3861d4fdb50c4c3e6aec9",
+      "release_git_blob": "f44cb3d8f9d78ee2ebe3861d4fdb50c4c3e6aec9",
+      "sha256": "f611f7c1627acc129c78acbe761046ca3f9a9b7c2a68c84464a3f565c0366973"
+    },
+    "verl/verl/workers/reward_manager/naive.py": {
+      "original_git_blob": "f3ca122c2b6f3da12bda2ba08412529e78d21907",
+      "release_git_blob": "f3ca122c2b6f3da12bda2ba08412529e78d21907",
+      "sha256": "f936d5fb1589cd8b1a0a1c31b58bea092886ec4e00493fb40483a9af4ac685a6"
+    },
+    "verl/verl/workers/reward_manager/prime.py": {
+      "original_git_blob": "b15ed7c3fcb3931e8860b6fe32898ebb2cc5386c",
+      "release_git_blob": "b15ed7c3fcb3931e8860b6fe32898ebb2cc5386c",
+      "sha256": "e30e34ca239ddb629b009eb30eee017c55ca4fdf37f9f797da1d4611239371a4"
+    },
+    "verl/verl/workers/reward_manager/registry.py": {
+      "original_git_blob": "4e255d8ac8cdc9467f33ba4a63c2f5ff27f44d33",
+      "release_git_blob": "4e255d8ac8cdc9467f33ba4a63c2f5ff27f44d33",
+      "sha256": "a5475a07bfa44ca933e0d9611cadb68a78e0c55a82705f98c2aca0eab8565834"
+    },
+    "verl/verl/workers/rollout/__init__.py": {
+      "original_git_blob": "f6bd6c28b770fd5996bd23936796ef374ccb8ec1",
+      "release_git_blob": "f6bd6c28b770fd5996bd23936796ef374ccb8ec1",
+      "sha256": "73fe554828154bbc9f2491bbdd969a84cd94c5f44da3a5b4b6cab0ff82c185c0"
+    },
+    "verl/verl/workers/rollout/base.py": {
+      "original_git_blob": "c8038606f1fc6f844156423cabff681ed32dd594",
+      "release_git_blob": "c8038606f1fc6f844156423cabff681ed32dd594",
+      "sha256": "7a9609bc726dbb93a3468816fb589f3b28ad12636db3c48f60dbb72f6078713f"
+    },
+    "verl/verl/workers/rollout/hf_rollout.py": {
+      "original_git_blob": "e596507cdb9cab9362be448b34c9702ea9dc7061",
+      "release_git_blob": "e596507cdb9cab9362be448b34c9702ea9dc7061",
+      "sha256": "198a567f504d0e7c2a52964e289029c236661de42577e5439ca6b98b72f4a22b"
+    },
+    "verl/verl/workers/rollout/naive/__init__.py": {
+      "original_git_blob": "cb6c23bf4327ef199ea9b454f00be88cbaa27967",
+      "release_git_blob": "cb6c23bf4327ef199ea9b454f00be88cbaa27967",
+      "sha256": "68176cf43c79bc96d5549d1950e402f391f39ddd62582ffaac62d649015af785"
+    },
+    "verl/verl/workers/rollout/naive/naive_rollout.py": {
+      "original_git_blob": "fe56dc4c929b05aa2279b7e1b46e6d9a74e1b175",
+      "release_git_blob": "fe56dc4c929b05aa2279b7e1b46e6d9a74e1b175",
+      "sha256": "f243226fbb0db0cf2d2e2c3c96730da81994ef358c2c06921c98564164356edc"
+    },
+    "verl/verl/workers/rollout/replica.py": {
+      "original_git_blob": "969c6208083f7262d1eeccf3ec3549f025c78179",
+      "release_git_blob": "969c6208083f7262d1eeccf3ec3549f025c78179",
+      "sha256": "12d9de71edafe1a818024648d636e13a572c6778289754d9862a6042d0498b7e"
+    },
+    "verl/verl/workers/rollout/schemas.py": {
+      "original_git_blob": "b640ba64a77e166483ea4f27a6f2704390b6b527",
+      "release_git_blob": "b640ba64a77e166483ea4f27a6f2704390b6b527",
+      "sha256": "6ad46226025f0453a3d6fa750a970804cfdf7d2433b47e051343b53969ce1224"
+    },
+    "verl/verl/workers/rollout/sglang_rollout/__init__.py": {
+      "original_git_blob": "337ec74bce1922b8af69a9879fcbf0f2b382c555",
+      "release_git_blob": "337ec74bce1922b8af69a9879fcbf0f2b382c555",
+      "sha256": "13b565361b06091549aa80e8b5c1c2cadb20778589192f0148aaaa7b217019bd"
+    },
+    "verl/verl/workers/rollout/sglang_rollout/async_sglang_server.py": {
+      "original_git_blob": "09d415bb468b64be3c8c949d9b6a91a600921fc3",
+      "release_git_blob": "09d415bb468b64be3c8c949d9b6a91a600921fc3",
+      "sha256": "1ec1fdbc666890be1fc1121c14a075facfe345b24000f5b14ecc0db7ae2db5e7"
+    },
+    "verl/verl/workers/rollout/sglang_rollout/http_server_engine.py": {
+      "original_git_blob": "6822a9e52dac74cbb8320bc2d54e7eab421df57b",
+      "release_git_blob": "6822a9e52dac74cbb8320bc2d54e7eab421df57b",
+      "sha256": "f96471daa73b3096f15b029abb15f9fdff506be5817cfc6053c65f7f84fdb55d"
+    },
+    "verl/verl/workers/rollout/sglang_rollout/sglang_rollout.py": {
+      "original_git_blob": "2f813c452bb62c2bc55591ea10afe5ace27bb23c",
+      "release_git_blob": "2f813c452bb62c2bc55591ea10afe5ace27bb23c",
+      "sha256": "fb37ed6bba595b851b09fe7a56427247ebf57ffdd32d31be9f31889b57c8be7b"
+    },
+    "verl/verl/workers/rollout/sglang_rollout/utils.py": {
+      "original_git_blob": "9cc66c0070c4b3b25b6dbe9c242ba02cef38dcff",
+      "release_git_blob": "9cc66c0070c4b3b25b6dbe9c242ba02cef38dcff",
+      "sha256": "02aaf8c52453a31ec9812b1464d054671fa1e1e03fc7a18e05a5a6c1fd5950c1"
+    },
+    "verl/verl/workers/rollout/tokenizer.py": {
+      "original_git_blob": "1e1212e50dce4785767cdd52c3dcc6288d08fa02",
+      "release_git_blob": "1e1212e50dce4785767cdd52c3dcc6288d08fa02",
+      "sha256": "021bb6a1e8a2efe9266a6b2b3f6f894ccc228ae3e28f617da0f5bf70e5625e86"
+    },
+    "verl/verl/workers/rollout/trtllm_rollout/trtllm_async_rollout.md": {
+      "original_git_blob": "e00c9c0f1ce69d9b798f39582148f2ba3bd4446a",
+      "release_git_blob": "e00c9c0f1ce69d9b798f39582148f2ba3bd4446a",
+      "sha256": "fa140de42a474980fa2f078fcfa584f6ef40cac53e2b44c12b1c7aa11d11ccd5"
+    },
+    "verl/verl/workers/rollout/trtllm_rollout/trtllm_async_server.py": {
+      "original_git_blob": "7b2c5ff25944df118b3b5dc2161684cd0d71f1c1",
+      "release_git_blob": "7b2c5ff25944df118b3b5dc2161684cd0d71f1c1",
+      "sha256": "e151419db22228fb16bc2d75867aae89b8e37e95ef6cc4f271c0bab3afffca2b"
+    },
+    "verl/verl/workers/rollout/trtllm_rollout/trtllm_rollout.py": {
+      "original_git_blob": "df8ca5649a59c03860ec1b32693d272622640079",
+      "release_git_blob": "df8ca5649a59c03860ec1b32693d272622640079",
+      "sha256": "5f4ba80b749eb4bae3333e215fa19827c6c67bcb8183d314845f6f7bfbe14ffe"
+    },
+    "verl/verl/workers/rollout/trtllm_rollout/trtllm_worker_extension.py": {
+      "original_git_blob": "4beb85f70e2a58e99e01bebd6899160924475bfc",
+      "release_git_blob": "4beb85f70e2a58e99e01bebd6899160924475bfc",
+      "sha256": "3431f5a8ecc9d734e9cd9093adf3da23401817c67e40b99135fdabb702934d79"
+    },
+    "verl/verl/workers/rollout/utils.py": {
+      "original_git_blob": "efff4af28525b73ca001345954a9c326cc9da51c",
+      "release_git_blob": "efff4af28525b73ca001345954a9c326cc9da51c",
+      "sha256": "8064df2c88683b7d2b9b100dd930d9c0f53e42732ea2822c4b19c437a7bbbce3"
+    },
+    "verl/verl/workers/rollout/vllm_rollout/__init__.py": {
+      "original_git_blob": "2ecf113c8394c651655e80fb3780837cd85288c3",
+      "release_git_blob": "2ecf113c8394c651655e80fb3780837cd85288c3",
+      "sha256": "11c57676b01ee7c95d8a1625908818fcd1ba698231737e619e1e5ea726d2fbfa"
+    },
+    "verl/verl/workers/rollout/vllm_rollout/bucketed_weight_transfer.py": {
+      "original_git_blob": "d4aa12490ca5c14089f0ff9e8e3393a8bd156278",
+      "release_git_blob": "d4aa12490ca5c14089f0ff9e8e3393a8bd156278",
+      "sha256": "8392e7a98b4b0a6397b212546c56c9c444fe87810cdaa00bb433356084c8d174"
+    },
+    "verl/verl/workers/rollout/vllm_rollout/utils.py": {
+      "original_git_blob": "5754f17a81e6f8b68dc0e1df44c825119d0d90df",
+      "release_git_blob": "5754f17a81e6f8b68dc0e1df44c825119d0d90df",
+      "sha256": "48bc630b6601d45de3ab5965e787847411138e9e677ba0e99b3ee0ea84c9c1d2"
+    },
+    "verl/verl/workers/rollout/vllm_rollout/vllm_async_server.py": {
+      "original_git_blob": "b684852a90da2cc84cb9dd965723f99d8835f9b5",
+      "release_git_blob": "b684852a90da2cc84cb9dd965723f99d8835f9b5",
+      "sha256": "8a72d53d4db589438e71f7d2aa75d494c810342f7a0abf6949886395ebb23d9c"
+    },
+    "verl/verl/workers/rollout/vllm_rollout/vllm_rollout.py": {
+      "original_git_blob": "90641b575a23e817e042f7ca3145181b56c9710e",
+      "release_git_blob": "90641b575a23e817e042f7ca3145181b56c9710e",
+      "sha256": "49531abb64c07a351c9188cf4e22deb768fdb2bcfd3f592777cd862c9b2bed8a"
+    },
+    "verl/verl/workers/sharding_manager/__init__.py": {
+      "original_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "release_git_blob": "1ce90c5eb352d85c59105c0dc85b5f1dd576f095",
+      "sha256": "e65abd77db034b4f29eb1268c24867f84919dbce22e28d1997e563ed1d94179c"
+    },
+    "verl/verl/workers/sharding_manager/base.py": {
+      "original_git_blob": "59537be64efcb0b580385f12ba820f837130e197",
+      "release_git_blob": "59537be64efcb0b580385f12ba820f837130e197",
+      "sha256": "8c38bf57c5bf9c3ae5d51725ce20a8042beb4a77d8b9462c4b2ad6462c083e1e"
+    },
+    "verl/verl/workers/sharding_manager/fsdp_ulysses.py": {
+      "original_git_blob": "39ccb77ccdd89cdfe886974702d98d9ae608532a",
+      "release_git_blob": "39ccb77ccdd89cdfe886974702d98d9ae608532a",
+      "sha256": "196bddf4f25815a48f94f7e8991f1dd8bc1477204acf6e0b0ea54a553a0784dc"
+    },
+    "verl/verl/workers/utils/__init__.py": {
+      "original_git_blob": "1cd1e8433dffa0b3ba420be3e346f4f5cd062014",
+      "release_git_blob": "1cd1e8433dffa0b3ba420be3e346f4f5cd062014",
+      "sha256": "ced14be479d27e864cf3557c37d8abe00d2204ba6c030620bf48ea85e25a5921"
+    },
+    "verl/verl/workers/utils/losses.py": {
+      "original_git_blob": "e0c6dad650a53e391575bc1fbb1d0daedf0dd004",
+      "release_git_blob": "e0c6dad650a53e391575bc1fbb1d0daedf0dd004",
+      "sha256": "b72ba152d59cabea299bf9801bea5c587f7b0d0324fe86fc36a5736c631ac386"
+    },
+    "verl/verl/workers/utils/padding.py": {
+      "original_git_blob": "16242e7731fd8bf68d79750c2eaa3c2c63e8c4bb",
+      "release_git_blob": "16242e7731fd8bf68d79750c2eaa3c2c63e8c4bb",
+      "sha256": "bb59327f5a350b30e09fa23a291fc5cdfdd9c3a1133f0c99183e80a3f98c572a"
+    },
+    "verl/pyproject.toml": {
+      "sha256": "7a3ec747eec04a3166e432a637aea82eece898d756206bcbe92ccc54d5c3f6ee",
+      "release_git_blob": "a597421e920335f2f177a49bf55016201ad25873",
+      "original_git_blob": "a597421e920335f2f177a49bf55016201ad25873"
+    },
+    "verl/requirements.txt": {
+      "sha256": "8a181e893340a23a41d4d982419a134873fa23d58b31f9178094f881bc61a453",
+      "release_git_blob": "11960721e5801d4062e94a14bcc388987fc45ef9",
+      "original_git_blob": "11960721e5801d4062e94a14bcc388987fc45ef9"
+    },
+    "verl/requirements-cuda.txt": {
+      "sha256": "074a5f4828dac66ad1c0d973695533f05c32bd61ca18ea1e378eac72a8763c00",
+      "release_git_blob": "7bfe8efeb555b9f509c7584045461076993424ce",
+      "original_git_blob": "7bfe8efeb555b9f509c7584045461076993424ce"
+    },
+    "verl/requirements-npu.txt": {
+      "sha256": "7436b1b93d9e33d748d071f26b883d707707443b90bfe9d8c0d642d51e1df2d8",
+      "release_git_blob": "fada1f839c2a55d245a6ac387cf6641d7ba107e8",
+      "original_git_blob": "fada1f839c2a55d245a6ac387cf6641d7ba107e8"
+    },
+    "verl/requirements-test.txt": {
+      "sha256": "608dd5fb8f72d0602b61cee12118d99812e4f70481b02f08777acb3099296c4d",
+      "release_git_blob": "92b4996eeb393ac21a203c8b3bc256abedaee87d",
+      "original_git_blob": "92b4996eeb393ac21a203c8b3bc256abedaee87d"
+    },
+    "verl/requirements_sglang.txt": {
+      "sha256": "a3ccd6f0ddf9c0f19918a9a3bc29682ce60e921d52f89271416434daab6236d4",
+      "release_git_blob": "113bca0d3e7ee9b976a854b48d271b3d27a88e81",
+      "original_git_blob": "113bca0d3e7ee9b976a854b48d271b3d27a88e81"
+    },
+    "verl/LICENSE": {
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "release_git_blob": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "original_git_blob": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+    },
+    "verl/Notice.txt": {
+      "sha256": "f40ed94400d2b9636afb1f8019ab817255b19892d426c40eebe0c60d4850a1c9",
+      "release_git_blob": "ade439da525ac3f82936e131a1ae386f43207fd8",
+      "original_git_blob": "ade439da525ac3f82936e131a1ae386f43207fd8"
+    },
+    "verl/.gitignore": {
+      "sha256": "424df3766b0d5dd3e38d1fe817ced31e2a43a5e0ea32f6d45dae40874b7cf523",
+      "release_git_blob": "e6c0f5a08e367d504c1b4b1f1fc85870a5def55f",
+      "original_git_blob": "e6c0f5a08e367d504c1b4b1f1fc85870a5def55f"
+    },
+    "verl/docker/Dockerfile.stable.vllm": {
+      "sha256": "98197da9628e5ad2c886b0a89aa4e3442d5bdd7e3c2785f3b3daa139bff61ce9",
+      "release_git_blob": "f3e399d2add5e913eccf03d4be872cd2812fa600",
+      "original_git_blob": "f3e399d2add5e913eccf03d4be872cd2812fa600"
+    },
+    "verl/setup.py": {
+      "sha256": "55c2b29c939b702d272a4a4d92780b49ebbd9335d4314f35b43428452f98c43f",
+      "release_git_blob": "af51223f5d87d6249d643a8d3e7f82bd2d6750e3"
+    },
+    "verl/README.md": {
+      "sha256": "4463e7338a1a1f51454d3f12e4851a0b6ac1be44f50875c98456e919660f940f",
+      "release_git_blob": "4b818ff700d2155ff740f72c1cda0d80465f6659"
+    },
+    "recipe/opd/download_models.sh": {
+      "original_git_blob": "33b78c3bdfaa1f50abc34138aeb225c392caf5f3",
+      "release_git_blob": "33b78c3bdfaa1f50abc34138aeb225c392caf5f3",
+      "sha256": "9e49483da13f2578b9c7e25e791412fdfb7090f7cab598d5260b33008789756e"
+    },
+    "recipe/opd/math_verify_reward.py": {
+      "original_git_blob": "51b9185483e4458e6a8360ac24f0161b190b4010",
+      "release_git_blob": "51b9185483e4458e6a8360ac24f0161b190b4010",
+      "sha256": "3fcec7dc04dac330b9acef23644f8604a543faa82404f6cc41e42a945b39e814"
+    },
+    "recipe/opd/run_qwen3_1p7b_base_qwen3_30a3b_teacher_dapo17k_naive_topd_alpha0p1_16k_kl0.sh": {
+      "original_git_blob": "a2651f93fe8ccac432446fd5878f6f24820cf728",
+      "release_git_blob": "a2651f93fe8ccac432446fd5878f6f24820cf728",
+      "sha256": "03be3ab9e41ea65aacceb485f036f80412904df16cdb1bdadf0c96737ac9a259"
+    },
+    "recipe/opd/run_qwen3_1p7b_base_qwen3_30a3b_teacher_dapo17k_opd_16k_kl0.sh": {
+      "original_git_blob": "02d0193d0a34a1475eff18c46177288da52ab394",
+      "release_git_blob": "02d0193d0a34a1475eff18c46177288da52ab394",
+      "sha256": "af779e4fcc2e4451a5dc6cc994b1cf7b66c755fd9c47424e8abb7d9b1aa12ea5"
+    },
+    "recipe/opd/run_qwen3_1p7b_base_qwen3_30a3b_teacher_dapo17k_topd_alpha0p1_16k_kl0.sh": {
+      "original_git_blob": "18375ee10c35af4e2235e6491b07ac6503f6c601",
+      "release_git_blob": "18375ee10c35af4e2235e6491b07ac6503f6c601",
+      "sha256": "90400bcc88afaef0330186a18e7b32f0702b44b72a07bb8eb599766435dede42"
+    },
+    "recipe/opd/run_qwen3_1p7b_base_qwen3_teacher_dapo17k_common.sh": {
+      "original_git_blob": "34d7bd479e0053d5c1b7712c410026e7ad265a62",
+      "release_git_blob": "68239e615440dcc94296fcc687aefa75de3f0eef",
+      "sha256": "39da5aee9398e1a6e0a298001f801deeadaab8f4bf4f1868bb5fadd722b2654d"
+    }
+  },
+  "intentional_changes": {
+    "verl/verl/trainer/ppo/ray_trainer.py": "Only val-core display alias changes avg@32 to avg@16; training and metric computation unchanged.",
+    "recipe/opd/run_qwen3_1p7b_base_qwen3_teacher_dapo17k_common.sh": "Default teacher/model label changed from Qwen3-8B to Qwen3-30B-A3B-Instruct-2507; reference wrapping uses its Qwen3MoeDecoderLayer (overridable). Batch128, avg16, all algorithm/optimization/determinism settings retained."
+  }
+}

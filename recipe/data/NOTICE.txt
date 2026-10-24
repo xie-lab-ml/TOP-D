@@ -1,0 +1,42 @@
+Mathematical data provenance and separate licensing
+
+These four Parquet files match the author's original experiment files byte-for-byte
+(SHA-256 and byte counts are in data_manifest.json). Public source versions were
+used to recover the same prompts, answers, order, schema and serialization; no
+new training examples, normalization choices or alternative benchmark versions
+were substituted.
+
+1. dapo_math_17k.parquet (17,398 rows)
+Public source: open-r1/DAPO-Math-17k-Processed, all split
+Revision: 31dd309567e3da778038cc87d868b6097a3ccf68
+https://huggingface.co/datasets/open-r1/DAPO-Math-17k-Processed
+Derived upstream source: BytedTsinghua-SIA/DAPO-Math-17k (Apache-2.0).
+Credit: the DAPO authors and Open R1 processing contributors.
+
+2. aime24.parquet (30 rows)
+Source: AI-MO/aimo-validation-aime, 2024 subset (ids 60-89)
+Revision: 13f9e12f613e720c2a2b2f345dd04b998a29494d
+https://huggingface.co/datasets/AI-MO/aimo-validation-aime
+Source card license: Apache-2.0. Credit: AI-MO and the original AIME/AoPS sources.
+
+3. aime25.parquet (30 rows)
+Source: math-ai/aime25, test.jsonl
+Revision: 563bb8404243c5f09de6ec262f2db674fe5bce9b
+https://huggingface.co/datasets/math-ai/aime25
+Source license: Apache-2.0. Credit: Yifan Zhang and the Math-AI Team.
+
+4. aime26.parquet (30 rows)
+Source: MathArena/aime_2026, original 2026-02-13 data version
+Revision: 03fcf65cc5b0ebfdaa5f8f2154e5a9fb36deb989
+https://huggingface.co/datasets/MathArena/aime_2026/tree/03fcf65cc5b0ebfdaa5f8f2154e5a9fb36deb989
+License: CC BY-NC-SA 4.0, NOT the code's Apache-2.0 license.
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+Credit: MathArena / ETH SRI and original AIME problem sources.
+The adaptation adds the author's prompt suffix and verl data fields. The
+non-commercial, attribution and share-alike terms continue to apply.
+
+Original preparation retained: one user message per problem; the suffix
+" Please reason step-by-step, and put your final answer within \\boxed{}.";
+string answers and ids; original extra_info; no question duplication.
+AIME datasets are evaluation-only. Model weights are not included.
+The repository's code license does not override dataset terms or other rights.

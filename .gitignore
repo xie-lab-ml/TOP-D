@@ -1,0 +1,14 @@
+third_party/
+model/
+recipe/data/
+recipe/runs/
+recipe/logs/
+recipe/tensorboard/
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+*.bundle
+*.log
+.env
+.env.*

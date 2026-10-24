@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-24",
+  "release_status": "initial_private_review",
+  "upstream_commit": "a4f53df1a3511648330de8c3db2fc29463f2b730",
+  "algorithm_provenance": {
+    "original_functions_checked": 7,
+    "normalized_ast_match": true,
+    "exact_original_upstream_commit_recovered": false,
+    "matching_original_framework_and_config_blobs": 11
+  },
+  "checks": {
+    "cpu_pytest": {"passed": 28, "failed": 0, "python": "3.10.14", "torch": "2.1.2", "device": "cpu"},
+    "hydra_composition": {"passed": 3, "modes": ["opd", "topd", "naive_topd"], "training_executed": false},
+    "patch_clean_checkout_apply": "passed",
+    "patch_repeated_verification": "passed",
+    "git_diff_whitespace": "passed",
+    "targeted_credential_and_internal_path_scan": "no_matches",
+    "standalone_combined_python_and_shell_syntax_scan": "not_executed: host blocked cross-shell command; not retried"
+  },
+  "default_preset": {
+    "student": "Qwen/Qwen3-1.7B-Base",
+    "teacher": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "teacher_source": "reference_policy",
+    "gpus": 8,
+    "prompt_batch": 128,
+    "rollouts_per_prompt": 8,
+    "validation_samples_per_prompt": 16,
+    "validation_metric": "avg@16"
+  },
+  "not_verified": [
+    "complete GPU software environment installation",
+    "public model and dataset downloads",
+    "full model-weight integrity beyond shard presence",
+    "GPU model loading and memory requirements",
+    "FSDP/vLLM end-to-end execution",
+    "Linux math-verifier worker timeout in distributed training",
+    "checkpoint save and restore",
+    "bitwise reproducibility",
+    "paper-level benchmark results"
+  ]
+}

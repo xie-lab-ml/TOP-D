@@ -1,0 +1,10 @@
+{
+  "comparison": "byte-for-byte SHA-256 equality to the original experiment files",
+  "serialization": {"pyarrow": "23.0.1", "pandas_metadata_version": "3.0.1", "compression": "SNAPPY", "row_groups": 1},
+  "files": {
+    "math_reasoning_parquet/dapo_math_17k.parquet": {"rows": 17398, "bytes": 2786415, "sha256": "990758c5a9243124c491339890ad9704662d15ab045c7d4124192d9ec5a42bae", "rows_sha256": "26389c7c7785a49fc3d2e2ec637adc4849ac3c5e1930b42cc9a83b1979a0f6ed"},
+    "math_reasoning_parquet/aime24.parquet": {"rows": 30, "bytes": 23727, "sha256": "06c04d799e5b5f67bb314d6d82c986cb015aa1c2bdd4276d281c8750b0e5dfb0", "rows_sha256": "f190ab6e50dbb0b645b148671df1f3c131a84977c442458b9130b9e6f7ed3d0a"},
+    "math_reasoning_parquet/aime25.parquet": {"rows": 30, "bytes": 29658, "sha256": "6395f937ddda9401cd7f058fbd6bdcd21a5d46f85b868806af1f6b0426d7af6e", "rows_sha256": "69b67b2d5c2404c955cdc54b5f03f12eb06dd114e4b7d3185fd950c85b48b25b"},
+    "math_reasoning_parquet/aime26.parquet": {"rows": 30, "bytes": 22595, "sha256": "7ddd96cfd76e6f6ff930b3878c22edca0a186d82c37d969d760fb5292e47bd8c", "rows_sha256": "db3b9c99763bf09dd9003c912e9ef4588872ed9d5150a51493639d3edef7822b"}
+  }
+}

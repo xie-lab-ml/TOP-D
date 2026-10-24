@@ -1,18 +1,13 @@
-TOP-D minimal release
+TOP-D
 
-This distribution includes modifications to verl under Apache License 2.0.
-Upstream: https://github.com/verl-project/verl
-Pinned public base: a4f53df1a3511648330de8c3db2fc29463f2b730
-
-Upstream Notice.txt:
+Bundled verl runtime and installation files retain the upstream Apache-2.0 notices.
 Copyright 2023-2024 Bytedance Ltd. and/or its affiliates
+Additional per-file notices in verl/ remain in effect.
 
-Additional notices on modified upstream files are retained in the fetched source:
-Copyright 2024 Bytedance Ltd. and/or its affiliates
-Copyright 2022 The HuggingFace Team. All rights reserved.
-Copyright 2023-2024 SGLang Team
-Copyright 2025 ModelBest Inc. and/or its affiliates
+The 482-file runtime was matched to the author's working source. Only the declared
+avg@16 display alias and recipe defaults for the requested teacher differ.
+See recipe/verification/source_manifest.json for precise file provenance.
 
-The patch adds the author's minimal OPD, TOP-D and naive TOP-D estimators,
-reference-policy activation, input guards, and explicit avg@N validation metrics.
-It does not redistribute model weights or datasets. Those retain their own terms.
+Datasets are NOT all covered by the code license. See recipe/data/NOTICE.txt.
+In particular AIME26 is subject to CC BY-NC-SA 4.0.
+No model weights or private service configuration are redistributed.

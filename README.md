@@ -26,11 +26,20 @@
 
 <!-- Figure 1, original vector asset: https://arxiv.org/html/2607.04751v1/teaser.svg -->
 <p align="center">
-  <img src="recipe/assets/teaser.svg" width="600" alt="Figure 1: While standard OPD forces direct teacher supervision and suffers from unstable optimization, TOP-D ensures stable training by dynamically constructing a proximal teacher at every iteration.">
+  <img src="recipe/assets/teaser.svg" width="550" alt="Figure 1: While standard OPD forces direct teacher supervision and suffers from unstable optimization, TOP-D ensures stable training by dynamically constructing a proximal teacher at every iteration.">
 </p>
 
 <p align="center">
   <em>Figure 1: While standard OPD forces direct teacher supervision and suffers from unstable optimization, TOP-D ensures stable training by dynamically constructing a proximal teacher at every iteration.</em>
+</p>
+
+<!-- Figure 2, original vector asset: https://arxiv.org/html/2607.04751v1/aime_performance.svg -->
+<p align="center">
+  <img src="recipe/assets/aime_performance.svg" width="100%" alt="Figure 2: The avg@32 accuracy on several AIME benchmarks for RLVR applied to the Qwen3-8B-Base model, and for OPD and TOP-D using Qwen3-30B-A3B-Instruct-2507 as the teacher model.">
+</p>
+
+<p align="center">
+  <em>Figure 2: The avg@32 accuracy on several AIME benchmarks for RLVR applied to the Qwen3-8B-Base model, and for OPD and TOP-D using Qwen3-30B-A3B-Instruct-2507 as the teacher model.</em>
 </p>
 
 A **minimal implementation of TOP-D and On-Policy Distillation (OPD)** built on [verl](https://github.com/verl-project/verl). The repository includes the working runtime, training recipes, and original math datasets—no separate upstream checkout or patch step.
@@ -180,7 +189,7 @@ TOP-D/
 │   ├── data/              # original math datasets
 │   ├── environment/       # dependency pins and environment checks
 │   ├── verification/      # file-identity and CPU checks
-│   └── assets/            # paper teaser
+│   └── assets/            # original paper figures
 ├── verl/                  # complete bundled runtime and install metadata
 ├── install.sh
 └── README.md

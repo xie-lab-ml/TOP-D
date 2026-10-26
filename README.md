@@ -17,14 +17,13 @@
 
 <p align="center">
   <a href="mailto:zhengpengxie00@gmail.com"><code>zhengpengxie00@gmail.com</code></a> &ensp;
-  <a href="mailto:li.zhang@xingyunzhili.com"><code>li.zhang@xingyunzhili.com</code></a><br>
+  <a href="mailto:li.zhang@xingyunzhili.com"><code>li.zhang@xingyunzhili.com</code></a> &ensp;
   <a href="mailto:zekexie@hkust-gz.edu.cn"><code>zekexie@hkust-gz.edu.cn</code></a> &ensp;
   <a href="mailto:maoyang@xingyunzhili.com"><code>maoyang@xingyunzhili.com</code></a>
 </p>
 
 <p align="center">
-  <sub>∗ Did this work during the internship at Xingyunzhili.<br>
-  † Project leader. &ensp; ‡ Corresponding author.</sub>
+  <sub>∗ Did this work during the internship at Xingyunzhili. &ensp; † Project leader. &ensp; ‡ Corresponding author.</sub>
 </p>
 
 <p align="center"><b>Accepted to NeurIPS 2026</b></p>

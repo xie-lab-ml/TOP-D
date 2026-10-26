@@ -3,14 +3,28 @@
 </h1>
 
 <p align="center">
-  <a href="https://scholar.google.com/citations?user=QuK9uDcAAAAJ&amp;hl=en">Zhengpeng Xie</a><sup>*</sup>,
-  <a href="https://scholar.google.com/citations?user=-_ItfAoAAAAJ&amp;hl=en">Li Lyna Zhang</a><sup>†</sup>,
-  <a href="https://scholar.google.com/citations?user=ysXmZCMAAAAJ&amp;hl=en">Zeke Xie</a><sup>‡</sup>,
-  <a href="https://scholar.google.com/citations?user=LgJqohwAAAAJ&amp;hl=en">Mao Yang</a>
+  <a href="https://scholar.google.com/citations?user=QuK9uDcAAAAJ&amp;hl=en">Zhengpeng&nbsp;Xie</a><sup>1∗</sup> &ensp;&ensp;
+  <a href="https://scholar.google.com/citations?user=-_ItfAoAAAAJ&amp;hl=en">Li&nbsp;Lyna&nbsp;Zhang</a><sup>3,†</sup> &ensp;&ensp;
+  <a href="https://scholar.google.com/citations?user=ysXmZCMAAAAJ&amp;hl=en">Zeke&nbsp;Xie</a><sup>1,2,‡</sup> &ensp;&ensp;
+  <a href="https://scholar.google.com/citations?user=LgJqohwAAAAJ&amp;hl=en">Mao&nbsp;Yang</a><sup>3</sup>
 </p>
 
 <p align="center">
-  <sub>* Work done during an internship. &nbsp; † Project leader. &nbsp; ‡ Corresponding author.</sub>
+  <sup>1</sup> The Hong Kong University of Science and Technology (Guangzhou)<br>
+  <sup>2</sup> The Hong Kong University of Science and Technology<br>
+  <sup>3</sup> Shanghai Xingyunzhili Artificial Intelligence Institute
+</p>
+
+<p align="center">
+  <a href="mailto:zhengpengxie00@gmail.com"><code>zhengpengxie00@gmail.com</code></a> &ensp;
+  <a href="mailto:li.zhang@xingyunzhili.com"><code>li.zhang@xingyunzhili.com</code></a><br>
+  <a href="mailto:zekexie@hkust-gz.edu.cn"><code>zekexie@hkust-gz.edu.cn</code></a> &ensp;
+  <a href="mailto:maoyang@xingyunzhili.com"><code>maoyang@xingyunzhili.com</code></a>
+</p>
+
+<p align="center">
+  <sub>∗ Did this work during the internship at Xingyunzhili.<br>
+  † Project leader. &ensp; ‡ Corresponding author.</sub>
 </p>
 
 <p align="center"><b>Accepted to NeurIPS 2026</b></p>

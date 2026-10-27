@@ -16,10 +16,10 @@
 </p>
 
 <p align="center">
-  <a href="mailto:zhengpengxie00@gmail.com"><code>zhengpengxie00@gmail.com</code></a> &ensp;
-  <a href="mailto:li.zhang@xingyunzhili.com"><code>li.zhang@xingyunzhili.com</code></a> &ensp;
-  <a href="mailto:zekexie@hkust-gz.edu.cn"><code>zekexie@hkust-gz.edu.cn</code></a> &ensp;
-  <a href="mailto:maoyang@xingyunzhili.com"><code>maoyang@xingyunzhili.com</code></a>
+  <a href="mailto:zhengpengxie00@gmail.com">zhengpengxie00@gmail.com</a> &ensp;
+  <a href="mailto:li.zhang@xingyunzhili.com">li.zhang@xingyunzhili.com</a> &ensp;
+  <a href="mailto:zekexie@hkust-gz.edu.cn">zekexie@hkust-gz.edu.cn</a> &ensp;
+  <a href="mailto:maoyang@xingyunzhili.com">maoyang@xingyunzhili.com</a>
 </p>
 
 <p align="center">
@@ -101,6 +101,12 @@ Student rollouts → teacher scores → token advantages → existing PPO update
    data.batch["advantages"] = advantages
    data.batch["returns"] = returns
    ```
+
+> [!NOTE]
+> **Empirical observations.**
+> - **Dense teachers (Qwen3-8B / Qwen3-14B):** Both TOP-D and OPD can exhibit **response-length explosion**. Combining TOP-D with recent methods that mitigate this behavior may further improve performance.
+> - **MoE teacher (Qwen3-30B-A3B-Instruct-2507):** TOP-D **markedly mitigates response-length explosion** in our experiments.
+> - **Minimal ablation:** TOP-D **generally outperforms naive TOP-D**, which serves as a deliberately minimal ablation baseline.
 
 ## Quick start
 
